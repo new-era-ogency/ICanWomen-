@@ -147,7 +147,8 @@
           'Ми хочемо, щоб підтримка залишалась доступною — не випадково, а стабільно. Щоб жінки в прифронтових громадах знали: звернутись по допомогу — це не привілей, а можливість, яка поруч. У найближчі роки плануємо:',
         carousel_prev: 'Попередній слайд',
         carousel_next: 'Наступний слайд',
-        photo_alt: '',
+        photo_alt:
+          'Учасниці та учасник навчального заходу ICAN Women Foundation за столом: бейдж «АЙ КЕН», зошит і вода на столі.',
         s1_title: 'Розширити сталий доступ до підтримки',
         s1_body:
           'закріпити роботу хабів і мобільних бригад, щоб допомога була передбачуваною та надійною, а не лише від випадку до випадку.',
@@ -470,7 +471,8 @@
           'We want support to remain reachable—not by chance, but steadily. So that women in frontline communities know that asking for help is not a privilege, but an option that is close by. In the coming years we plan to:',
         carousel_prev: 'Previous slide',
         carousel_next: 'Next slide',
-        photo_alt: '',
+        photo_alt:
+          'ICAN Women Foundation workshop: participants at a table with an ICAN name badge, notebook and water bottle.',
         s1_title: 'Expand reliable access to support',
         s1_body:
           'strengthen hubs and mobile brigades so assistance is predictable and dependable—not only from one-off visits.',
@@ -729,7 +731,7 @@
   const STRATEGY_SLIDES_LAYOUT = [
     { type: 'text', icon: 'network', titleKey: 'strategy.s1_title', bodyKey: 'strategy.s1_body' },
     { type: 'text', icon: 'mental', titleKey: 'strategy.s2_title', bodyKey: 'strategy.s2_body' },
-    { type: 'photo', src: 'images/placeholder.jpg' },
+    { type: 'photo', src: 'images/strategy-carousel-seminar.png' },
     { type: 'text', icon: 'care', titleKey: 'strategy.s3_title', bodyKey: 'strategy.s3_body' },
     { type: 'text', icon: 'partners', titleKey: 'strategy.s4_title', bodyKey: 'strategy.s4_body' },
     { type: 'text', icon: 'education', titleKey: 'strategy.s5_title', bodyKey: 'strategy.s5_body' }
