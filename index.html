@@ -780,6 +780,189 @@
     .scroll-indicator.hidden { opacity: 0; pointer-events: none; }
 
     /* ============================================================
+       STRATEGY — development carousel
+       ============================================================ */
+    .strategy-panel {
+      background: var(--color-surface);
+      padding: clamp(3.5rem, 8vw, 5.25rem) 0;
+      border-top: 1px solid var(--color-border);
+    }
+
+    .strategy-panel__header {
+      display: grid;
+      gap: var(--space-lg);
+      margin-bottom: var(--space-2xl);
+      align-items: start;
+    }
+
+    .strategy-panel__title {
+      font-family: var(--font-heading);
+      font-size: clamp(1.65rem, 4vw, 2.35rem);
+      font-weight: 700;
+      color: var(--color-dark);
+      line-height: 1.2;
+      margin: 0;
+    }
+
+    .strategy-panel__intro {
+      font-size: 0.9875rem;
+      line-height: 1.75;
+      color: var(--color-mid);
+      margin: 0;
+      max-width: 36rem;
+    }
+
+    .strategy-carousel {
+      position: relative;
+    }
+
+    .strategy-carousel__viewport {
+      overflow-x: auto;
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+      margin-inline: calc(-1 * max(var(--container-pad), env(safe-area-inset-left, 0px)));
+      padding-inline: max(var(--container-pad), env(safe-area-inset-left, 0px));
+      scrollbar-width: none;
+      mask-image: linear-gradient(to right, transparent 0, #000 12px, #000 calc(100% - 12px), transparent 100%);
+    }
+    .strategy-carousel__viewport::-webkit-scrollbar { display: none; }
+
+    .strategy-carousel__track {
+      display: flex;
+      gap: var(--space-md);
+      padding-bottom: var(--space-sm);
+    }
+
+    .strategy-slide {
+      flex: 0 0 min(100%, 340px);
+      scroll-snap-align: start;
+      min-height: 320px;
+      border-radius: var(--radius-xl);
+      background: var(--color-white);
+      box-shadow: var(--shadow-md);
+      border: 1px solid rgba(0, 0, 0, 0.04);
+    }
+
+    .strategy-slide--text {
+      padding: var(--space-xl);
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+
+    .strategy-slide__top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: var(--space-md);
+      margin-bottom: var(--space-lg);
+    }
+
+    .strategy-slide__icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--color-accent);
+      color: var(--color-white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .strategy-slide__icon svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .strategy-slide__index {
+      font-family: var(--font-heading);
+      font-size: 0.8125rem;
+      font-weight: 500;
+      color: var(--color-muted);
+      letter-spacing: 0.02em;
+    }
+
+    .strategy-slide__title {
+      font-family: var(--font-heading);
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: var(--color-dark);
+      line-height: 1.35;
+      margin: 0 0 var(--space-md);
+    }
+
+    .strategy-slide__body {
+      font-size: 0.9375rem;
+      line-height: 1.7;
+      color: var(--color-mid);
+      margin: 0;
+      margin-top: auto;
+    }
+
+    .strategy-slide--photo {
+      padding: 0;
+      overflow: hidden;
+    }
+    .strategy-slide--photo img {
+      width: 100%;
+      height: 100%;
+      min-height: 320px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .strategy-carousel__nav {
+      display: flex;
+      justify-content: center;
+      gap: var(--space-md);
+      margin-top: var(--space-xl);
+    }
+
+    .strategy-carousel__btn {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      border: 1px solid var(--color-border);
+      background: var(--color-white);
+      color: var(--color-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow-sm);
+      transition:
+        background var(--transition-fast),
+        border-color var(--transition-fast),
+        transform var(--transition-fast);
+    }
+    .strategy-carousel__btn:hover {
+      border-color: rgba(0, 0, 0, 0.14);
+      background: var(--color-accent-soft);
+    }
+    .strategy-carousel__btn:active { transform: scale(0.96); }
+    .strategy-carousel__btn svg {
+      width: 20px;
+      height: 20px;
+    }
+    .strategy-carousel__btn:disabled {
+      opacity: 0.35;
+      pointer-events: none;
+    }
+
+    @media (min-width: 769px) {
+      .strategy-panel__header {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+        gap: var(--space-2xl);
+      }
+      .strategy-slide {
+        flex: 0 0 min(100%, 360px);
+        min-height: 340px;
+      }
+      .strategy-slide--photo img { min-height: 340px; }
+    }
+
+    /* ============================================================
        IMPACT STATS SECTION
        ============================================================ */
     .our-impact {
@@ -1035,20 +1218,24 @@
       background: var(--color-white);
       border: 1px solid var(--color-border);
       border-radius: var(--radius-lg);
-      padding: var(--space-xl);
+      padding: var(--space-xl) var(--space-lg) var(--space-xl);
       text-align: center;
       transition: box-shadow var(--transition-base);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     .team-card:hover { box-shadow: var(--shadow-sm); }
 
     .team-card__photo {
-      width: 96px;
-      height: 96px;
+      width: 112px;
+      height: 112px;
       margin: 0 auto var(--space-md);
       border-radius: 50%;
       overflow: hidden;
-      border: 2px solid var(--color-border);
+      border: 1px solid var(--color-border);
       background: var(--color-surface);
+      flex-shrink: 0;
     }
     .team-card__photo img {
       width: 100%;
@@ -1056,82 +1243,22 @@
       object-fit: cover;
     }
 
-    .team-card__placeholder {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: var(--font-heading);
-      font-weight: 600;
-      font-size: 1.5rem;
-      color: var(--color-muted);
-      background: var(--color-accent-soft);
-    }
-
     .team-card__name {
       font-family: var(--font-heading);
       font-size: 1.0625rem;
       font-weight: 600;
       color: var(--color-dark);
+      line-height: 1.35;
+      margin: 0;
     }
 
     .team-card__role {
+      font-family: var(--font-heading);
       font-size: 0.8125rem;
       font-weight: 500;
       color: var(--color-accent);
-      margin: var(--space-xs) 0 var(--space-md);
-    }
-
-    .team-card__bio {
-      font-size: 0.875rem;
-      color: var(--color-mid);
-      line-height: 1.7;
-      margin: 0;
-    }
-
-    /* Timeline / history */
-    .history { background: var(--color-white); padding: clamp(3.75rem, 8vw, 5.5rem) 0; }
-
-    .timeline {
-      max-width: 720px;
-      margin: 0 auto;
-      padding-left: var(--space-lg);
-      border-left: 2px solid var(--color-border);
-    }
-
-    .timeline__item {
-      position: relative;
-      padding-bottom: var(--space-xl);
-      padding-left: var(--space-lg);
-    }
-    .timeline__item:last-child { padding-bottom: 0; }
-
-    .timeline__item::before {
-      content: '';
-      position: absolute;
-      left: calc(-1 * var(--space-lg) - 7px);
-      top: 6px;
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      background: var(--color-white);
-      border: 2px solid var(--color-accent);
-    }
-
-    .timeline__year {
-      font-family: var(--font-heading);
-      font-size: 0.9375rem;
-      font-weight: 600;
-      color: var(--color-dark);
-      margin-bottom: var(--space-xs);
-    }
-
-    .timeline__desc {
-      font-size: 0.9375rem;
-      color: var(--color-mid);
-      line-height: 1.7;
-      margin: 0;
+      margin: var(--space-sm) 0 0;
+      line-height: 1.45;
     }
 
     .hero-quote-strip {
@@ -1911,6 +2038,132 @@
     }
 
     /* ============================================================
+       FAQ — partnership accordion
+       ============================================================ */
+    .faq {
+      background: var(--color-white);
+      padding: clamp(3.75rem, 8vw, 5.5rem) 0;
+      border-top: 1px solid var(--color-border);
+    }
+
+    .faq__inner {
+      display: grid;
+      gap: var(--space-2xl);
+      align-items: start;
+    }
+
+    .faq__title {
+      font-family: var(--font-heading);
+      font-size: clamp(1.65rem, 3.6vw, 2.25rem);
+      font-weight: 700;
+      color: var(--color-dark);
+      line-height: 1.2;
+      margin: 0 0 var(--space-md);
+    }
+
+    .faq__lead {
+      font-size: 0.9875rem;
+      line-height: 1.75;
+      color: var(--color-mid);
+      margin: 0 0 var(--space-xl);
+      max-width: 28rem;
+    }
+
+    .faq__cta {
+      border-radius: var(--radius-full);
+      padding-inline: var(--space-xl);
+    }
+
+    .faq-accordion {
+      border-top: 1px solid var(--color-border);
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .faq-item__trigger {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-lg);
+      text-align: left;
+      padding: var(--space-lg) 0;
+      font-family: var(--font-heading);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--color-dark);
+      line-height: 1.45;
+      background: none;
+      border: none;
+      cursor: pointer;
+      transition: color var(--transition-fast);
+    }
+    .faq-item__trigger:hover { color: var(--color-accent-hover); }
+
+    .faq-item__icon {
+      position: relative;
+      width: 22px;
+      height: 22px;
+      flex-shrink: 0;
+    }
+    .faq-item__icon::before,
+    .faq-item__icon::after {
+      content: '';
+      position: absolute;
+      background: var(--color-dark);
+      transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      border-radius: 1px;
+    }
+    .faq-item__icon::before {
+      width: 14px;
+      height: 2px;
+      left: 4px;
+      top: 10px;
+    }
+    .faq-item__icon::after {
+      width: 2px;
+      height: 14px;
+      left: 10px;
+      top: 4px;
+    }
+    .faq-item.is-open .faq-item__icon::after {
+      transform: scaleY(0);
+    }
+    .faq-item.is-open .faq-item__trigger { color: var(--color-accent); }
+
+    .faq-item__panel {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .faq-item.is-open .faq-item__panel {
+      grid-template-rows: 1fr;
+    }
+
+    .faq-item__panel-inner {
+      min-height: 0;
+      overflow: hidden;
+    }
+
+    .faq-item__answer {
+      font-size: 0.9375rem;
+      line-height: 1.75;
+      color: var(--color-mid);
+      margin: 0;
+      padding: 0 0 var(--space-lg);
+      max-width: 40rem;
+    }
+
+    @media (min-width: 900px) {
+      .faq__inner {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+        gap: clamp(2rem, 5vw, 4rem);
+      }
+    }
+
+    /* ============================================================
        CONTACT SECTION
        ============================================================ */
     .contact { background: var(--color-white); }
@@ -2200,6 +2453,7 @@
       .programs__grid  { grid-template-columns: repeat(2, 1fr); }
       .projects__grid  { grid-template-columns: repeat(2, 1fr); }
       #partners-grid   { grid-template-columns: repeat(2, 1fr); }
+      .team__grid       { grid-template-columns: repeat(2, 1fr); }
     }
 
     /* ============================================================
@@ -2233,8 +2487,6 @@
         grid-template-columns: repeat(4, 1fr);
         gap: var(--space-lg);
       }
-      #partners-grid .partner-card:nth-child(5) { grid-column: 2; }
-      #partners-grid .partner-card:nth-child(6) { grid-column: 3; }
       .two-col             { grid-template-columns: 1fr 1fr; }
       .contact .two-col    { grid-template-columns: 1fr 1fr; }
       .split-asym          { grid-template-columns: 1fr 1fr; }
@@ -2548,7 +2800,6 @@
           <blockquote class="pull-quote" data-i18n="mission.quote">«Коли поруч є люди без засудження, легше дихати навіть у найважчі тижні» — зворотний зв’язок учасниць програм ICAN.</blockquote>
           <div class="our-projects__actions" style="margin-top:var(--space-xl);">
             <a href="#donate" class="btn btn-primary" data-i18n="mission.cta_donate">Підтримати місію</a>
-            <a href="#history" class="btn btn-secondary" data-i18n="mission.cta_history">Подивитися історію фонду</a>
           </div>
         </div>
         <figure class="mission-started__figure" data-animate>
@@ -2557,69 +2808,26 @@
       </div>
     </section>
 
-    <!-- ── TEAM ───────────────────────────────────────────────────── -->
-    <section id="team" class="team section-warm-bg" aria-labelledby="team-title">
+    <!-- ── STRATEGY (development carousel) ───────────────────────── -->
+    <section id="strategy" class="strategy-panel" aria-labelledby="strategy-title">
       <div class="container">
-        <div class="section-header section-header--wide" data-animate>
-          <p class="section-tag" data-i18n="team.tag">Команда</p>
-          <h2 class="section-title" id="team-title" data-i18n="team.headline">Хто робить роботу на місці</h2>
-          <p class="section-subtitle" data-i18n="team.subtitle">
-            Прозора структура: керівниця координує локальних партнерів і волонтерів без зайвої бюрократії.
+        <div class="strategy-panel__header" data-animate>
+          <h2 class="strategy-panel__title" id="strategy-title" data-i18n="strategy.headline">Стратегія розвитку</h2>
+          <p class="strategy-panel__intro" data-i18n="strategy.intro">
+            Ми хочемо, щоб підтримка залишалась доступною — не випадково, а стабільно. Щоб жінки в прифронтових громадах знали: звернутись по допомогу — це не привілей, а можливість, яка поруч. У найближчі роки плануємо:
           </p>
         </div>
-        <div class="team__grid" data-animate-stagger>
-          <article class="team-card">
-            <div class="team-card__photo">
-              <img src="https://images.unsplash.com/photo-1594744803329-e58e31df8fad?w=400&q=80" alt="Засновниця організації" width="96" height="96" loading="lazy">
-            </div>
-            <h3 class="team-card__name" data-i18n="team.p1_name">Ірина Сергеєнко</h3>
-            <p class="team-card__role" data-i18n="team.p1_role">Співзасновниця й керуюча партнерка</p>
-            <p class="team-card__bio" data-i18n="team.p1_bio">Комунікує з донорами, затверджує гуманітарні заявки й тримає ескалації «людина — людині», коли війна блокує офіційні шляхи.</p>
-          </article>
-          <article class="team-card">
-            <div class="team-card__photo">
-              <div class="team-card__placeholder" aria-hidden="true">К</div>
-            </div>
-            <h3 class="team-card__name" data-i18n="team.p2_name">Кирило Пономарьов</h3>
-            <p class="team-card__role" data-i18n="team.p2_role">Координатор польових операцій</p>
-            <p class="team-card__bio" data-i18n="team.p2_bio">Планує виїзди психологів і юристів до 18 громад, тримає логістику та безпечні маршрути для команд із ризиками.</p>
-          </article>
-          <article class="team-card">
-            <div class="team-card__photo">
-              <div class="team-card__placeholder" aria-hidden="true">В</div>
-            </div>
-            <h3 class="team-card__name" data-i18n="team.p3_name">Волонтерська мережа</h3>
-            <p class="team-card__role" data-i18n="team.p3_role">55+ людей із сусідніх областей</p>
-            <p class="team-card__bio" data-i18n="team.p3_bio">Пакують комплекти, супроводжують на прийоми, ведуть запис у хабах. Кожний місяць — два онлайн-брифінги та наставник із штатної команди.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── HISTORY / TIMELINE ─────────────────────────────────────── -->
-    <section id="history" class="history section-pad-snug" aria-labelledby="history-title">
-      <div class="container">
-        <div class="section-header section-header--wide section-header--left" data-animate>
-          <p class="section-tag" data-i18n="history.tag">Короткий шлях</p>
-          <h2 class="section-title" id="history-title" data-i18n="history.headline">Що встигло змінитися між хвилями</h2>
-          <p class="section-subtitle" data-i18n="history.subtitle">Не повна біографія — дороговказ, як ми дорослішаємо поруч із громадами.</p>
-        </div>
-        <div class="timeline" data-animate>
-          <div class="timeline__item">
-            <p class="timeline__year" data-i18n="history.y1">2023 — заснування ICAN у Харкові</p>
-            <p class="timeline__desc" data-i18n="history.d1">Старт роботи фонду з фокусом на людей, які найбільше постраждали від війни.</p>
+        <div class="strategy-carousel" data-strategy-carousel data-animate>
+          <div class="strategy-carousel__viewport" tabindex="0">
+            <div class="strategy-carousel__track" id="strategy-carousel-track" aria-live="polite"></div>
           </div>
-          <div class="timeline__item">
-            <p class="timeline__year" data-i18n="history.y2">2024 — масштабування програм</p>
-            <p class="timeline__desc" data-i18n="history.d2">Розгортання психосоціальної підтримки, захисту та гуманітарної допомоги разом із партнерами.</p>
-          </div>
-          <div class="timeline__item">
-            <p class="timeline__year" data-i18n="history.y3">2025 — звітність і партнерства</p>
-            <p class="timeline__desc" data-i18n="history.d3">Прозорі KPI, міжнародні гранти та сталі локальні точки доступу до допомоги в регіоні.</p>
-          </div>
-          <div class="timeline__item">
-            <p class="timeline__year" data-i18n="history.y4">Далі — стійкість громад</p>
-            <p class="timeline__desc" data-i18n="history.d4">Довгострокові програми для жінок і дітей, peer-мережі та економічне зміцнення родин.</p>
+          <div class="strategy-carousel__nav">
+            <button type="button" class="strategy-carousel__btn" data-strategy-prev data-i18n-aria-label="strategy.carousel_prev" aria-label="Попередній слайд">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <button type="button" class="strategy-carousel__btn" data-strategy-next data-i18n-aria-label="strategy.carousel_next" aria-label="Наступний слайд">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
           </div>
         </div>
       </div>
@@ -2715,6 +2923,20 @@
       </div>
     </section>
 
+    <!-- ── TEAM ───────────────────────────────────────────────────── -->
+    <section id="team" class="team section-warm-bg section-pad-relaxed" aria-labelledby="team-title">
+      <div class="container">
+        <div class="section-header section-header--wide" data-animate>
+          <p class="section-tag" data-i18n="team.tag">Команда</p>
+          <h2 class="section-title" id="team-title" data-i18n="team.headline">Команда</h2>
+          <p class="section-subtitle" data-i18n="team.subtitle">
+            Люди, які координують програми та підтримку громад.
+          </p>
+        </div>
+        <div id="team-grid" class="team__grid" data-animate-stagger aria-label="Команда ICAN"></div>
+      </div>
+    </section>
+
     <!-- ── PARTNERS ───────────────────────────────────────────────── -->
     <section id="partners" class="partners section-pad-relaxed section-warm-bg" aria-labelledby="partners-title">
       <div class="container">
@@ -2723,6 +2945,78 @@
         </div>
         <!-- Populated by app.js renderPartners() -->
         <div id="partners-grid" data-animate-stagger aria-label="Організації-партнери"></div>
+      </div>
+    </section>
+
+    <!-- ── FAQ (partners) ───────────────────────────────────────── -->
+    <section id="faq" class="faq" aria-labelledby="faq-title">
+      <div class="container faq__inner">
+        <div class="faq__intro" data-animate>
+          <h2 class="faq__title" id="faq-title" data-i18n="faq.headline">Поширені запитання</h2>
+          <p class="faq__lead" data-i18n="faq.lead">
+            Можливо, у вас вже є питання? Ми зібрали відповіді на найважливіші. Якщо не знайдете потрібного — пишіть нам, ми завжди поруч, щоб допомогти.
+          </p>
+          <a href="mailto:bobfican@gmail.com?subject=Запитання%20щодо%20партнерства" class="btn btn-primary faq__cta" data-i18n="faq.cta">Задати запитання</a>
+        </div>
+        <div class="faq__accordion-wrap" data-animate data-faq-accordion>
+          <div class="faq-accordion" role="list">
+            <div class="faq-item" role="listitem">
+              <button type="button" class="faq-item__trigger" id="faq-t-1" aria-expanded="false" aria-controls="faq-p-1" data-faq-trigger>
+                <span data-i18n="faq.q1">Як стати партнером фонду?</span>
+                <span class="faq-item__icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-item__panel" id="faq-p-1" role="region" aria-labelledby="faq-t-1">
+                <div class="faq-item__panel-inner">
+                  <p class="faq-item__answer" data-i18n="faq.a1"></p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item" role="listitem">
+              <button type="button" class="faq-item__trigger" id="faq-t-2" aria-expanded="false" aria-controls="faq-p-2" data-faq-trigger>
+                <span data-i18n="faq.q2">Які можливості для партнерства ви пропонуєте?</span>
+                <span class="faq-item__icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-item__panel" id="faq-p-2" role="region" aria-labelledby="faq-t-2">
+                <div class="faq-item__panel-inner">
+                  <p class="faq-item__answer" data-i18n="faq.a2"></p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item" role="listitem">
+              <button type="button" class="faq-item__trigger" id="faq-t-3" aria-expanded="false" aria-controls="faq-p-3" data-faq-trigger>
+                <span data-i18n="faq.q3">Чи є вимоги до потенційних партнерів?</span>
+                <span class="faq-item__icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-item__panel" id="faq-p-3" role="region" aria-labelledby="faq-t-3">
+                <div class="faq-item__panel-inner">
+                  <p class="faq-item__answer" data-i18n="faq.a3"></p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item" role="listitem">
+              <button type="button" class="faq-item__trigger" id="faq-t-4" aria-expanded="false" aria-controls="faq-p-4" data-faq-trigger>
+                <span data-i18n="faq.q4">Чи є можливість стати ексклюзивним партнером у певній сфері?</span>
+                <span class="faq-item__icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-item__panel" id="faq-p-4" role="region" aria-labelledby="faq-t-4">
+                <div class="faq-item__panel-inner">
+                  <p class="faq-item__answer" data-i18n="faq.a4"></p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item" role="listitem">
+              <button type="button" class="faq-item__trigger" id="faq-t-5" aria-expanded="false" aria-controls="faq-p-5" data-faq-trigger>
+                <span data-i18n="faq.q5">Як фонд підтримує своїх партнерів?</span>
+                <span class="faq-item__icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-item__panel" id="faq-p-5" role="region" aria-labelledby="faq-t-5">
+                <div class="faq-item__panel-inner">
+                  <p class="faq-item__answer" data-i18n="faq.a5"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -3106,7 +3400,7 @@
 
       <div class="footer__bottom">
         <p class="footer__reg" data-i18n="footer.registration">
-          БФ «ICAN Women Foundation» · Код ЄДРПОУ: XXXXXXXX · Зареєстровано в Україні
+          БО «БФ «АЙ КЕН»» · Код ЄДРПОУ 45404369 · Зареєстровано в Україні
         </p>
         <p class="footer__copy" data-i18n="footer.rights">
           © 2024–2026 ICAN Women Foundation. Всі права захищені.

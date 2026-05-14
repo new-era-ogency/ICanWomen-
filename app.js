@@ -43,7 +43,6 @@
         team:         'Команда',
         projects:     'Проєкти',
         partners:     'Партнери',
-        history_nav:  'Хронологія',
         contact:      'Контакти',
         donate_outline: 'Підтримати місію'
       },
@@ -140,36 +139,56 @@
         val_responsibility_title: 'Відповідальність',
         val_responsibility_desc: 'публічна звітність, етичні стандарти роботи та відповідь перед людьми, які нам довірилися.',
         quote: '«Коли поруч є люди без засудження, легше дихати навіть у найважчі тижні» — зворотний зв’язок учасниць програм ICAN.',
-        cta_donate: 'Підтримати місію',
-        cta_history: 'Подивитися історію фонду'
+        cta_donate: 'Підтримати місію'
+      },
+      strategy: {
+        headline: 'Стратегія розвитку',
+        intro:
+          'Ми хочемо, щоб підтримка залишалась доступною — не випадково, а стабільно. Щоб жінки в прифронтових громадах знали: звернутись по допомогу — це не привілей, а можливість, яка поруч. У найближчі роки плануємо:',
+        carousel_prev: 'Попередній слайд',
+        carousel_next: 'Наступний слайд',
+        photo_alt: '',
+        s1_title: 'Розширити сталий доступ до підтримки',
+        s1_body:
+          'закріпити роботу хабів і мобільних бригад, щоб допомога була передбачуваною та надійною, а не лише від випадку до випадку.',
+        s2_title: 'Посилити роботу з психічним здоров’ям',
+        s2_body:
+          'запровадити нові практики, зокрема TRE-терапію, збільшити кількість фахівців і просторів відновлення.',
+        s3_title: 'Підтримати жінок, які доглядають за іншими',
+        s3_body:
+          'мам, які виховують дітей з інвалідністю, жінок, що втратили близьких, і тих, хто тривалий час не мав змоги подбати про себе.',
+        s4_title: 'Зміцнити партнерства',
+        s4_body:
+          'розвивати співпрацю з міжнародними й локальними організаціями, громадами та донорами — із прозорою звітністю та спільними програмами.',
+        s5_title: 'Посилити просвітницькі напрями',
+        s5_body:
+          'масштабувати заходи з профілактики насильства й підтримки жіночого лідерства в прифронтових громадах.'
       },
       team: {
-        tag: 'Про команду',
-        headline: 'Кого ви фактично чекаєте в громадах',
-        subtitle: 'Керівництво невелике навмисно — ми інвестуємо в локальну мережу більше, ніж у ряд широких чиновних посад.',
-        p1_name: 'Ірина Сергеєнко',
-        p1_role: 'Співзасновниця · керуюча партнерка',
-        p1_bio: 'Тримає стратегію впливу, міжнародні грантові узгоди й ескалації, коли на кону безпека сімей у прифронтових селах.',
-        p2_name: 'Кирило Пономарьов',
-        p2_role: 'Координатор польових операцій',
-        p2_bio: 'Будує маршрути мобільних бригад, синхронізує лікарню, школу й волонтерів там, де немає зайвої адмінструктури.',
-        p3_name: 'Хмара волонтерів ICAN',
-        p3_role: 'Фасилітатори на місцях і дистанційно',
-        p3_bio: 'Юристи-про-боно, студентські логісти, пекарі домових кооперацій — ми даємо їм методички й ментора в штаті фонду.'
+        tag: 'Команда',
+        headline: 'Команда',
+        subtitle: 'Люди, які координують програми та підтримку громад.',
+        m1_name: 'Наталія Соловйова',
+        m1_role: 'Голова правління',
+        m2_name: 'Марина Овчаренко',
+        m2_role: 'Керівниця програм',
+        m3_name: 'Валерія Бурлакова',
+        m3_role: 'Керівниця комунікацій',
+        m4_name: 'Дар\'я Глебова',
+        m4_role: 'Соціальна працівниця',
+        m5_name: 'Юлія Маловічко',
+        m5_role: 'Психологиня',
+        m6_name: 'Анна Іванченко',
+        m6_role: 'Координаторка проєктів'
       },
-      history: {
-        tag: 'Історія фонду',
-        headline: 'Як формувалася ICAN',
-        subtitle: 'Короткі орієнтири — не повна хроніка, а як ми дорослішаємо разом із громадами Харківщини.',
-        y1: '2023 — старт у Харкові',
-        d1: 'Реєстрація фонду й перші кроки: зібрати команду, вибудувати безпечні маршрути допомоги й почути жінок і дітей у громадах, які опинилися на лінії впливу війни.',
-        y2: '2023–2024 — польові бригади та локальні точки',
-        d2: 'Виїзди психологів і юристів, відкриття хабів і співпраця з місцевими активними групами — щоб допомога була поруч, а не лише «по телефону».',
-        y3: '2024–2026 — масштабування й міжнародні проєкти',
-        d3: 'Інтегровані програми підтримки, збір коштів «від людини до людини», проєкт P.E.A.C.E III та партнерства з донорами — із прозорою звітністю для громади.',
-        y4: 'Далі — стійкість громад',
-        d4: 'Довгостроковий супровід родин, peer-мережі жінок-лідерок і зміцнення локальних ініціатив після наших виїздів.'
-      },
+      teamMembers: [
+        { photo: 'images/placeholder.jpg', nameKey: 'team.m1_name', roleKey: 'team.m1_role' },
+        { photo: 'images/placeholder.jpg', nameKey: 'team.m2_name', roleKey: 'team.m2_role' },
+        { photo: 'images/placeholder.jpg', nameKey: 'team.m3_name', roleKey: 'team.m3_role' },
+        { photo: 'images/placeholder.jpg', nameKey: 'team.m4_name', roleKey: 'team.m4_role' },
+        { photo: 'images/placeholder.jpg', nameKey: 'team.m5_name', roleKey: 'team.m5_role' },
+        { photo: 'images/placeholder.jpg', nameKey: 'team.m6_name', roleKey: 'team.m6_role' }
+      ],
       how: {
         section_tag: 'Методологія',
         headline: 'Як ми працюємо',
@@ -243,6 +262,27 @@
       partners: {
         headline: 'Наші партнери'
       },
+      faq: {
+        headline: 'Поширені запитання',
+        lead:
+          'Можливо, у вас вже є питання? Ми зібрали відповіді на найважливіші. Якщо не знайдете потрібного — пишіть нам, ми завжди поруч, щоб допомогти.',
+        cta: 'Задати запитання',
+        q1: 'Як стати партнером фонду?',
+        a1:
+          'Напишіть нам на електронну пошту або в Telegram — коротко опишіть організацію, сферу діяльності та ідею співпраці. Координаторка програм зв’яжеться, щоб узгодити формат: проєкт, гуманітарний напрям, експертиза чи інший варіант.',
+        q2: 'Які можливості для партнерства ви пропонуєте?',
+        a2:
+          'Ми відкриті до спільних грантових заявок, польових програм, навчань для команд, інформаційних кампаній і локальних ініціатив у громадах Харківщини. Конкретний формат залежить від потреб громад і ваших компетенцій.',
+        q3: 'Чи є вимоги до потенційних партнерів?',
+        a3:
+          'Важливі прозорість, дотримання етики роботи з вразливими групами, готовність до публічної звітності там, де це передбачено угодою, та реалістичні зобов’язання щодо обсягів і термінів.',
+        q4: 'Чи є можливість стати ексклюзивним партнером у певній сфері?',
+        a4:
+          'За погодженням сторін можлива фокусна співпраця в окремій тематиці (наприклад, ментальне здоров’я чи юридичний супровід) без ущемлення інших партнерів — умови обговорюємо індивідуально.',
+        q5: 'Як фонд підтримує своїх партнерів?',
+        a5:
+          'Надаємо методичні матеріали, координацію з польовою командою, підсвічування партнерства у звітах і, де доречно, у комунікаціях, а також зворотний зв’язок після ключових етапів проєкту.'
+      },
       volunteer: {
         section_tag: 'Волонтерство',
         headline:    'Долучайтесь як волонтери',
@@ -307,7 +347,7 @@
         privacy:           'Політика конфіденційності',
         terms:             'Умови сайту',
         registration_link: 'Реєстраційні документи',
-        registration:      'БФ «ICAN Women Foundation» · Код ЄДРПОУ: XXXXXXXX · Зареєстровано в Україні',
+        registration:      'БО «БФ «АЙ КЕН»» · Код ЄДРПОУ 45404369 · Зареєстровано в Україні',
         rights:            '© 2024–2026 ICAN Women Foundation. Всі права захищені.'
       }
     },
@@ -326,7 +366,6 @@
         team:         'Team',
         projects:     'Projects',
         partners:     'Partners',
-        history_nav:  'Timeline',
         contact:      'Contact',
         donate_outline: 'Support our mission'
       },
@@ -423,36 +462,56 @@
         val_responsibility_title: 'Responsibility',
         val_responsibility_desc: 'public reporting, ethical practice and accountability to the people who place their trust in us.',
         quote: '“When someone stands beside you without judgment, it becomes easier to breathe—even in the hardest weeks.” — feedback from ICAN programme participants.',
-        cta_donate: 'Support our mission',
-        cta_history: 'See our timeline'
+        cta_donate: 'Support our mission'
+      },
+      strategy: {
+        headline: 'Development strategy',
+        intro:
+          'We want support to remain reachable—not by chance, but steadily. So that women in frontline communities know that asking for help is not a privilege, but an option that is close by. In the coming years we plan to:',
+        carousel_prev: 'Previous slide',
+        carousel_next: 'Next slide',
+        photo_alt: '',
+        s1_title: 'Expand reliable access to support',
+        s1_body:
+          'strengthen hubs and mobile brigades so assistance is predictable and dependable—not only from one-off visits.',
+        s2_title: 'Deepen mental health work',
+        s2_body:
+          'introduce new practices including TRE therapy, grow the number of specialists and safe recovery spaces.',
+        s3_title: 'Support women who care for others',
+        s3_body:
+          'mothers raising children with disabilities, women who have lost loved ones, and those who have long had no chance to care for themselves.',
+        s4_title: 'Strengthen partnerships',
+        s4_body:
+          'develop cooperation with international and local organisations, communities and donors—with transparent reporting and joint programmes.',
+        s5_title: 'Scale awareness-raising work',
+        s5_body:
+          'grow activities on violence prevention and women’s leadership in frontline municipalities.'
       },
       team: {
-        tag: 'Meet the scaffolding',
-        headline: 'Who actually answers your knock at the hub',
-        subtitle: 'We keep HQ lean deliberately so municipalities and volunteers absorb the daylight budget.',
-        p1_name: 'Iryna Serheienko',
-        p1_role: 'Co-founder · managing partner',
-        p1_bio: 'Keeps fiduciary relationships honest, translates donor intent into safeguarding rules and hops on night calls during escalations.',
-        p2_name: 'Kyrylo Ponomarov',
-        p2_role: 'Field mobilisation coordinator',
-        p2_bio: 'Sequences mobile jurist buses, aligns schools and pharmacies on shared calendars when infrastructure is fractured.',
-        p3_name: 'ICAN Volunteer Cloud',
-        p3_role: 'Neighbour volunteers & remote pals',
-        p3_bio: 'Pack parcels, babysit registrations, whisper-translate trauma stories — guided by mentors on payroll.'
+        tag: 'Team',
+        headline: 'Our team',
+        subtitle: 'The people coordinating programmes and community support.',
+        m1_name: 'Nataliia Soloviova',
+        m1_role: 'Chair of the Board',
+        m2_name: 'Maryna Ovcharenko',
+        m2_role: 'Head of Programmes',
+        m3_name: 'Valeriia Burlakova',
+        m3_role: 'Head of Communications',
+        m4_name: 'Daria Hlebova',
+        m4_role: 'Social worker',
+        m5_name: 'Yuliia Malovichko',
+        m5_role: 'Psychologist',
+        m6_name: 'Anna Ivanchenko',
+        m6_role: 'Project coordinator'
       },
-      history: {
-        tag: 'Foundation history',
-        headline: 'How ICAN took shape',
-        subtitle: 'A few milestones—not a full chronicle, but how we mature together with communities in Kharkiv region.',
-        y1: '2023 · Starting in Kharkiv',
-        d1: 'Registration and first steps: building a team, safe routes for assistance and—above all—listening to women and children in communities caught in the war’s path.',
-        y2: '2023–2024 · Field brigades and local hubs',
-        d2: 'Outreach by psychologists and lawyers, opening hubs and working with grassroots groups so help is nearby, not only on the phone.',
-        y3: '2024–2026 · Scale & international projects',
-        d3: 'Integrated support programmes, “person-to-person” solidarity fundraising, the P.E.A.C.E III project and donor partnerships—with transparent reporting to the public.',
-        y4: 'Next · Community resilience',
-        d4: 'Long-term accompaniment for families, peer networks of women leaders and strengthening local initiatives after our teams move on.'
-      },
+      teamMembers: [
+        { photo: 'images/placeholder.jpg', nameKey: 'team.m1_name', roleKey: 'team.m1_role' },
+        { photo: 'images/placeholder.jpg', nameKey: 'team.m2_name', roleKey: 'team.m2_role' },
+        { photo: 'images/placeholder.jpg', nameKey: 'team.m3_name', roleKey: 'team.m3_role' },
+        { photo: 'images/placeholder.jpg', nameKey: 'team.m4_name', roleKey: 'team.m4_role' },
+        { photo: 'images/placeholder.jpg', nameKey: 'team.m5_name', roleKey: 'team.m5_role' },
+        { photo: 'images/placeholder.jpg', nameKey: 'team.m6_name', roleKey: 'team.m6_role' }
+      ],
       how: {
         section_tag: 'Method',
         headline: 'How We Work',
@@ -526,6 +585,27 @@
       partners: {
         headline: 'Our partners'
       },
+      faq: {
+        headline: 'Frequently asked questions',
+        lead:
+          'Maybe you already have questions? Here are answers to the most important ones. If you don’t find what you need, write to us — we’re always here to help.',
+        cta: 'Ask a question',
+        q1: 'How can we become a foundation partner?',
+        a1:
+          'Email us or message on Telegram with a short outline of your organisation, field of work and cooperation idea. Our programmes lead will get in touch to agree the format — project, humanitarian track, expertise or another model.',
+        q2: 'What partnership opportunities do you offer?',
+        a2:
+          'We are open to joint grant applications, field programmes, team trainings, awareness campaigns and local initiatives in Kharkiv region communities. The exact format depends on community needs and your strengths.',
+        q3: 'Are there requirements for potential partners?',
+        a3:
+          'We look for transparency, ethical practice with vulnerable groups, willingness for public reporting where the agreement requires it, and realistic commitments on scope and timelines.',
+        q4: 'Can we become an exclusive partner in a specific area?',
+        a4:
+          'By mutual agreement, focused cooperation on one theme (e.g. mental health or legal support) is possible without disadvantaging other partners — terms are discussed case by case.',
+        q5: 'How does the foundation support its partners?',
+        a5:
+          'We provide guidance materials, coordination with the field team, recognition in reports and, where appropriate, in communications, plus feedback after key project milestones.'
+      },
       volunteer: {
         section_tag: 'Volunteering',
         headline:    'Volunteer with us',
@@ -590,7 +670,7 @@
         privacy:           'Privacy policy',
         terms:             'Site terms',
         registration_link: 'Registration files',
-        registration:      'CF "ICAN Women Foundation" · EDRPOU: XXXXXXXX · Registered in Ukraine',
+        registration:      'Charitable organisation «BF «I CAN»» · EDRPOU 45404369 · Registered in Ukraine',
         rights:            '© 2024–2026 ICAN Women Foundation. All rights reserved.'
       }
     }
@@ -624,25 +704,21 @@
     },
     {
       id: 'lwf',
-      name: 'LWF',
+      name: 'LWF (The Lutheran World Federation)',
       logo: 'images/partner-lwf.png',
       url: 'https://www.lutheranworld.org/',
       category: 'international'
-    },
-    {
-      id: 'cafi',
-      name: 'CAFI',
-      logo: 'images/partner-cafi.png',
-      url: 'https://www.facebook.com/p/CAFI-%D0%97%D0%B0%D0%BA%D0%BB%D0%B8%D0%BA-%D0%B4%D0%BE-%D0%B4%D1%96%D1%97-%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%B5-%D1%80%D0%B5%D0%B0%D0%B3%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F-61555848638948/',
-      category: 'international'
-    },
-    {
-      id: 'kharkiv-1325',
-      name: 'Коаліція «Харківщина 1325»',
-      logo: 'images/partner-kharkivshchyna-1325.png',
-      url: 'https://www.facebook.com/kharkiv1325/?locale=uk_UA',
-      category: 'national'
     }
+  ];
+
+  /** Slides: two text cards, photo placeholder, three text cards (carousel of 6). */
+  const STRATEGY_SLIDES_LAYOUT = [
+    { type: 'text', icon: 'network', titleKey: 'strategy.s1_title', bodyKey: 'strategy.s1_body' },
+    { type: 'text', icon: 'mental', titleKey: 'strategy.s2_title', bodyKey: 'strategy.s2_body' },
+    { type: 'photo', src: 'images/placeholder.jpg' },
+    { type: 'text', icon: 'care', titleKey: 'strategy.s3_title', bodyKey: 'strategy.s3_body' },
+    { type: 'text', icon: 'partners', titleKey: 'strategy.s4_title', bodyKey: 'strategy.s4_body' },
+    { type: 'text', icon: 'education', titleKey: 'strategy.s5_title', bodyKey: 'strategy.s5_body' }
   ];
 
   /* ================================================================
@@ -653,7 +729,7 @@
     { value: 2300, suffix: '+', key: 'pillar_women' },
     { value: 840, suffix: '+', key: 'pillar_consults' },
     { value: 140, suffix: '+', key: 'pillar_programs' },
-    { value: 6, suffix: '', key: 'pillar_partners' }
+    { value: 4, suffix: '', key: 'pillar_partners' }
   ];
 
   /* ================================================================
@@ -709,6 +785,8 @@
     });
 
     updateDonateCustomPlaceholder();
+    renderTeam();
+    renderStrategyCarousel();
   }
 
   function refreshStoryExpandButtons() {
@@ -774,6 +852,204 @@
       }
 
       grid.append(a);
+    });
+  }
+
+  /* ================================================================
+     RENDER TEAM
+     ================================================================ */
+  function renderTeam() {
+    const grid = document.getElementById('team-grid');
+    if (!grid) return;
+
+    const list = translations[currentLang]?.teamMembers;
+    grid.replaceChildren();
+
+    if (!Array.isArray(list) || !list.length) return;
+
+    list.forEach(m => {
+      const article = document.createElement('article');
+      article.className = 'team-card';
+
+      const photoWrap = document.createElement('div');
+      photoWrap.className = 'team-card__photo';
+
+      const img = document.createElement('img');
+      img.src = m.photo || 'images/placeholder.jpg';
+      img.alt = '';
+      img.setAttribute('aria-hidden', 'true');
+      img.width = 224;
+      img.height = 224;
+      img.loading = 'lazy';
+      img.decoding = 'async';
+      photoWrap.append(img);
+
+      const nameEl = document.createElement('h3');
+      nameEl.className = 'team-card__name';
+      nameEl.setAttribute('data-i18n', m.nameKey);
+      nameEl.textContent = getNestedValue(translations[currentLang], m.nameKey) || '';
+
+      const roleEl = document.createElement('p');
+      roleEl.className = 'team-card__role';
+      roleEl.setAttribute('data-i18n', m.roleKey);
+      roleEl.textContent = getNestedValue(translations[currentLang], m.roleKey) || '';
+
+      article.append(photoWrap, nameEl, roleEl);
+      grid.append(article);
+    });
+  }
+
+  /* ================================================================
+     STRATEGY CAROUSEL
+     ================================================================ */
+  function strategyIconSvg(kind) {
+    const a = 'aria-hidden="true"';
+    const s =
+      'viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"';
+    switch (kind) {
+      case 'network':
+        return `<svg ${s} ${a}><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>`;
+      case 'mental':
+        return `<svg ${s} ${a}><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>`;
+      case 'care':
+        return `<svg ${s} ${a}><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>`;
+      case 'partners':
+        return `<svg ${s} ${a}><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>`;
+      case 'education':
+        return `<svg ${s} ${a}><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>`;
+      default:
+        return `<svg ${s} ${a}><circle cx="12" cy="12" r="10"/></svg>`;
+    }
+  }
+
+  function refreshStrategyCarouselNav() {
+    const root = document.querySelector('[data-strategy-carousel]');
+    const vp = root?.querySelector('.strategy-carousel__viewport');
+    const prev = root?.querySelector('[data-strategy-prev]');
+    const next = root?.querySelector('[data-strategy-next]');
+    if (!vp || !prev || !next) return;
+    const max = vp.scrollWidth - vp.clientWidth - 2;
+    if (max <= 0) {
+      prev.disabled = true;
+      next.disabled = true;
+      return;
+    }
+    prev.disabled = vp.scrollLeft <= 2;
+    next.disabled = vp.scrollLeft >= max - 2;
+  }
+
+  function renderStrategyCarousel() {
+    const track = document.getElementById('strategy-carousel-track');
+    if (!track) return;
+    const bundle = translations[currentLang];
+    if (!bundle?.strategy) return;
+
+    track.replaceChildren();
+    const total = STRATEGY_SLIDES_LAYOUT.length;
+
+    STRATEGY_SLIDES_LAYOUT.forEach((spec, i) => {
+      if (spec.type === 'photo') {
+        const art = document.createElement('article');
+        art.className = 'strategy-slide strategy-slide--photo';
+        const img = document.createElement('img');
+        img.src = spec.src || 'images/placeholder.jpg';
+        img.alt = bundle.strategy.photo_alt ?? '';
+        img.loading = 'lazy';
+        img.decoding = 'async';
+        art.append(img);
+        track.append(art);
+        return;
+      }
+
+      const art = document.createElement('article');
+      art.className = 'strategy-slide strategy-slide--text';
+
+      const top = document.createElement('div');
+      top.className = 'strategy-slide__top';
+
+      const iconWrap = document.createElement('div');
+      iconWrap.className = 'strategy-slide__icon';
+      iconWrap.innerHTML = strategyIconSvg(spec.icon);
+
+      const idx = document.createElement('span');
+      idx.className = 'strategy-slide__index';
+      idx.textContent = `${String(i + 1).padStart(2, '0')} / ${String(total).padStart(2, '0')}`;
+
+      top.append(iconWrap, idx);
+
+      const h3 = document.createElement('h3');
+      h3.className = 'strategy-slide__title';
+      h3.textContent = getNestedValue(bundle, spec.titleKey) || '';
+
+      const p = document.createElement('p');
+      p.className = 'strategy-slide__body';
+      p.textContent = getNestedValue(bundle, spec.bodyKey) || '';
+
+      art.append(top, h3, p);
+      track.append(art);
+    });
+
+    const vp = document.querySelector('[data-strategy-carousel] .strategy-carousel__viewport');
+    if (vp) vp.scrollLeft = 0;
+    window.requestAnimationFrame(refreshStrategyCarouselNav);
+  }
+
+  function initStrategyCarousel() {
+    const root = document.querySelector('[data-strategy-carousel]');
+    if (!root || root.dataset.strategyBound === '1') return;
+    root.dataset.strategyBound = '1';
+
+    const vp = root.querySelector('.strategy-carousel__viewport');
+    const prev = root.querySelector('[data-strategy-prev]');
+    const next = root.querySelector('[data-strategy-next]');
+    if (!vp || !prev || !next) return;
+
+    function slideDistance() {
+      const slide = vp.querySelector('.strategy-slide');
+      if (!slide) return 376;
+      const tr = vp.querySelector('.strategy-carousel__track');
+      const gapRaw = tr ? parseFloat(getComputedStyle(tr).gap || '0') : 16;
+      const gap = Number.isFinite(gapRaw) ? gapRaw : 16;
+      return slide.getBoundingClientRect().width + gap;
+    }
+
+    prev.addEventListener('click', () => {
+      vp.scrollBy({ left: -slideDistance(), behavior: 'smooth' });
+    });
+    next.addEventListener('click', () => {
+      vp.scrollBy({ left: slideDistance(), behavior: 'smooth' });
+    });
+
+    vp.addEventListener('scroll', () => window.requestAnimationFrame(refreshStrategyCarouselNav), { passive: true });
+    window.addEventListener('resize', refreshStrategyCarouselNav, { passive: true });
+
+    refreshStrategyCarouselNav();
+  }
+
+  /* ================================================================
+     FAQ ACCORDION
+     ================================================================ */
+  function initFaqAccordion() {
+    const root = document.querySelector('[data-faq-accordion]');
+    if (!root || root.dataset.faqBound === '1') return;
+    root.dataset.faqBound = '1';
+
+    root.querySelectorAll('[data-faq-trigger]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        if (!item) return;
+        const willOpen = !item.classList.contains('is-open');
+
+        root.querySelectorAll('.faq-item.is-open').forEach(el => {
+          el.classList.remove('is-open');
+          el.querySelector('[data-faq-trigger]')?.setAttribute('aria-expanded', 'false');
+        });
+
+        if (willOpen) {
+          item.classList.add('is-open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
     });
   }
 
@@ -1235,6 +1511,9 @@
     renderPartners();
 
     setLanguage(localStorage.getItem('ican_lang') || CONFIG.defaultLang);
+
+    initStrategyCarousel();
+    initFaqAccordion();
 
     initScrollAnimations();
     initCounterAnimations();
