@@ -52,7 +52,6 @@
         headline:    'Я зможу — ти зможеш',
         subheading:  'Фонд поруч із жінками й дітьми в прифронтових громадах Харківщини: психологічна підтримка, право й гуманітарна допомога — людяно й без зайвого шуму.',
         mission:     'Допомагати людям у складних обставинах подолати наслідки втрат і насильства та підсилювати жіноче лідерство через психосоціальну, освітню й гуманітарну підтримку.',
-        impact_line: 'Разом ми вже підтримали понад 2\u00A0300 родин лише через польові команди й хаби в 32 громадах.',
         cta_support: 'Підтримати місію',
         cta_get_help:'Отримати допомогу',
         cta_learn:   'Дізнатися більше про програми',
@@ -242,10 +241,7 @@
         gateway_label:     ''
       },
       partners: {
-        section_tag: 'Партнери й разом із нами',
-        headline:   'Партнери та громади, що нас підтримують',
-        subheading: 'Міжнародні фонди, державні партнери та місцеві активні групи — усі на рівних у наших звітах.',
-        community_note: 'Ми дякуємо релігійним общинам, школам і мікрогрантодавцям із діаспори — вони часто лишаються за кадром маркетингових фото, але тримають нашу логістику.'
+        headline: 'Наші партнери'
       },
       volunteer: {
         section_tag: 'Волонтерство',
@@ -339,7 +335,6 @@
         headline:    'I can — you can',
         subheading:  'Standing with women and children in Kharkiv’s frontline communities—psychological care, legal support and humanitarian relief, grounded in dignity and clarity.',
         mission:     'We help people in difficult circumstances overcome the consequences of loss and violence, and promote women’s leadership through psychosocial, educational and humanitarian support.',
-        impact_line: 'Together we have already accompanied 2,300+ families through outreach teams and hubs spanning 32 municipalities.',
         cta_support: 'Support our mission',
         cta_get_help:'Get help',
         cta_learn:   'Learn more about our programmes',
@@ -529,10 +524,7 @@
         gateway_label:     ''
       },
       partners: {
-        section_tag: 'Partners standing with us',
-        headline:   'Partners strengthening legitimacy',
-        subheading: 'International agencies, state actors and fearless micro-grant circles — credited equally inside our PDF reports.',
-        community_note: 'Churches hosting storerooms, school principals lending buses and diaspora fundraisers rarely show up in hero photos yet keep pallets moving.'
+        headline: 'Our partners'
       },
       volunteer: {
         section_tag: 'Volunteering',
@@ -612,7 +604,7 @@
     {
       id: 'oxfam',
       name: 'OXFAM',
-      logo: 'images/background_green_oxfam_logo_organization_social_inequality_confederation.jpg',
+      logo: 'images/partner-oxfam.png',
       url: 'https://www.oxfam.org/',
       category: 'international'
     },
@@ -627,7 +619,7 @@
       id: 'yednannia',
       name: 'Єднання',
       logo: 'images/partner-ednannia.png',
-      url: 'https://www.ednannia.org/',
+      url: 'https://ednannia.ua/',
       category: 'national'
     },
     {
@@ -641,14 +633,14 @@
       id: 'cafi',
       name: 'CAFI',
       logo: 'images/partner-cafi.png',
-      url: 'https://womensperspectives.org.ua/',
+      url: 'https://www.facebook.com/p/CAFI-%D0%97%D0%B0%D0%BA%D0%BB%D0%B8%D0%BA-%D0%B4%D0%BE-%D0%B4%D1%96%D1%97-%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%B5-%D1%80%D0%B5%D0%B0%D0%B3%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F-61555848638948/',
       category: 'international'
     },
     {
       id: 'kharkiv-1325',
       name: 'Коаліція «Харківщина 1325»',
       logo: 'images/partner-kharkivshchyna-1325.png',
-      url: 'https://1325ukraine.org.ua/ua/',
+      url: 'https://www.facebook.com/kharkiv1325/?locale=uk_UA',
       category: 'national'
     }
   ];
