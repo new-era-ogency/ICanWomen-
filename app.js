@@ -254,7 +254,7 @@
         gateway_label:     ''
       },
       partners: {
-        headline: 'Наші донери і партнери'
+        headline: 'Наші донори та партнери'
       },
       faq: {
         headline: 'Поширені запитання',
@@ -1337,6 +1337,55 @@
     }, { passive: true });
   }
 
+  /** Soft cursor-follow glow + subtle hero visual parallax (respects motion & pointer prefs). */
+  function initPremiumChrome() {
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const finePointer = window.matchMedia('(pointer: fine)').matches;
+    if (reduced || !finePointer) return;
+
+    const glow = document.getElementById('cursor-glow');
+    if (glow) {
+      document.body.classList.add('is-premium-cursor');
+      glow.classList.add('is-active');
+      let tx = window.innerWidth / 2;
+      let ty = window.innerHeight / 2;
+      let bx = tx;
+      let by = ty;
+      window.addEventListener(
+        'pointermove',
+        e => {
+          tx = e.clientX;
+          ty = e.clientY;
+        },
+        { passive: true }
+      );
+      function tickGlow() {
+        bx += (tx - bx) * 0.07;
+        by += (ty - by) * 0.07;
+        glow.style.transform = `translate(${bx}px, ${by}px)`;
+        requestAnimationFrame(tickGlow);
+      }
+      tickGlow();
+    }
+
+    const heroVis = document.querySelector('[data-parallax-visual]');
+    const inner = heroVis?.querySelector('.hero__visual-inner');
+    if (heroVis && inner) {
+      window.addEventListener(
+        'pointermove',
+        e => {
+          const r = heroVis.getBoundingClientRect();
+          const cx = r.left + r.width / 2;
+          const cy = r.top + r.height / 2;
+          const nx = (e.clientX - cx) / Math.max(window.innerWidth * 0.5, 1);
+          const ny = (e.clientY - cy) / Math.max(window.innerHeight * 0.5, 1);
+          inner.style.transform = `translate(${nx * 12}px, ${ny * 10}px)`;
+        },
+        { passive: true }
+      );
+    }
+  }
+
   /* ================================================================
      ACTIVE NAV LINK TRACKING  (PRD §5.2)
      ================================================================ */
@@ -1527,6 +1576,7 @@
     initStoryExpandButtons();
 
     initHeaderScroll();
+    initPremiumChrome();
   });
 
 })();
