@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="description" content="ICAN Women Foundation — психологічна, юридична та соціальна допомога жінкам і дітям у громадах Харківщини.">
-  <meta property="og:title" content="ICAN Women Foundation">
+  <meta name="description" content="I CAN Women Foundation - психологічна, юридична та соціальна допомога жінкам і дітям у громадах Харківщини.">
+  <meta property="og:title" content="I CAN Women Foundation">
   <meta property="og:description" content="Supporting women and children living beside war in Ukraine.">
   <meta property="og:image" content="https://icanwomen.org/og-image.jpg">
   <meta property="og:url" content="https://icanwomen.org/">
@@ -12,14 +12,14 @@
   <link rel="canonical" href="https://icanwomen.org/">
   <link rel="icon" href="images/logo-ican-foundation.png" type="image/png">
 
-  <title>ICAN Women Foundation — Підтримка жінок і дітей Харківщини</title>
+  <title>I CAN Women Foundation - Підтримка жінок і дітей Харківщини</title>
 
   <!-- Structured Data: Organization -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "ICAN Women Foundation",
+    "name": "I CAN Women Foundation",
     "url": "https://icanwomen.org",
     "description": "Psychological, legal and social support for women and children in Kharkiv region communities affected by war.",
     "address": {
@@ -43,10 +43,10 @@
 
   <style>
     /* ============================================================
-       DESIGN SYSTEM — CSS CUSTOM PROPERTIES  (PRD §7)
+       DESIGN SYSTEM - CSS CUSTOM PROPERTIES  (PRD §7)
        ============================================================ */
     :root {
-      /* --- Colours (white + dusty rose — ICAN-style) --- */
+      /* --- Colours (white + dusty rose - I CAN-style) --- */
       --color-accent:        #D989A3;
       --color-accent-hover:  #C4708D;
       --color-accent-muted:  #E8B3C5;
@@ -331,7 +331,7 @@
         box-shadow  var(--transition-base);
     }
 
-    /* Glassmorphism state — applied by JS on scroll > 80px */
+    /* Glassmorphism state - applied by JS on scroll > 80px */
     .site-header.scrolled {
       background: rgba(255, 251, 252, 0.94);
       backdrop-filter: blur(8px);
@@ -480,7 +480,7 @@
     .hamburger.is-open .hamburger__line:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
     /* ============================================================
-       MOBILE MENU — бічна панель + затемнення (краще за fullscreen)
+       MOBILE MENU - бічна панель + затемнення (краще за fullscreen)
        ============================================================ */
     .mobile-menu {
       position: fixed;
@@ -591,7 +591,7 @@
       overflow: hidden;
     }
 
-    /* Дуже легкий рожевий ритм — без «стартапового» шуму */
+    /* Дуже легкий рожевий ритм - без «стартапового» шуму */
     .hero::before {
       content: '';
       position: absolute;
@@ -627,7 +627,7 @@
       padding: var(--space-xl) 0 var(--space-2xl);
     }
 
-    /* Рожева панель зліва як на референсі ICAN — білий текст */
+    /* Рожева панель зліва як на референсі I CAN - білий текст */
     .hero__content {
       position: relative;
       z-index: 2;
@@ -691,26 +691,7 @@
       text-underline-offset: 3px;
     }
 
-    .hero .hero__trust {
-      margin-top: var(--space-xl);
-      display: flex;
-      flex-wrap: wrap;
-      gap: var(--space-md) var(--space-lg);
-    }
-    .hero .hero__trust-item {
-      display: flex;
-      align-items: center;
-      gap: var(--space-xs);
-      font-size: 0.8125rem;
-      font-weight: 500;
-      color: rgba(255, 255, 255, 0.84);
-    }
-    .hero .hero__trust-item svg {
-      color: rgba(255, 255, 255, 0.95);
-      flex-shrink: 0;
-    }
-
-    /* CTAs всередині рожевої панелі: білий solid + ghost — як на макеті */
+    /* CTAs всередині рожевої панелі: білий solid + ghost - як на макеті */
     .hero .btn-primary {
       background: var(--color-white);
       color: var(--color-dark);
@@ -731,7 +712,7 @@
       color: var(--color-white);
     }
 
-    /* Hero image — великі радіуси, білий кордон */
+    /* Hero image - великі радіуси, білий кордон */
     .hero__visual {
       position: relative;
       border-radius: clamp(28px, 5vw, 46px);
@@ -780,7 +761,7 @@
     .scroll-indicator.hidden { opacity: 0; pointer-events: none; }
 
     /* ============================================================
-       STRATEGY — development carousel
+       STRATEGY - development carousel
        ============================================================ */
     .strategy-panel {
       background: var(--color-surface);
@@ -1010,7 +991,7 @@
       line-height: 1.45;
     }
 
-    /* Real stories — staggered cards + expandable body */
+    /* Real stories - staggered cards + expandable body */
     .stories {
       padding: clamp(4.25rem, 9vw, 6.25rem) 0;
       background: var(--color-warm-bg);
@@ -1151,6 +1132,16 @@
       margin-bottom: var(--space-md);
     }
 
+    .mission-started__lead {
+      font-family: var(--font-heading);
+      font-size: clamp(1.125rem, 2.4vw, 1.3125rem);
+      font-weight: 600;
+      color: var(--color-dark);
+      line-height: 1.45;
+      margin: 0 0 var(--space-lg);
+      max-width: 40rem;
+    }
+
     .mission-started__subhead {
       font-family: var(--font-heading);
       font-size: 1.125rem;
@@ -1274,39 +1265,7 @@
       max-width: 540px;
     }
 
-    /* ============================================================
-       OUR PROJECTS (formerly about narrative + photo)
-       ============================================================ */
-    .our-projects { background: var(--color-warm-bg); }
-
-    .our-projects__inner {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: var(--space-2xl);
-      align-items: center;
-    }
-
-    .our-projects__figure {
-      margin: 0;
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-      border: 1px solid var(--color-border);
-      box-shadow: var(--shadow-sm);
-    }
-    .our-projects__figure img {
-      width: 100%;
-      display: block;
-      aspect-ratio: 4 / 3;
-      object-fit: cover;
-    }
-
-    .our-projects__body {
-      color: var(--color-mid);
-      font-size: 1.0625rem;
-      line-height: 1.8;
-      margin-bottom: var(--space-md);
-    }
-
+    /* Shared CTA row (e.g. mission block) */
     .our-projects__actions {
       display: flex;
       flex-wrap: wrap;
@@ -1314,7 +1273,7 @@
       margin-top: var(--space-xl);
     }
 
-    /* Activity reports — PDF cards */
+    /* Activity reports - PDF cards */
     .activity-reports {
       background: var(--color-white);
       padding: clamp(4rem, 9vw, 6rem) 0;
@@ -1643,7 +1602,7 @@
     .donate-amt-grid .donate__amount-btn--cell-3 { grid-column: span 2; }
     .donate-amt-grid .donate__amount-btn--cell-6 { grid-column: span 3; }
 
-    /* [hidden] is overridden by `display:grid` above (same specificity) — enforce hide */
+    /* [hidden] is overridden by `display:grid` above (same specificity) - enforce hide */
     .donate-preset-panels > .donate-amt-grid[hidden] {
       display: none !important;
     }
@@ -1886,7 +1845,7 @@
     }
 
     /* ============================================================
-       FORMS — SHARED  (PRD §6.4)
+       FORMS - SHARED  (PRD §6.4)
        ============================================================ */
     .form-card {
       background: var(--color-white);
@@ -2043,7 +2002,7 @@
     }
 
     /* ============================================================
-       FAQ — partnership accordion
+       FAQ - partnership accordion
        ============================================================ */
     .faq {
       background: var(--color-white);
@@ -2325,7 +2284,7 @@
       transform: translateY(0);
     }
 
-    /* Герой: без translate на рожевій панелі — інакше логотип і дрібний текст у PNG розмиваються в Chrome */
+    /* Герой: без translate на рожевій панелі - інакше логотип і дрібний текст у PNG розмиваються в Chrome */
     #hero .hero__content[data-animate] {
       opacity: 0;
       transform: none;
@@ -2462,7 +2421,7 @@
     }
 
     /* ============================================================
-       RESPONSIVE — md 769px+
+       RESPONSIVE - md 769px+
        ============================================================ */
     @media (min-width: 769px) {
       :root {
@@ -2478,7 +2437,6 @@
 
       .hero__inner         { grid-template-columns: 1fr 1fr; gap: var(--space-3xl); padding-bottom: var(--space-3xl); }
       .our-impact__grid    { grid-template-columns: repeat(3, 1fr); }
-      .our-projects__inner { grid-template-columns: 1fr 1fr; }
       .reports__grid       { grid-template-columns: repeat(2, 1fr); }
       .stories__mosaic     { grid-template-columns: repeat(2, 1fr); align-items: start; }
       .stories__mosaic .story-card:nth-child(2) { margin-top: 2rem; }
@@ -2505,7 +2463,7 @@
     }
 
     /* ============================================================
-       RESPONSIVE — lg 1025px+
+       RESPONSIVE - lg 1025px+
        ============================================================ */
     @media (min-width: 1025px) {
       :root { --container-pad: var(--space-3xl); }
@@ -2529,7 +2487,7 @@
     }
 
     /* ============================================================
-       RESPONSIVE — xl 1281px+
+       RESPONSIVE - xl 1281px+
        ============================================================ */
     @media (min-width: 1281px) {
       :root { --container-pad: var(--space-xl); }
@@ -2550,15 +2508,14 @@
       <nav class="nav-inner" role="navigation" aria-label="Головне меню">
 
         <!-- Logo -->
-        <a href="#hero" class="nav-logo" aria-label="I CAN — на початок сторінки">
+        <a href="#hero" class="nav-logo" aria-label="I CAN - на початок сторінки">
           <span class="brand-logo-mark" aria-hidden="true"><img src="images/logo-ican-foundation.png" width="52" height="52" alt="" decoding="async"></span>
           <span class="nav-logo__text"><span data-i18n="hero.brand_lockup">I CAN</span></span>
         </a>
 
-        <!-- Desktop links — основні пункти меню -->
+        <!-- Desktop links - основні пункти меню -->
         <ul class="nav-links" role="list">
           <li><a href="#mission-started" class="nav-link" data-i18n="nav.about">Про нас</a></li>
-          <li><a href="#our-projects" class="nav-link" data-i18n="nav.our_projects">Наші проекти</a></li>
           <li><a href="#programs"    class="nav-link" data-i18n="nav.directions">Напрямки діяльності</a></li>
           <li><a href="#projects"    class="nav-link" data-i18n="nav.projects">Проєкти</a></li>
           <li><a href="#partners"    class="nav-link" data-i18n="nav.partners">Партнери</a></li>
@@ -2605,7 +2562,7 @@
     <button type="button" class="mobile-menu__backdrop" tabindex="-1" aria-label="Закрити меню"></button>
     <div class="mobile-menu__panel">
       <div class="mobile-menu__header">
-        <a href="#hero" class="nav-logo" aria-label="I CAN — на початок сторінки">
+        <a href="#hero" class="nav-logo" aria-label="I CAN - на початок сторінки">
           <span class="brand-logo-mark" aria-hidden="true"><img src="images/logo-ican-foundation.png" width="52" height="52" alt="" decoding="async"></span>
           <span class="nav-logo__text"><span data-i18n="hero.brand_lockup">I CAN</span></span>
         </a>
@@ -2622,7 +2579,6 @@
 
       <nav class="mobile-menu__nav" aria-label="Мобільна навігація">
         <a href="#mission-started" class="nav-link" data-i18n="nav.about">Про нас</a>
-        <a href="#our-projects" class="nav-link" data-i18n="nav.our_projects">Наші проекти</a>
         <a href="#programs"    class="nav-link" data-i18n="nav.directions">Напрямки діяльності</a>
         <a href="#projects"    class="nav-link" data-i18n="nav.projects">Проєкти</a>
         <a href="#partners"    class="nav-link" data-i18n="nav.partners">Партнери</a>
@@ -2653,11 +2609,11 @@
           <!-- Content -->
           <div class="hero__content" data-animate>
             <h1 class="hero__headline" id="hero-headline">
-              <span data-i18n="hero.headline">Я зможу — ти зможеш</span>
+              <span data-i18n="hero.headline">Я зможу - ти зможеш</span>
             </h1>
 
             <p class="hero__subheading" data-i18n="hero.subheading">
-              Фонд поруч із жінками й дітьми в прифронтових громадах Харківщини: психологічна підтримка, право й гуманітарна допомога — людяно й без зайвого шуму.
+              Фонд поруч із жінками й дітьми в прифронтових громадах Харківщини: психологічна підтримка, право й гуманітарна допомога - людяно й без зайвого шуму.
             </p>
 
             <p class="hero__mission" data-i18n="hero.mission">
@@ -2675,24 +2631,13 @@
               <p class="hero__cta-note"><a href="#programs" class="hero-learn-link" data-i18n="hero.cta_learn">Дізнатися більше про програми</a></p>
             </div>
 
-            <p class="hero-quote-strip" data-i18n="hero.quote">«Ця спільнота допомогла мені відчути, що я не одна» — учасниця групи підтримки</p>
-
-            <div class="hero__trust" aria-label="Знаки довіри">
-              <span class="hero__trust-item">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span data-i18n="hero.trust1">Зареєстрований благодійний фонд в Україні</span>
-              </span>
-              <span class="hero__trust-item">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span data-i18n="hero.trust2">Польові команди працюють у громадах на місці</span>
-              </span>
-            </div>
+            <p class="hero-quote-strip" data-i18n="hero.quote">«Ця спільнота допомогла мені відчути, що я не одна» - учасниця групи підтримки</p>
           </div>
 
           <div class="hero__visual" data-animate>
             <img
               src="images/hero-meeting.png"
-              alt="Учасниці заходу ICAN Women Foundation: жінки в залі на семінарі, на бейджах видно назву фонду"
+              alt="Учасниці заходу I CAN Women Foundation: жінки в залі на семінарі, на бейджах видно назву фонду"
               width="1200"
               height="675"
               loading="eager"
@@ -2708,47 +2653,6 @@
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <polyline points="6 9 12 15 18 9"/>
         </svg>
-      </div>
-    </section>
-
-    <!-- ── OUR PROJECTS (intro) — перший контентний блок після hero ── -->
-    <section id="our-projects" class="our-projects section-pad-relaxed" aria-labelledby="our-projects-title">
-      <div class="container">
-        <div class="our-projects__inner">
-
-          <figure class="our-projects__figure" data-animate>
-            <img
-              src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=900&q=80"
-              alt="Волонтери під час роздачі гуманітарної допомоги в місті Харків"
-              width="640"
-              height="480"
-              loading="lazy"
-            >
-          </figure>
-
-          <div>
-            <div data-animate>
-              <p class="section-tag" data-i18n="ourProjects.section_tag">Наші проекти</p>
-              <h2 class="section-title" id="our-projects-title" data-i18n="ourProjects.headline">
-                Ми там, де найскладніше — поруч із громадами на межі
-              </h2>
-              <p class="our-projects__body" data-i18n="ourProjects.body1">
-                ICAN Women Foundation — благодійна організація, яка з 2022 року надає психологічну, юридичну та соціальну підтримку жінкам і дітям у прифронтових громадах Харківщини.
-              </p>
-              <p class="our-projects__body" data-i18n="ourProjects.body2">
-                Ми будуємо стійкість там, де вона потрібна найбільше — у невеликих містах і селах, куди рідко доходить системна допомога.
-              </p>
-              <div class="our-projects__actions">
-                <a href="#activity-reports" class="btn btn-secondary">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                  <span data-i18n="ourProjects.cta_report">Звіти про діяльність</span>
-                </a>
-                <a href="#donate" class="btn btn-primary" data-i18n="ourProjects.cta_donate">Підтримати місію</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
       </div>
     </section>
 
@@ -2795,10 +2699,16 @@
     <section id="mission-started" class="mission-started" aria-labelledby="mission-started-title">
       <div class="container split-asym mission-started__inner">
         <div data-animate>
-          <p class="section-tag" data-i18n="mission.tag">Про ICAN</p>
+          <p class="section-tag" data-i18n="mission.tag">Про I CAN</p>
           <h2 class="section-title" id="mission-started-title" data-i18n="mission.title">Історія, місія й цінності</h2>
+          <p class="mission-started__lead" data-i18n="mission.lead">
+            Ми там, де найскладніше - поруч із громадами на межі
+          </p>
           <p class="mission-started__body" data-i18n="mission.body1">
-            ICAN засновано у 2023 році в Харкові. Наша мета — допомагати тим, хто найбільше постраждав від війни.
+            Благодійна організація I CAN заснована у 2023 році в Харкові; ми допомагаємо тим, хто найбільше постраждав від війни - через психосоціальну, освітню й гуманітарну підтримку жінок і дітей у Харківській області.
+          </p>
+          <p class="mission-started__body" data-i18n="mission.body2">
+            Ми будуємо стійкість там, де вона потрібна найбільше - у невеликих містах і селах, куди рідко доходить системна допомога.
           </p>
           <h3 class="mission-started__subhead" data-i18n="mission.mission_heading">Місія</h3>
           <p class="mission-started__body" data-i18n="mission.body_mission">
@@ -2806,13 +2716,13 @@
           </p>
           <h3 class="mission-started__subhead" data-i18n="mission.values_heading">Цінності</h3>
           <ul class="mission-values" role="list">
-            <li><strong data-i18n="mission.val_trust_title">Довіра</strong> — <span data-i18n="mission.val_trust_desc">будуємо стосунки на передбачуваності, чесності й підтримці без засудження.</span></li>
-            <li><strong data-i18n="mission.val_safety_title">Безпека</strong> — <span data-i18n="mission.val_safety_desc">піклуємося про фізичну й психоемоційну безпеку людей і команди; нуль толерантності до насильства.</span></li>
-            <li><strong data-i18n="mission.val_respect_title">Повага</strong> — <span data-i18n="mission.val_respect_desc">визнаємо гідність і автономію, слухаємо по-справжньому й дотримуємося особистих меж.</span></li>
-            <li><strong data-i18n="mission.val_solidarity_title">Солідарність</strong> — <span data-i18n="mission.val_solidarity_desc">тримаємо одна одну в кризі — мережа взаємодопомоги без змагання «хто старанніший».</span></li>
-            <li><strong data-i18n="mission.val_responsibility_title">Відповідальність</strong> — <span data-i18n="mission.val_responsibility_desc">публічна звітність, етичні стандарти роботи та відповідь перед людьми, які нам довірилися.</span></li>
+            <li><strong data-i18n="mission.val_trust_title">Довіра</strong> - <span data-i18n="mission.val_trust_desc">будуємо стосунки на передбачуваності, чесності й підтримці без засудження.</span></li>
+            <li><strong data-i18n="mission.val_safety_title">Безпека</strong> - <span data-i18n="mission.val_safety_desc">піклуємося про фізичну й психоемоційну безпеку людей і команди; нуль толерантності до насильства.</span></li>
+            <li><strong data-i18n="mission.val_respect_title">Повага</strong> - <span data-i18n="mission.val_respect_desc">визнаємо гідність і автономію, слухаємо по-справжньому й дотримуємося особистих меж.</span></li>
+            <li><strong data-i18n="mission.val_solidarity_title">Солідарність</strong> - <span data-i18n="mission.val_solidarity_desc">тримаємо одна одну в кризі - мережа взаємодопомоги без змагання «хто старанніший».</span></li>
+            <li><strong data-i18n="mission.val_responsibility_title">Відповідальність</strong> - <span data-i18n="mission.val_responsibility_desc">публічна звітність, етичні стандарти роботи та відповідь перед людьми, які нам довірилися.</span></li>
           </ul>
-          <blockquote class="pull-quote" data-i18n="mission.quote">«Коли поруч є люди без засудження, легше дихати навіть у найважчі тижні» — зворотний зв’язок учасниць програм ICAN.</blockquote>
+          <blockquote class="pull-quote" data-i18n="mission.quote">«Коли поруч є люди без засудження, легше дихати навіть у найважчі тижні» - зворотний зв’язок учасниць програм I CAN.</blockquote>
           <div class="our-projects__actions" style="margin-top:var(--space-xl);">
             <a href="#donate" class="btn btn-primary" data-i18n="mission.cta_donate">Підтримати місію</a>
           </div>
@@ -2829,7 +2739,7 @@
         <div class="strategy-panel__header" data-animate>
           <h2 class="strategy-panel__title" id="strategy-title" data-i18n="strategy.headline">Стратегія розвитку</h2>
           <p class="strategy-panel__intro" data-i18n="strategy.intro">
-            Ми хочемо, щоб підтримка залишалась доступною — не випадково, а стабільно. Щоб жінки в прифронтових громадах знали: звернутись по допомогу — це не привілей, а можливість, яка поруч. У найближчі роки плануємо:
+            Ми хочемо, щоб підтримка залишалась доступною - не випадково, а стабільно. Щоб жінки в прифронтових громадах знали: звернутись по допомогу - це не привілей, а можливість, яка поруч. У найближчі роки плануємо:
           </p>
         </div>
         <div class="strategy-carousel" data-strategy-carousel data-animate>
@@ -2892,7 +2802,7 @@
 
           <article class="project-card">
             <div class="project-card__media">
-              <img src="images/IMG-20260121-123340.png" alt="«Добрі руки» — волонтерка та мешканка громади взимку" width="640" height="360" loading="lazy" decoding="async">
+              <img src="images/IMG-20260121-123340.png" alt="«Добрі руки» - волонтерка та мешканка громади взимку" width="640" height="360" loading="lazy" decoding="async">
             </div>
             <div class="project-card__body">
               <span class="project-card__tag"  data-i18n="projects.p1_tag">Інтегрована допомога</span>
@@ -2903,7 +2813,7 @@
 
           <article class="project-card">
             <div class="project-card__media">
-              <img src="images/IMG_0097.png" alt="Психологічна підтримка — практика в безпечному просторі з супроводом фахівця" width="640" height="360" loading="lazy" decoding="async">
+              <img src="images/IMG_0097.png" alt="Психологічна підтримка - практика в безпечному просторі з супроводом фахівця" width="640" height="360" loading="lazy" decoding="async">
             </div>
             <div class="project-card__body">
               <span class="project-card__tag"  data-i18n="projects.p2_tag">Ментальне здоров’я</span>
@@ -2914,18 +2824,18 @@
 
           <article class="project-card">
             <div class="project-card__media">
-              <img src="images/project-vid-lyudyny.png" alt="«Від людини до людини» — спільна творча активність з дітьми та командою ICAN" width="640" height="360" loading="lazy" decoding="async">
+              <img src="images/project-vid-lyudyny.png" alt="«Від людини до людини» - спільна творча активність з дітьми та командою I CAN" width="640" height="360" loading="lazy" decoding="async">
             </div>
             <div class="project-card__body">
               <span class="project-card__tag"  data-i18n="projects.p3_tag">Пряма солідарність</span>
               <h3  class="project-card__title" data-i18n="projects.p3_title">«Від людини до людини»</h3>
-              <p   class="project-card__desc"  data-i18n="projects.p3_desc">Ініціатива збору коштів на основі прямої солідарності — підтримка дітей через події й подарунки.</p>
+              <p   class="project-card__desc"  data-i18n="projects.p3_desc">Ініціатива збору коштів на основі прямої солідарності - підтримка дітей через події й подарунки.</p>
             </div>
           </article>
 
           <article class="project-card">
             <div class="project-card__media">
-              <img src="images/project-peace-iii.png" alt="P.E.A.C.E III — підтримка та практика в безпечному просторі разом із фахівцями" width="640" height="360" loading="lazy" decoding="async">
+              <img src="images/project-peace-iii.png" alt="P.E.A.C.E III - підтримка та практика в безпечному просторі разом із фахівцями" width="640" height="360" loading="lazy" decoding="async">
             </div>
             <div class="project-card__body">
               <span class="project-card__tag"  data-i18n="projects.p4_tag">Розвиток і зцілення</span>
@@ -2948,7 +2858,7 @@
             Люди, які координують програми та підтримку громад.
           </p>
         </div>
-        <div id="team-grid" class="team__grid" data-animate-stagger aria-label="Команда ICAN"></div>
+        <div id="team-grid" class="team__grid" data-animate-stagger aria-label="Команда I CAN"></div>
       </div>
     </section>
 
@@ -2969,7 +2879,7 @@
         <div class="faq__intro" data-animate>
           <h2 class="faq__title" id="faq-title" data-i18n="faq.headline">Поширені запитання</h2>
           <p class="faq__lead" data-i18n="faq.lead">
-            Можливо, у вас вже є питання? Ми зібрали відповіді на найважливіші. Якщо не знайдете потрібного — пишіть нам, ми завжди поруч, щоб допомогти.
+            Можливо, у вас вже є питання? Ми зібрали відповіді на найважливіші. Якщо не знайдете потрібного - пишіть нам, ми завжди поруч, щоб допомогти.
           </p>
           <a href="mailto:bobfican@gmail.com?subject=Запитання%20щодо%20партнерства" class="btn btn-primary faq__cta" data-i18n="faq.cta">Задати запитання</a>
         </div>
@@ -3042,7 +2952,7 @@
           <p class="section-tag" data-i18n="reports.section_tag">Документи</p>
           <h2 class="section-title" id="activity-reports-title" data-i18n="reports.headline">Звіт про діяльність</h2>
           <p class="section-subtitle" data-i18n="reports.subtitle">
-            Офіційні матеріали для партнерів і громади. Посилання — плейсхолдери до публікації реальних PDF.
+            Офіційні матеріали для партнерів і громади. Посилання - плейсхолдери до публікації реальних PDF.
           </p>
         </div>
         <div class="reports__grid" data-animate-stagger>
@@ -3084,10 +2994,10 @@
           <p class="section-tag" data-i18n="stories.tag">Реальні історії</p>
           <h2 class="section-title" id="stories-title" data-i18n="stories.headline">Історії людей, не кейси для сайту</h2>
           <p class="stories__philosophy" data-i18n="stories.philosophy">
-            Люди, а не кейси — це не слоган, а наш спосіб працювати з підтримкою й розповідями.
+            Люди, а не кейси - це не слоган, а наш спосіб працювати з підтримкою й розповідями.
           </p>
           <p class="section-subtitle" data-i18n="stories.subtitle">
-            Узагальнені історії без прізвищ — так ми бережемо приватність, але показуємо, що змінилося після нашої роботи поруч.
+            Узагальнені історії без прізвищ - так ми бережемо приватність, але показуємо, що змінилося після нашої роботи поруч.
           </p>
         </div>
 
@@ -3100,10 +3010,10 @@
             <div class="story-card__body">
               <h3 class="story-card__name" data-i18n="stories.p1_name">Олена, учасниця програми</h3>
               <div class="story-card__text-inner">
-                <p data-i18n="stories.p1_a">Через евакуацію зникає не лише дім — губиться звичний коло підтримки. У новому місті складно було навіть запитати про психолога.</p>
+                <p data-i18n="stories.p1_a">Через евакуацію зникає не лише дім - губиться звичний коло підтримки. У новому місті складно було навіть запитати про психолога.</p>
                 <p data-i18n="stories.p1_b">Спочатку я прийшла на офлайн-зустріч «коло довіри», потім отримала кілька юридичних консультацій щодо аліментів та статусів.</p>
               </div>
-              <p class="story-card__help" data-i18n="stories.p1_help">Фонд дав шлях із трьох кроків: група підтримки, правник і гуманітарний пакунок під час кризи — без осуду і згори.</p>
+              <p class="story-card__help" data-i18n="stories.p1_help">Фонд дав шлях із трьох кроків: група підтримки, правник і гуманітарний пакунок під час кризи - без осуду і згори.</p>
               <button type="button" class="story-card__toggle" data-story-expand aria-expanded="false">Читати далі</button>
             </div>
           </article>
@@ -3118,7 +3028,7 @@
                 <p data-i18n="stories.p2_a">На місцях ми бачимо, як жінки тягнуть цілу громаду: діти, літні батьки, робота без вихідних.</p>
                 <p data-i18n="stories.p2_b">Разом із фондом ми відкрити маленький хаб: чай, дитячий куточок дві години на день, та «тихий» запис до спеціаліста.</p>
               </div>
-              <p class="story-card__help" data-i18n="stories.p2_help">ICAN дав методологію, навчання для команди й фінансування першого місяця оренди — ми зібрали 18 постійних волонтерів.</p>
+              <p class="story-card__help" data-i18n="stories.p2_help">I CAN дав методологію, навчання для команди й фінансування першого місяця оренди - ми зібрали 18 постійних волонтерів.</p>
               <button type="button" class="story-card__toggle" data-story-expand aria-expanded="false">Читати далі</button>
             </div>
           </article>
@@ -3130,9 +3040,9 @@
             <div class="story-card__body">
               <h3 class="story-card__name" data-i18n="stories.p3_name">Юлія, юристка-партнерка хабу</h3>
               <div class="story-card__text-inner">
-                <p data-i18n="stories.p3_a">Половина запитів — про безпеку в родині та статус домашнього насильства під час війни. Людині потрібна не лекція, а прості кроки.</p>
+                <p data-i18n="stories.p3_a">Половина запитів - про безпеку в родині та статус домашнього насильства під час війни. Людині потрібна не лекція, а прості кроки.</p>
               </div>
-              <p class="story-card__help" data-i18n="stories.p3_help">Разом ми зробили 12 виїздів із мобільними юристами й шаблонами заяв — без «ідеальної» поліграфії лендингу, зате живий контакт.</p>
+              <p class="story-card__help" data-i18n="stories.p3_help">Разом ми зробили 12 виїздів із мобільними юристами й шаблонами заяв - без «ідеальної» поліграфії лендингу, зате живий контакт.</p>
               <button type="button" class="story-card__toggle" data-story-expand aria-expanded="false">Читати далі</button>
             </div>
           </article>
@@ -3202,22 +3112,22 @@
               Кожна гривня йде безпосередньо до жінок і дітей у прифронтових громадах Харківщини.
             </p>
             <p class="donate__emotional" style="font-size:0.975rem;color:var(--color-mid);line-height:1.72;margin-bottom:var(--space-lg);max-width:36rem;" data-i18n="donate.emotional">
-              Жодна гривня не йде на маркетинг — лише виїзди, хаби та супровід волонтерів.
+              Жодна гривня не йде на маркетинг - лише виїзди, хаби та супровід волонтерів.
             </p>
 
             <p id="donate-impact-legend" class="visually-hidden" data-i18n="donate.impact_list_sr">Приклади, на що впливає ваш внесок</p>
             <ul class="donate__impact-list" aria-labelledby="donate-impact-legend">
               <li class="donate__impact-item">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span data-i18n="donate.impact_200">200 ₴ — одна година психологічної підтримки</span>
+                <span data-i18n="donate.impact_200">200 ₴ - одна година психологічної підтримки</span>
               </li>
               <li class="donate__impact-item">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span data-i18n="donate.impact_500">500 ₴ — гігієнічний набір для матері та дитини</span>
+                <span data-i18n="donate.impact_500">500 ₴ - гігієнічний набір для матері та дитини</span>
               </li>
               <li class="donate__impact-item">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span data-i18n="donate.impact_1000">1000 ₴ — юридичне супроводження документів</span>
+                <span data-i18n="donate.impact_1000">1000 ₴ - юридичне супроводження документів</span>
               </li>
             </ul>
           </div>
@@ -3283,7 +3193,7 @@
                 aria-invalid="false"
               >
               <p class="donate__error-msg" id="donate-error-msg" role="alert" data-i18n="donate.error_amount">
-                Мінімальна сума — 10 (у вибраній валюті)
+                Мінімальна сума - 10 (у вибраній валюті)
               </p>
             </div>
 
@@ -3352,7 +3262,7 @@
 
         <!-- Brand -->
         <div class="footer__brand">
-          <a href="#hero" class="nav-logo" aria-label="I CAN — на початок сторінки">
+          <a href="#hero" class="nav-logo" aria-label="I CAN - на початок сторінки">
             <span class="brand-logo-mark" aria-hidden="true"><img src="images/logo-ican-foundation.png" width="52" height="52" alt="" decoding="async"></span>
             <span class="nav-logo__text"><span data-i18n="hero.brand_lockup">I CAN</span></span>
           </a>
@@ -3386,7 +3296,6 @@
           <h3 class="footer__col-title" data-i18n="footer.col1_title">Швидкі посилання</h3>
           <ul class="footer__links" role="list">
             <li><a href="#mission-started" data-i18n="nav.about">Про нас</a></li>
-            <li><a href="#our-projects" data-i18n="nav.our_projects">Наші проекти</a></li>
             <li><a href="#programs" data-i18n="nav.directions">Напрямки діяльності</a></li>
             <li><a href="#projects" data-i18n="nav.projects">Проєкти</a></li>
             <li><a href="#partners" data-i18n="nav.partners">Партнери</a></li>
@@ -3419,7 +3328,7 @@
           БО «БФ «АЙ КЕН»» · Код ЄДРПОУ 45404369 · Зареєстровано в Україні
         </p>
         <p class="footer__copy" data-i18n="footer.rights">
-          © 2024–2026 ICAN Women Foundation. Всі права захищені.
+          © 2023-2026 I CAN Women Foundation. Всі права захищені.
         </p>
       </div>
     </div>

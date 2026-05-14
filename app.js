@@ -1,10 +1,10 @@
-/** ICAN Women Foundation — vanilla JS per PRD (two-file site). Zero deps; CONFIG at top — replace placeholders before production. */
+/** I CAN Women Foundation - vanilla JS per PRD (two-file site). Zero deps; CONFIG at top - replace placeholders before production. */
 
 (() => {
   'use strict';
 
   /* ================================================================
-     CONFIG — client-editable values  (PRD §11.2)
+     CONFIG - client-editable values  (PRD §11.2)
      Replace placeholder values before going live.
      ================================================================ */
   const CONFIG = {
@@ -35,7 +35,6 @@
         about:        'Про нас',
         directions:   'Напрямки діяльності',
         reporting:    'Звітність',
-        our_projects: 'Наші проекти',
         impact:       'У цифрах',
         programs:     'Напрямки діяльності',
         reports:      'Звіти',
@@ -48,16 +47,14 @@
       },
       hero: {
         brand_lockup: 'I CAN',
-        headline:    'Я зможу — ти зможеш',
-        subheading:  'Фонд поруч із жінками й дітьми в прифронтових громадах Харківщини: психологічна підтримка, право й гуманітарна допомога — людяно й без зайвого шуму.',
+        headline:    'Я зможу - ти зможеш',
+        subheading:  'Фонд поруч із жінками й дітьми в прифронтових громадах Харківщини: психологічна підтримка, право й гуманітарна допомога - людяно й без зайвого шуму.',
         mission:     'Допомагати людям у складних обставинах подолати наслідки втрат і насильства та підсилювати жіноче лідерство через психосоціальну, освітню й гуманітарну підтримку.',
         cta_support: 'Підтримати місію',
         cta_get_help:'Отримати допомогу',
         cta_learn:   'Дізнатися більше про програми',
         cta_community:'До спільноти волонтерів',
-        quote:       '«Ця спільнота допомогла мені почуватися менш самотньою» — учасниця групи підтримки.',
-        trust1:      'Офіційна реєстрація в Україні й публічна звітність',
-        trust2:      'Команди поруч із людьми, а не лише в чаті'
+        quote:       '«Ця спільнота допомогла мені почуватися менш самотньою» - учасниця групи підтримки.',
       },
       impact: {
         section_tag:   'У цифрах',
@@ -68,18 +65,10 @@
         pillar_programs:    'Подій освіти, профілактики насильства та груп підтримки',
         pillar_partners:    'Партнерських організацій у спільних програмах'
       },
-      ourProjects: {
-        section_tag: 'Наші проекти',
-        headline:   'Ми там, де найскладніше — поруч із громадами на межі',
-        body1:      'Благодійна організація ICAN заснована у 2023 році в Харкові; ми допомагаємо тим, хто найбільше постраждав від війни — через психосоціальну, освітню й гуманітарну підтримку жінок і дітей у Харківській області.',
-        body2:      'Ми будуємо стійкість там, де вона потрібна найбільше — у невеликих містах і селах, куди рідко доходить системна допомога.',
-        cta_report: 'Звіти про діяльність',
-        cta_donate: 'Підтримати місію'
-      },
       reports: {
         section_tag: 'Документи',
         headline:   'Звіт про діяльність',
-        subtitle:   'Офіційні матеріали для партнерів, донорів і громади. Файли-плейсхолдери — замініть посилання на реальні PDF перед публікацією.',
+        subtitle:   'Офіційні матеріали для партнерів, донорів і громади. Файли-плейсхолдери - замініть посилання на реальні PDF перед публікацією.',
         r2025:       'Річний звіт 2025',
         r2024:       'Річний звіт 2024',
         r_finance:   'Фінансовий звіт',
@@ -105,8 +94,8 @@
       stories: {
         tag: 'Реальні історії',
         headline: 'Історії людей, не кейси для сайту',
-        philosophy: 'Люди, а не кейси — це не слоган, а наш спосіб працювати з підтримкою й розповідями.',
-        subtitle: 'Ми змінюємо імена й деталі, але зберігаємо форму допомоги — так чесно перед донором і безопасно для людини.',
+        philosophy: 'Люди, а не кейси - це не слоган, а наш спосіб працювати з підтримкою й розповідями.',
+        subtitle: 'Ми змінюємо імена й деталі, але зберігаємо форму допомоги - так чесно перед донором і безопасно для людини.',
         read_more: 'Читати далі',
         read_less: 'Згорнути',
         p1_name: 'Олена, учасниця програми',
@@ -114,17 +103,21 @@
         p1_b: 'У хабі мені без черги підказали, як записатися до психолога державної лінії, а паралельно запросили до кола жінок, що збирається щотижня.',
         p1_help: 'Фонд дав три речі: живий простір без оцінювання, два юридичні супроводи щодо аліментів і пакунок гігієни, бо гроші пішли на оренду.',
         p2_name: 'Марія, кураторка волонтерів',
-        p2_a: 'Наші активістки вигорають через постійний «режим тривожності» — хотілося місце, де можна просто перевести подих.',
-        p2_b: 'ICAN дав ноутбук бухгалтеру, аптечку і шаблон графіка чергування. Мобільний психолог приїхав із нами тричі — це було видно очима громади.',
+        p2_a: 'Наші активістки вигорають через постійний «режим тривожності» - хотілося місце, де можна просто перевести подих.',
+        p2_b: 'I CAN дав ноутбук бухгалтеру, аптечку і шаблон графіка чергування. Мобільний психолог приїхав із нами тричі - це було видно очима громади.',
         p2_help: 'Ми тримаємо волонтерський чат уже 14 місяців без «вігоньок»: фонд платить символічну доплату локальній координаторці через прозору угоду.',
         p3_name: 'Юлія, партнерка-юристка',
-        p3_a: 'На консультаціях ми бачимо: жінку лякає не закон — а відсутність супроводу. Одна фраза «ми запишемо разом» вже заспокоює.',
-        p3_help: 'Спільно зібрали 12 модулів простою мовою про захист від насильства під час переїзду — і роздали партнерам у п’яти містах уздовж нашого маршруту.'
+        p3_a: 'На консультаціях ми бачимо: жінку лякає не закон - а відсутність супроводу. Одна фраза «ми запишемо разом» вже заспокоює.',
+        p3_help: 'Спільно зібрали 12 модулів простою мовою про захист від насильства під час переїзду - і роздали партнерам у п’яти містах уздовж нашого маршруту.'
       },
       mission: {
-        tag: 'Про ICAN',
+        tag: 'Про I CAN',
         title: 'Історія, місія й цінності',
-        body1: 'Благодійна організація «ICAN Women Foundation» створена в Харкові у відповідь на зростання потреб жінок і дітей у прифронтових, деокупованих і переміщених громадах. Ми поєднуємо психосоціальну допомогу, супровід у доступі до правових і соціальних сервісів та адресну гуманітарну підтримку — без зайвого шуму й з повагою до досвіду кожної родини.',
+        lead: 'Ми там, де найскладніше - поруч із громадами на межі',
+        body1:
+          'Благодійна організація I CAN заснована у 2023 році в Харкові; ми допомагаємо тим, хто найбільше постраждав від війни - через психосоціальну, освітню й гуманітарну підтримку жінок і дітей у Харківській області.',
+        body2:
+          'Ми будуємо стійкість там, де вона потрібна найбільше - у невеликих містах і селах, куди рідко доходить системна допомога.',
         mission_heading: 'Місія',
         body_mission: 'Допомагати людям у складних обставинах подолати наслідки втрат і насильства; зміцнювати жіноче лідерство й самоорганізацію через психосоціальну, освітню та гуманітарну підтримку, яка залишається доступною там, де система ще не встигає.',
         values_heading: 'Цінності',
@@ -135,20 +128,20 @@
         val_respect_title: 'Повага',
         val_respect_desc: 'визнаємо гідність і автономію, слухаємо по-справжньому й дотримуємося особистих меж.',
         val_solidarity_title: 'Солідарність',
-        val_solidarity_desc: 'тримаємо одна одну в кризі — мережа взаємодопомоги без змагання «хто старанніший».',
+        val_solidarity_desc: 'тримаємо одна одну в кризі - мережа взаємодопомоги без змагання «хто старанніший».',
         val_responsibility_title: 'Відповідальність',
         val_responsibility_desc: 'публічна звітність, етичні стандарти роботи та відповідь перед людьми, які нам довірилися.',
-        quote: '«Коли поруч є люди без засудження, легше дихати навіть у найважчі тижні» — зворотний зв’язок учасниць програм ICAN.',
+        quote: '«Коли поруч є люди без засудження, легше дихати навіть у найважчі тижні» - зворотний зв’язок учасниць програм I CAN.',
         cta_donate: 'Підтримати місію'
       },
       strategy: {
         headline: 'Стратегія розвитку',
         intro:
-          'Ми хочемо, щоб підтримка залишалась доступною — не випадково, а стабільно. Щоб жінки в прифронтових громадах знали: звернутись по допомогу — це не привілей, а можливість, яка поруч. У найближчі роки плануємо:',
+          'Ми хочемо, щоб підтримка залишалась доступною - не випадково, а стабільно. Щоб жінки в прифронтових громадах знали: звернутись по допомогу - це не привілей, а можливість, яка поруч. У найближчі роки плануємо:',
         carousel_prev: 'Попередній слайд',
         carousel_next: 'Наступний слайд',
         photo_alt:
-          'Учасниці та учасник навчального заходу ICAN Women Foundation за столом: бейдж «АЙ КЕН», зошит і вода на столі.',
+          'Учасниці та учасник навчального заходу I CAN Women Foundation за столом: бейдж «АЙ КЕН», зошит і вода на столі.',
         s1_title: 'Розширити сталий доступ до підтримки',
         s1_body:
           'закріпити роботу хабів і мобільних бригад, щоб допомога була передбачуваною та надійною, а не лише від випадку до випадку.',
@@ -160,7 +153,7 @@
           'мам, які виховують дітей з інвалідністю, жінок, що втратили близьких, і тих, хто тривалий час не мав змоги подбати про себе.',
         s4_title: 'Зміцнити партнерства',
         s4_body:
-          'розвивати співпрацю з міжнародними й локальними організаціями, громадами та донорами — із прозорою звітністю та спільними програмами.',
+          'розвивати співпрацю з міжнародними й локальними організаціями, громадами та донорами - із прозорою звітністю та спільними програмами.',
         s5_title: 'Посилити просвітницькі напрями',
         s5_body:
           'масштабувати заходи з профілактики насильства й підтримки жіночого лідерства в прифронтових громадах.'
@@ -205,7 +198,7 @@
         p1_tag:   'Інтегрована допомога',
         p1_title: '«Добрі руки»',
         p1_desc:
-          'Комплексна психосоціальна та адресна соціальна допомога на Харківщині: індивідуальні та групові формати, матеріальна підтримка й супровід у зверненнях до служб — для родин після втрат, насильства й примусового переміщення.',
+          'Комплексна психосоціальна та адресна соціальна допомога на Харківщині: індивідуальні та групові формати, матеріальна підтримка й супровід у зверненнях до служб - для родин після втрат, насильства й примусового переміщення.',
         p2_tag:   'Ментальне здоров’я',
         p2_title: 'Психологічна підтримка',
         p2_desc:
@@ -213,7 +206,7 @@
         p3_tag:   'Пряма солідарність',
         p3_title: '«Від людини до людини»',
         p3_desc:
-          'Благодійні збори й події прямої солідарності: кошти, подарунки та увага для дітей із вразливих родин — щоб повернути відчуття турботи й святковості навіть під час війни.',
+          'Благодійні збори й події прямої солідарності: кошти, подарунки та увага для дітей із вразливих родин - щоб повернути відчуття турботи й святковості навіть під час війни.',
         p4_tag:   'Розвиток і зцілення',
         p4_title: 'P.E.A.C.E III',
         p4_desc:
@@ -221,11 +214,11 @@
       },
       donate: {
         headline:          'Ваша підтримка відкриває жінкам доступ до турботи й спільноти',
-        subheading:        'Не «донат як кнопка» — а їжа, терапія, право на тишу для тих, хто тягне родину в прифронтових селах Харківщини.',
-        emotional:         'Жодна гривня не йде на маркетинг — тільки виїзди, хаби й супровід волонтерів, яким теж потрібне пальне та страховки.',
-        impact_200:       '200 ₴ — один шанс поговорити з психологом без черги',
-        impact_500:       '500 ₴ — гідний гігієнічний набір для жінки й дитини',
-        impact_1000:      '1000 ₴ — юридичний супровід + оформлення заяви',
+        subheading:        'Не «донат як кнопка» - а їжа, терапія, право на тишу для тих, хто тягне родину в прифронтових селах Харківщини.',
+        emotional:         'Жодна гривня не йде на маркетинг - тільки виїзди, хаби й супровід волонтерів, яким теж потрібне пальне та страховки.',
+        impact_200:       '200 ₴ - один шанс поговорити з психологом без черги',
+        impact_500:       '500 ₴ - гідний гігієнічний набір для жінки й дитини',
+        impact_1000:      '1000 ₴ - юридичний супровід + оформлення заяви',
         card_title:        'Підтримати',
         module_title:      'Підтримати',
         freq_monthly:      'Щомісячно',
@@ -242,7 +235,7 @@
         cta:               'Продовжити до оплати',
         section_tag:       'Допомога',
         trust:             '🔒 Безпечна оплата WayForPay · Офіційний благодійний фонд України',
-        error_amount:      'Мінімальна сума — 10 (у вибраній валюті)',
+        error_amount:      'Мінімальна сума - 10 (у вибраній валюті)',
         error_amount_max:  'Максимум 999 999 за операцію',
         preset_sr:         'Готові суми лише в обраній валюті (за замовчуванням ₴)',
         impact_list_sr:    'Приклади, що може профінансувати ваш внесок',
@@ -266,11 +259,11 @@
       faq: {
         headline: 'Поширені запитання',
         lead:
-          'Можливо, у вас вже є питання? Ми зібрали відповіді на найважливіші. Якщо не знайдете потрібного — пишіть нам, ми завжди поруч, щоб допомогти.',
+          'Можливо, у вас вже є питання? Ми зібрали відповіді на найважливіші. Якщо не знайдете потрібного - пишіть нам, ми завжди поруч, щоб допомогти.',
         cta: 'Задати запитання',
         q1: 'Як стати партнером фонду?',
         a1:
-          'Напишіть нам на електронну пошту або в Telegram — коротко опишіть організацію, сферу діяльності та ідею співпраці. Координаторка програм зв’яжеться, щоб узгодити формат: проєкт, гуманітарний напрям, експертиза чи інший варіант.',
+          'Напишіть нам на електронну пошту або в Telegram - коротко опишіть організацію, сферу діяльності та ідею співпраці. Координаторка програм зв’яжеться, щоб узгодити формат: проєкт, гуманітарний напрям, експертиза чи інший варіант.',
         q2: 'Які можливості для партнерства ви пропонуєте?',
         a2:
           'Ми відкриті до спільних грантових заявок, польових програм, навчань для команд, інформаційних кампаній і локальних ініціатив у громадах Харківщини. Конкретний формат залежить від потреб громад і ваших компетенцій.',
@@ -279,7 +272,7 @@
           'Важливі прозорість, дотримання етики роботи з вразливими групами, готовність до публічної звітності там, де це передбачено угодою, та реалістичні зобов’язання щодо обсягів і термінів.',
         q4: 'Чи є можливість стати ексклюзивним партнером у певній сфері?',
         a4:
-          'За погодженням сторін можлива фокусна співпраця в окремій тематиці (наприклад, ментальне здоров’я чи юридичний супровід) без ущемлення інших партнерів — умови обговорюємо індивідуально.',
+          'За погодженням сторін можлива фокусна співпраця в окремій тематиці (наприклад, ментальне здоров’я чи юридичний супровід) без ущемлення інших партнерів - умови обговорюємо індивідуально.',
         q5: 'Як фонд підтримує своїх партнерів?',
         a5:
           'Надаємо методичні матеріали, координацію з польовою командою, підсвічування партнерства у звітах і, де доречно, у комунікаціях, а також зворотний зв’язок після ключових етапів проєкту.'
@@ -293,7 +286,7 @@
         ben2_title:  'Наставництво',
         ben2_body:   'Кожному волонтеру призначаємо члена координ-команди, щоб ви не зависали в «невидимій» задачі.',
         ben3_title:  'Спільний розвиток',
-        ben3_body:   'Раз на місяць — відкриті тренінги з польової етики без зайвого «корпоративного глянцю».',
+        ben3_body:   'Раз на місяць - відкриті тренінги з польової етики без зайвого «корпоративного глянцю».',
         field_name:    'Повне ім\'я',
         field_email:   'Email',
         field_phone:   'Телефон',
@@ -349,7 +342,7 @@
         terms:             'Умови сайту',
         registration_link: 'Реєстраційні документи',
         registration:      'БО «БФ «АЙ КЕН»» · Код ЄДРПОУ 45404369 · Зареєстровано в Україні',
-        rights:            '© 2024–2026 ICAN Women Foundation. Всі права захищені.'
+        rights:            '© 2023-2026 I CAN Women Foundation. Всі права захищені.'
       }
     },
 
@@ -359,7 +352,6 @@
         about:        'About us',
         directions:   'Areas of work',
         reporting:    'Reporting',
-        our_projects: 'Our projects',
         impact:       'In numbers',
         programs:     'Areas of work',
         reports:      'Reports',
@@ -372,16 +364,14 @@
       },
       hero: {
         brand_lockup: 'I CAN',
-        headline:    'I can — you can',
-        subheading:  'Standing with women and children in Kharkiv’s frontline communities—psychological care, legal support and humanitarian relief, grounded in dignity and clarity.',
+        headline:    'I CAN - you can',
+        subheading:  'Standing with women and children in Kharkiv’s frontline communities-psychological care, legal support and humanitarian relief, grounded in dignity and clarity.',
         mission:     'We help people in difficult circumstances overcome the consequences of loss and violence, and promote women’s leadership through psychosocial, educational and humanitarian support.',
         cta_support: 'Support our mission',
         cta_get_help:'Get help',
         cta_learn:   'Learn more about our programmes',
         cta_community:'Join our community',
-        quote:       '“This community helped me feel less alone” — participant in a support circle.',
-        trust1:      'Registered Ukrainian foundation with public reporting',
-        trust2:      'Field teams rooted in communities, not dashboards'
+        quote:       '“This community helped me feel less alone” - participant in a support circle.',
       },
       impact: {
         section_tag:   'Impact by numbers',
@@ -392,18 +382,10 @@
         pillar_programs:    'Community trainings, resilience circles & prevention clinics',
         pillar_partners:    'Partner organisations in joint programming'
       },
-      ourProjects: {
-        section_tag: 'Our projects',
-        headline:   'We are where it\'s hardest — beside frontline communities',
-        body1:      'ICAN is a charitable organisation founded in Kharkiv in 2023. We support those most affected by war—through psychosocial, educational and humanitarian assistance to women and children across Kharkiv region.',
-        body2:      'We build resilience where it is needed most — in small towns and villages that rarely receive systematic aid.',
-        cta_report: 'Activity reports',
-        cta_donate: 'Support our mission'
-      },
       reports: {
         section_tag: 'Documents',
         headline:   'Activity reports',
-        subtitle:   'Official materials for partners, donors and communities. Placeholder links — replace with real PDF URLs before launch.',
+        subtitle:   'Official materials for partners, donors and communities. Placeholder links - replace with real PDF URLs before launch.',
         r2025:       'Annual report 2025',
         r2024:       'Annual report 2024',
         r_finance:   'Financial report',
@@ -429,26 +411,30 @@
       stories: {
         tag: 'Real voices',
         headline: 'People, not portfolio testimonials',
-        philosophy: 'People, not cases — this is how we hold stories, data and dignity together.',
+        philosophy: 'People, not cases - this is how we hold stories, data and dignity together.',
         subtitle: 'We change names and trim details to protect privacy while showing what shifts after support lands.',
         read_more: 'Read more',
         read_less: 'Show less',
         p1_name: 'Olena, programme participant',
-        p1_a: 'Displacement takes more than a roof — it quietly erases your circle. I was ashamed to even ask how to find a therapist.',
+        p1_a: 'Displacement takes more than a roof - it quietly erases your circle. I was ashamed to even ask how to find a therapist.',
         p1_b: 'The hub invited me to a listening circle, then walked me through two legal consults about child support while kids played in the corner.',
-        p1_help: 'ICAN gave three grounded gifts: a shame-free room, paperwork help and dignity kits during the emptiest paycheck week.',
+        p1_help: 'I CAN gave three grounded gifts: a shame-free room, paperwork help and dignity kits during the emptiest paycheck week.',
         p2_name: 'Mariya, volunteer lead',
         p2_a: 'Local activists were burning out from constant alert mode yet still feeding entire streets.',
-        p2_b: 'ICAN financed the first rent month, coached us on safeguarding and brought mobile therapy teams three times alongside us.',
+        p2_b: 'I CAN financed the first rent month, coached us on safeguarding and brought mobile therapy teams three times alongside us.',
         p2_help: 'Our volunteer roster stayed above 40 people thanks to stipends routed transparently through the foundation.',
         p3_name: 'Yuliia, partner jurist',
         p3_a: 'People fear stigma more than statutes. Saying «we\'ll draft this together» calms quicker than brochures.',
-        p3_help: 'We packaged 12 plain-language protections for women on the move and shipped them via ICAN vans to five county seats.'
+        p3_help: 'We packaged 12 plain-language protections for women on the move and shipped them via I CAN vans to five county seats.'
       },
       mission: {
-        tag: 'About ICAN',
+        tag: 'About I CAN',
         title: 'Our history, mission and values',
-        body1: 'ICAN Women Foundation is a charitable organisation registered in Kharkiv, responding to the growing needs of women and children in frontline, de-occupied and displaced communities. We combine psychosocial support, guidance in accessing legal and social services and targeted humanitarian assistance—with respect for each family’s lived experience and no unnecessary noise.',
+        lead: 'We are where it is hardest - beside communities on the front line',
+        body1:
+          'I CAN is a charitable organisation founded in Kharkiv in 2023. We support those most affected by the war - through psychosocial, educational and humanitarian assistance to women and children across Kharkiv region.',
+        body2:
+          'We build resilience where it is needed most - in small towns and villages that rarely receive systematic support.',
         mission_heading: 'Mission',
         body_mission: 'We help people in difficult circumstances overcome the consequences of loss and violence; we strengthen women’s leadership and self-organisation through psychosocial, educational and humanitarian support that remains reachable where formal systems are still catching up.',
         values_heading: 'Values',
@@ -459,23 +445,23 @@
         val_respect_title: 'Respect',
         val_respect_desc: 'we honour dignity and agency, listen with care and maintain clear personal boundaries.',
         val_solidarity_title: 'Solidarity',
-        val_solidarity_desc: 'we hold each other through crisis—a mutual-aid network without competing over “who helps more”.',
+        val_solidarity_desc: 'we hold each other through crisis-a mutual-aid network without competing over “who helps more”.',
         val_responsibility_title: 'Responsibility',
         val_responsibility_desc: 'public reporting, ethical practice and accountability to the people who place their trust in us.',
-        quote: '“When someone stands beside you without judgment, it becomes easier to breathe—even in the hardest weeks.” — feedback from ICAN programme participants.',
+        quote: '“When someone stands beside you without judgment, it becomes easier to breathe-even in the hardest weeks.” - feedback from I CAN programme participants.',
         cta_donate: 'Support our mission'
       },
       strategy: {
         headline: 'Development strategy',
         intro:
-          'We want support to remain reachable—not by chance, but steadily. So that women in frontline communities know that asking for help is not a privilege, but an option that is close by. In the coming years we plan to:',
+          'We want support to remain reachable-not by chance, but steadily. So that women in frontline communities know that asking for help is not a privilege, but an option that is close by. In the coming years we plan to:',
         carousel_prev: 'Previous slide',
         carousel_next: 'Next slide',
         photo_alt:
-          'ICAN Women Foundation workshop: participants at a table with an ICAN name badge, notebook and water bottle.',
+          'I CAN Women Foundation workshop: participants at a table with an I CAN name badge, notebook and water bottle.',
         s1_title: 'Expand reliable access to support',
         s1_body:
-          'strengthen hubs and mobile brigades so assistance is predictable and dependable—not only from one-off visits.',
+          'strengthen hubs and mobile brigades so assistance is predictable and dependable-not only from one-off visits.',
         s2_title: 'Deepen mental health work',
         s2_body:
           'introduce new practices including TRE therapy, grow the number of specialists and safe recovery spaces.',
@@ -484,7 +470,7 @@
           'mothers raising children with disabilities, women who have lost loved ones, and those who have long had no chance to care for themselves.',
         s4_title: 'Strengthen partnerships',
         s4_body:
-          'develop cooperation with international and local organisations, communities and donors—with transparent reporting and joint programmes.',
+          'develop cooperation with international and local organisations, communities and donors-with transparent reporting and joint programmes.',
         s5_title: 'Scale awareness-raising work',
         s5_body:
           'grow activities on violence prevention and women’s leadership in frontline municipalities.'
@@ -529,7 +515,7 @@
         p1_tag:   'Integrated assistance',
         p1_title: 'Good Hands',
         p1_desc:
-          'Integrated psychosocial and targeted social assistance in Kharkiv region—individual and group formats, material aid and help navigating public services for families after loss, violence and displacement.',
+          'Integrated psychosocial and targeted social assistance in Kharkiv region-individual and group formats, material aid and help navigating public services for families after loss, violence and displacement.',
         p2_tag:   'Mental health',
         p2_title: 'Psychological support',
         p2_desc:
@@ -537,7 +523,7 @@
         p3_tag:   'Direct solidarity',
         p3_title: 'From Person to Person',
         p3_desc:
-          'Solidarity fundraising and events where people support people—resources, gifts and attention for children in vulnerable families, bringing back a sense of care and celebration even in wartime.',
+          'Solidarity fundraising and events where people support people-resources, gifts and attention for children in vulnerable families, bringing back a sense of care and celebration even in wartime.',
         p4_tag:   'Growth & healing',
         p4_title: 'P.E.A.C.E III',
         p4_desc:
@@ -545,11 +531,11 @@
       },
       donate: {
         headline:          'Your support helps women access care and community',
-        subheading:        'No lifestyle-brand gloss — fuel for counsellors, vans and quiet rooms in Kharkiv border communities.',
+        subheading:        'No lifestyle-brand gloss - fuel for counsellors, vans and quiet rooms in Kharkiv border communities.',
         emotional:         'Every hryvnia skips billboards; it pays stipends, fuel and insurance for humans carrying boxes and stories.',
-        impact_200:       '200 UAH — one counseling hour when public queues fail',
-        impact_500:       '500 UAH — hygiene + warmth bundle for a mother and child',
-        impact_1000:      '1,000 UAH — legal drafting with follow-up texting',
+        impact_200:       '200 UAH - one counseling hour when public queues fail',
+        impact_500:       '500 UAH - hygiene + warmth bundle for a mother and child',
+        impact_1000:      '1,000 UAH - legal drafting with follow-up texting',
         card_title:        'Support us',
         module_title:      'Support',
         freq_monthly:       'Monthly',
@@ -590,11 +576,11 @@
       faq: {
         headline: 'Frequently asked questions',
         lead:
-          'Maybe you already have questions? Here are answers to the most important ones. If you don’t find what you need, write to us — we’re always here to help.',
+          'Maybe you already have questions? Here are answers to the most important ones. If you don’t find what you need, write to us - we’re always here to help.',
         cta: 'Ask a question',
         q1: 'How can we become a foundation partner?',
         a1:
-          'Email us or message on Telegram with a short outline of your organisation, field of work and cooperation idea. Our programmes lead will get in touch to agree the format — project, humanitarian track, expertise or another model.',
+          'Email us or message on Telegram with a short outline of your organisation, field of work and cooperation idea. Our programmes lead will get in touch to agree the format - project, humanitarian track, expertise or another model.',
         q2: 'What partnership opportunities do you offer?',
         a2:
           'We are open to joint grant applications, field programmes, team trainings, awareness campaigns and local initiatives in Kharkiv region communities. The exact format depends on community needs and your strengths.',
@@ -603,7 +589,7 @@
           'We look for transparency, ethical practice with vulnerable groups, willingness for public reporting where the agreement requires it, and realistic commitments on scope and timelines.',
         q4: 'Can we become an exclusive partner in a specific area?',
         a4:
-          'By mutual agreement, focused cooperation on one theme (e.g. mental health or legal support) is possible without disadvantaging other partners — terms are discussed case by case.',
+          'By mutual agreement, focused cooperation on one theme (e.g. mental health or legal support) is possible without disadvantaging other partners - terms are discussed case by case.',
         q5: 'How does the foundation support its partners?',
         a5:
           'We provide guidance materials, coordination with the field team, recognition in reports and, where appropriate, in communications, plus feedback after key project milestones.'
@@ -617,7 +603,7 @@
         ben2_title:  'Buddy system',
         ben2_body:   'Matched with a coordinator so you never feel ghosted halfway through onboarding.',
         ben3_title:  'Practice-based learning',
-        ben3_body:   'Monthly open trainings on safeguarding and trauma-informed presence — zero startup theatrics.',
+        ben3_body:   'Monthly open trainings on safeguarding and trauma-informed presence - zero startup theatrics.',
         field_name:    'Full name',
         field_email:   'Email',
         field_phone:   'Phone',
@@ -673,7 +659,7 @@
         terms:             'Site terms',
         registration_link: 'Registration files',
         registration:      'Charitable organisation «BF «I CAN»» · EDRPOU 45404369 · Registered in Ukraine',
-        rights:            '© 2024–2026 ICAN Women Foundation. All rights reserved.'
+        rights:            '© 2023-2026 I CAN Women Foundation. All rights reserved.'
       }
     }
   };
@@ -715,14 +701,14 @@
       id: 'cafi',
       name: 'CAFI II',
       logo: 'images/partner-cafi.png',
-      url: 'https://associationhda.com/cafi-ii/',
+      url: 'https://www.facebook.com/p/CAFI-%D0%97%D0%B0%D0%BA%D0%BB%D0%B8%D0%BA-%D0%B4%D0%BE-%D0%B4%D1%96%D1%97-%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%B5-%D1%80%D0%B5%D0%B0%D0%B3%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F-61555848638948/',
       category: 'international'
     },
     {
       id: 'kharkivshchyna1325',
       name: 'Коаліція «Харківщина 1325»',
       logo: 'images/partner-kharkivshchyna-1325.png',
-      url: 'https://www.genderculturecentre.org/',
+      url: 'https://1325ukraine.org.ua/koalicziyi/',
       category: 'national'
     }
   ];
