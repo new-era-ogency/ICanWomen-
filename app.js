@@ -43,14 +43,14 @@
         projects:     'Проєкти',
         partners:     'Партнери',
         contact:      'Контакти',
-        donate_outline: 'Підтримати місію'
+        donate_outline: 'Підтримати фонд'
       },
       hero: {
         brand_lockup: 'I CAN',
-        headline:    'Я зможу - ти зможеш',
-        subheading:  'Фонд поруч із жінками й дітьми в прифронтових громадах Харківщини: психологічна підтримка, право й гуманітарна допомога - людяно й без зайвого шуму.',
-        mission:     'Допомагати людям у складних обставинах подолати наслідки втрат і насильства та підсилювати жіноче лідерство через психосоціальну, освітню й гуманітарну підтримку.',
-        cta_support: 'Підтримати місію',
+        headline:    'Підтримка жінок і дітей там, де війна змінила все',
+        subheading:  'Психологічна допомога, право та гуманітарна підтримка в громадах Харківщини - поруч і без зайвого шуму.',
+        cta_support: 'Підтримати фонд',
+        cta_join:    'Долучитися до спільноти',
         cta_get_help:'Отримати допомогу',
         cta_learn:   'Дізнатися більше про програми',
         cta_community:'До спільноти волонтерів',
@@ -254,7 +254,7 @@
         gateway_label:     ''
       },
       partners: {
-        headline: 'Наші партнери'
+        headline: 'Наші донери і партнери'
       },
       faq: {
         headline: 'Поширені запитання',
@@ -360,14 +360,14 @@
         projects:     'Projects',
         partners:     'Partners',
         contact:      'Contact',
-        donate_outline: 'Support our mission'
+        donate_outline: 'Support the foundation'
       },
       hero: {
         brand_lockup: 'I CAN',
-        headline:    'I CAN - you can',
-        subheading:  'Standing with women and children in Kharkiv’s frontline communities-psychological care, legal support and humanitarian relief, grounded in dignity and clarity.',
-        mission:     'We help people in difficult circumstances overcome the consequences of loss and violence, and promote women’s leadership through psychosocial, educational and humanitarian support.',
-        cta_support: 'Support our mission',
+        headline:    'Standing with women and children when war changes everything',
+        subheading:  'Psychological care, legal support and humanitarian help in Kharkiv Oblast communities - close by, grounded in dignity.',
+        cta_support: 'Support the foundation',
+        cta_join:    'Join the community',
         cta_get_help:'Get help',
         cta_learn:   'Learn more about our programmes',
         cta_community:'Join our community',
@@ -571,7 +571,7 @@
         gateway_label:     ''
       },
       partners: {
-        headline: 'Our partners'
+        headline: 'Our donors and partners'
       },
       faq: {
         headline: 'Frequently asked questions',
@@ -708,7 +708,7 @@
       id: 'kharkivshchyna1325',
       name: 'Коаліція «Харківщина 1325»',
       logo: 'images/partner-kharkivshchyna-1325.png',
-      url: 'https://1325ukraine.org.ua/koalicziyi/',
+      url: 'https://www.facebook.com/kharkiv1325/?locale=uk_UA',
       category: 'national'
     }
   ];

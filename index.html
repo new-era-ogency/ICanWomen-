@@ -3,16 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="description" content="I CAN Women Foundation - психологічна, юридична та соціальна допомога жінкам і дітям у громадах Харківщини.">
-  <meta property="og:title" content="I CAN Women Foundation">
-  <meta property="og:description" content="Supporting women and children living beside war in Ukraine.">
+  <meta name="description" content="I CAN Women Foundation: психологічна, юридична й гуманітарна підтримка жінок і дітей у громадах Харківщини. Допомога поруч, прозора звітність.">
+  <meta name="theme-color" content="#D989A3">
+  <meta property="og:title" content="I CAN Women Foundation | Підтримка жінок і дітей Харківщини">
+  <meta property="og:description" content="Психологічна, юридична й гуманітарна підтримка жінок і дітей у громадах Харківщини. I CAN Women Foundation.">
   <meta property="og:image" content="https://icanwomen.org/og-image.jpg">
   <meta property="og:url" content="https://icanwomen.org/">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://icanwomen.org/">
   <link rel="icon" href="images/logo-ican-foundation.png" type="image/png">
 
-  <title>I CAN Women Foundation - Підтримка жінок і дітей Харківщини</title>
+  <title>I CAN Women Foundation | Підтримка жінок і дітей Харківщини</title>
 
   <!-- Structured Data: Organization -->
   <script type="application/ld+json">
@@ -46,18 +47,21 @@
        DESIGN SYSTEM - CSS CUSTOM PROPERTIES  (PRD §7)
        ============================================================ */
     :root {
-      /* --- Colours (white + dusty rose - I CAN-style) --- */
+      /*
+       * Палітра: основний текст (--color-dark), фон/поверхні (--color-white, --color-surface),
+       * акцент (--color-accent) для CTA та акцентів.
+       */
       --color-accent:        #D989A3;
       --color-accent-hover:  #C4708D;
       --color-accent-muted:  #E8B3C5;
       --color-accent-soft:   #FDF4F7;
       --color-accent-rgb:    217, 137, 163;
 
-      --color-dark:          #2A2526;
-      --color-mid:           #5C5356;
-      --color-muted:         #8A8285;
-      --color-border:        #EDE5E8;
-      --color-surface:       #FAF8F9;
+      --color-dark:          #1C1819;
+      --color-mid:           #4D4548;
+      --color-muted:         #756C70;
+      --color-border:        #E8E0E3;
+      --color-surface:       #FAF7F8;
       --color-white:         #FFFFFF;
       --color-warm-bg:       #FFFBFC;
       --color-warm-pink:     #FDF2F6;
@@ -74,7 +78,7 @@
       --space-xl:   2rem;      /* 32px */
       --space-2xl:  3rem;      /* 48px */
       --space-3xl:  4.5rem;    /* 72px */
-      --space-4xl:  6rem;      /* 96px */
+      --space-4xl:  6.75rem;   /* 108px */
 
       /* --- Border Radius --- */
       --radius-sm:   6px;
@@ -122,7 +126,7 @@
     body {
       font-family: var(--font-body);
       font-size: 1rem;
-      line-height: 1.75;
+      line-height: 1.8;
       color: var(--color-dark);
       background: var(--color-white);
       overflow-x: hidden;
@@ -181,11 +185,11 @@
         max(var(--container-pad), env(safe-area-inset-right, 0px));
     }
 
-    .section-pad { padding: var(--space-3xl) 0; }
+    .section-pad { padding: var(--space-4xl) 0; }
 
     .section-header {
       text-align: center;
-      margin-bottom: var(--space-2xl);
+      margin-bottom: var(--space-3xl);
     }
 
     .section-tag {
@@ -202,21 +206,22 @@
       font-family: var(--font-heading);
       font-weight: 700;
       color: var(--color-dark);
-      line-height: 1.26;
-      font-size: clamp(1.65rem, 3.85vw, 2.45rem);
+      line-height: 1.2;
+      font-size: clamp(1.75rem, 4vw, 2.6rem);
+      letter-spacing: -0.02em;
     }
 
     .section-subtitle {
-      font-size: clamp(0.975rem, 1.95vw, 1.0625rem);
+      font-size: clamp(1rem, 2vw, 1.125rem);
       color: var(--color-mid);
-      margin-top: var(--space-md);
+      margin-top: var(--space-lg);
       max-width: 640px;
       margin-left: auto;
       margin-right: auto;
-      line-height: 1.75;
+      line-height: 1.78;
     }
 
-    .section-pad-relaxed { padding: clamp(4rem, 10vw, 6.5rem) 0; }
+    .section-pad-relaxed { padding: clamp(4.5rem, 11vw, 7.5rem) 0; }
     .section-pad-snug { padding: clamp(3rem, 7vw, 4.75rem) 0; }
 
     /* Asymmetric splits */
@@ -246,14 +251,13 @@
        ============================================================ */
     h1, h2, h3, h4, h5, h6 {
       font-family: var(--font-heading);
-      line-height: 1.2;
+      line-height: 1.18;
       color: var(--color-dark);
     }
-    p { color: var(--color-mid); line-height: 1.76; }
+    p { color: var(--color-mid); line-height: 1.8; }
 
-    /* Softer headings (trust / editorial nonprofit) */
-    h1 { font-weight: 600 !important; letter-spacing: -0.025em !important; }
-    h2, h3 { font-weight: 600; }
+    h1 { font-weight: 700; letter-spacing: -0.03em; }
+    h2, h3 { font-weight: 700; letter-spacing: -0.02em; }
 
     /* ============================================================
        BUTTONS  (PRD §7.2.3)
@@ -392,10 +396,13 @@
     .nav-links a {
       font-family: var(--font-heading);
       font-size: 0.875rem;
-      font-weight: 500;
+      font-weight: 600;
       color: var(--color-dark);
       position: relative;
-      transition: color var(--transition-fast);
+      padding: 0.35rem 0;
+      transition:
+        color 0.22s ease,
+        transform 0.22s ease;
     }
     .nav-links a::after {
       content: '';
@@ -407,10 +414,11 @@
       background: var(--color-accent);
       border-radius: var(--radius-full);
       transform: scaleX(0);
-      transition: transform var(--transition-fast);
+      transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     }
     .nav-links a:hover,
     .nav-links a.active { color: var(--color-accent); opacity: 1; }
+    .nav-links a:hover { transform: translateY(-1px); }
     .nav-links a:hover::after,
     .nav-links a.active::after { transform: scaleX(1); }
 
@@ -642,11 +650,12 @@
     .hero .hero__headline {
       font-family: var(--font-heading);
       font-weight: 900;
-      font-size: clamp(2.1rem, 5vw, 3.35rem);
-      line-height: 1.14;
-      letter-spacing: -0.025em;
+      font-size: clamp(2.25rem, 5.5vw, 3.65rem);
+      line-height: 1.08;
+      letter-spacing: -0.03em;
       color: var(--color-white);
-      margin-bottom: var(--space-md);
+      margin-bottom: var(--space-lg);
+      text-wrap: balance;
     }
     .hero .hero__headline mark {
       color: rgba(255,255,255,0.98);
@@ -655,19 +664,12 @@
     }
 
     .hero .hero__subheading {
-      font-size: clamp(1rem, 1.9vw, 1.125rem);
-      line-height: 1.75;
-      color: rgba(255, 255, 255, 0.93);
-      margin-bottom: var(--space-sm);
-      max-width: 520px;
-    }
-
-    .hero .hero__mission {
-      font-size: 0.975rem;
-      line-height: 1.72;
-      color: rgba(255, 255, 255, 0.9);
-      max-width: 520px;
+      font-size: clamp(1.0625rem, 2.1vw, 1.28rem);
+      line-height: 1.62;
+      color: rgba(255, 255, 255, 0.94);
       margin-bottom: var(--space-xl);
+      max-width: 36rem;
+      text-wrap: balance;
     }
 
     .hero .hero__cta-group {
@@ -691,7 +693,29 @@
       text-underline-offset: 3px;
     }
 
+    .hero .hero__cta-group .btn {
+      min-height: 3rem;
+    }
+    .hero .hero__cta-group .btn-primary {
+      padding: 1rem 1.85rem;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+    .hero .hero__cta-group .btn-secondary {
+      padding: 0.9rem 1.65rem;
+      font-size: 0.9375rem;
+      font-weight: 600;
+    }
+
     /* CTAs всередині рожевої панелі: білий solid + ghost - як на макеті */
+    .hero .btn-primary,
+    .hero .btn-secondary {
+      transition:
+        background 0.22s ease,
+        box-shadow 0.22s ease,
+        transform 0.22s ease,
+        border-color 0.22s ease;
+    }
     .hero .btn-primary {
       background: var(--color-white);
       color: var(--color-dark);
@@ -699,18 +723,22 @@
     }
     .hero .btn-primary:hover {
       background: rgba(255, 255, 255, 0.94);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.14);
+      transform: translateY(-2px);
     }
+    .hero .btn-primary:active { transform: translateY(0); }
     .hero .btn-secondary {
       background: transparent;
       border-color: rgba(255, 255, 255, 0.88);
       color: var(--color-white);
     }
     .hero .btn-secondary:hover {
-      background: rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.14);
       border-color: var(--color-white);
       color: var(--color-white);
+      transform: translateY(-1px);
     }
+    .hero .btn-secondary:active { transform: translateY(0); }
 
     /* Hero image - великі радіуси, білий кордон */
     .hero__visual {
@@ -965,13 +993,16 @@
       border-radius: var(--radius-lg);
       padding: var(--space-xl) var(--space-lg);
       text-align: center;
+      box-shadow: var(--shadow-sm);
       transition:
         box-shadow var(--transition-base),
-        border-color var(--transition-base);
+        border-color var(--transition-base),
+        transform var(--transition-base);
     }
     .impact-pillar:hover {
-      box-shadow: var(--shadow-sm);
-      border-color: rgba(0,0,0,0.12);
+      box-shadow: var(--shadow-md);
+      border-color: rgba(0,0,0,0.1);
+      transform: translateY(-2px);
     }
 
     .impact-pillar__num {
@@ -1021,9 +1052,10 @@
       border: 1px solid var(--color-border);
       border-radius: var(--radius-lg);
       overflow: hidden;
-      transition: box-shadow var(--transition-base);
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow var(--transition-base), transform var(--transition-base);
     }
-    .story-card:hover { box-shadow: var(--shadow-md); }
+    .story-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
 
     .story-card__media {
       aspect-ratio: 16 / 10;
@@ -1343,15 +1375,16 @@
       border: 1px solid var(--color-border);
       border-radius: var(--radius-lg);
       padding: var(--space-xl);
+      box-shadow: var(--shadow-sm);
       transition:
         box-shadow  var(--transition-base),
         transform   var(--transition-base),
         border-color var(--transition-base);
     }
     .program-card:hover {
-      box-shadow: var(--shadow-md);
-      transform: translateY(-2px);
-      border-color: rgba(0,0,0,0.12);
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-4px);
+      border-color: rgba(0,0,0,0.1);
     }
 
     .program-card__icon {
@@ -1444,9 +1477,10 @@
       border: 1px solid var(--color-border);
       border-radius: var(--radius-lg);
       overflow: hidden;
+      box-shadow: var(--shadow-sm);
       transition: box-shadow var(--transition-base), transform var(--transition-base);
     }
-    .project-card:hover { box-shadow: var(--shadow-sm); transform: translateY(-2px); }
+    .project-card:hover { box-shadow: var(--shadow-md); transform: translateY(-4px); }
 
     .project-card__media {
       aspect-ratio: 16 / 9;
@@ -2200,8 +2234,8 @@
        ============================================================ */
     .site-footer {
       background: #1f1f1f;
-      color: rgba(255,255,255,0.7);
-      padding: clamp(3rem, 8vw, 4.5rem) 0 var(--space-xl);
+      color: rgba(255,255,255,0.72);
+      padding: clamp(3.75rem, 9vw, 5.5rem) 0 var(--space-2xl);
     }
 
     .footer__contact-block {
@@ -2218,7 +2252,7 @@
     .footer__inner {
       display: grid;
       grid-template-columns: 1fr;
-      gap: var(--space-xl);
+      gap: var(--space-2xl);
     }
 
     .footer__brand .nav-logo__text { color: var(--color-white); }
@@ -2241,9 +2275,9 @@
     .footer__links a {
       font-size: 0.875rem;
       color: rgba(255,255,255,0.55);
-      transition: color var(--transition-fast);
+      transition: color 0.2s ease, padding-left 0.2s ease;
     }
-    .footer__links a:hover { color: var(--color-white); }
+    .footer__links a:hover { color: var(--color-white); padding-left: 4px; }
 
     .footer__bottom {
       margin-top: var(--space-xl);
@@ -2276,8 +2310,10 @@
        ============================================================ */
     [data-animate] {
       opacity: 0;
-      transform: translateY(14px);
-      transition: opacity 0.55s ease, transform 0.55s ease;
+      transform: translateY(18px);
+      transition:
+        opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+        transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
     }
     [data-animate].visible {
       opacity: 1;
@@ -2288,7 +2324,7 @@
     #hero .hero__content[data-animate] {
       opacity: 0;
       transform: none;
-      transition: opacity 0.55s ease;
+      transition: opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1);
     }
     #hero .hero__content[data-animate].visible {
       opacity: 1;
@@ -2339,6 +2375,18 @@
       }
       .scroll-indicator { animation: none; }
       html { scroll-behavior: auto; }
+    }
+
+    @media (max-width: 380px) {
+      :root { --container-pad: 0.75rem; }
+
+      .hero .hero__headline {
+        font-size: clamp(1.55rem, 8.5vw, 2rem);
+        line-height: 1.12;
+      }
+      .hero .hero__content {
+        padding: clamp(1.1rem, 4vw, 1.85rem);
+      }
     }
 
     @media (max-width: 768px) {
@@ -2529,7 +2577,7 @@
             <button class="lang-btn"        data-lang="en" aria-pressed="false">EN</button>
           </div>
 
-          <a href="#donate" class="btn btn-primary btn-sm nav-donate" data-i18n="nav.donate_outline">Підтримати місію</a>
+          <a href="#donate" class="btn btn-primary btn-sm nav-donate" data-i18n="nav.donate_outline">Підтримати фонд</a>
 
           <button
             class="hamburger"
@@ -2590,7 +2638,7 @@
           <button class="lang-btn active" data-lang="ua">UA</button>
           <button class="lang-btn"        data-lang="en">EN</button>
         </div>
-        <a href="#donate" class="btn btn-primary" data-i18n="nav.donate_outline">Підтримати місію</a>
+        <a href="#donate" class="btn btn-primary" data-i18n="nav.donate_outline">Підтримати фонд</a>
       </div>
     </div>
   </div>
@@ -2609,24 +2657,20 @@
           <!-- Content -->
           <div class="hero__content" data-animate>
             <h1 class="hero__headline" id="hero-headline">
-              <span data-i18n="hero.headline">Я зможу - ти зможеш</span>
+              <span data-i18n="hero.headline">Підтримка жінок і дітей там, де війна змінила все</span>
             </h1>
 
             <p class="hero__subheading" data-i18n="hero.subheading">
-              Фонд поруч із жінками й дітьми в прифронтових громадах Харківщини: психологічна підтримка, право й гуманітарна допомога - людяно й без зайвого шуму.
-            </p>
-
-            <p class="hero__mission" data-i18n="hero.mission">
-              Наша місія проста: дати кожній жінці простір безпеки, голос та практичні кроки, коли війна зламала звичний ритм життя.
+              Психологічна допомога, право та гуманітарна підтримка в громадах Харківщини - поруч і без зайвого шуму.
             </p>
 
             <div class="hero__cta-group">
               <a href="#donate" class="btn btn-primary">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-                <span data-i18n="hero.cta_support">Підтримати місію</span>
+                <span data-i18n="hero.cta_support">Підтримати фонд</span>
               </a>
               <a href="https://t.me/bo_bf_ican" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" data-social="telegram">
-                <span data-i18n="hero.cta_get_help">Отримати допомогу</span>
+                <span data-i18n="hero.cta_join">Долучитися до спільноти</span>
               </a>
               <p class="hero__cta-note"><a href="#programs" class="hero-learn-link" data-i18n="hero.cta_learn">Дізнатися більше про програми</a></p>
             </div>
@@ -2866,7 +2910,7 @@
     <section id="partners" class="partners section-pad-relaxed section-warm-bg" aria-labelledby="partners-title">
       <div class="container">
         <div class="section-header section-header--wide" data-animate>
-          <h2 class="section-title" id="partners-title" data-i18n="partners.headline">Наші партнери</h2>
+          <h2 class="section-title" id="partners-title" data-i18n="partners.headline">Наші донери і партнери</h2>
         </div>
         <!-- Populated by app.js renderPartners() -->
         <div id="partners-grid" data-animate-stagger aria-label="Організації-партнери"></div>
@@ -3306,7 +3350,7 @@
         <div>
           <h3 class="footer__col-title" data-i18n="footer.col2_title">Дії</h3>
           <ul class="footer__links" role="list">
-            <li><a href="#donate" data-i18n="nav.donate_outline">Підтримати місію</a></li>
+            <li><a href="#donate" data-i18n="nav.donate_outline">Підтримати фонд</a></li>
             <li><a href="https://t.me/bo_bf_ican" target="_blank" rel="noopener noreferrer" data-i18n="footer.get_help" data-social="telegram">Отримати допомогу</a></li>
             <li><a href="#activity-reports" data-i18n="footer.reports_link">Фінзвіти</a></li>
           </ul>
