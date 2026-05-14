@@ -162,26 +162,29 @@
         tag: 'Команда',
         headline: 'Команда',
         subtitle: 'Люди, які координують програми та підтримку громад.',
-        m1_name: 'Наталія Соловйова',
-        m1_role: 'Голова правління',
-        m2_name: 'Марина Овчаренко',
-        m2_role: 'Керівниця програм',
-        m3_name: 'Валерія Бурлакова',
-        m3_role: 'Керівниця комунікацій',
-        m4_name: 'Дар\'я Глебова',
-        m4_role: 'Соціальна працівниця',
-        m5_name: 'Юлія Маловічко',
-        m5_role: 'Психологиня',
-        m6_name: 'Анна Іванченко',
-        m6_role: 'Координаторка проєктів'
+        m1_name: 'Юлія Лісова',
+        m1_role: 'Голова фонду',
+        m2_name: 'Ірина Черкашина',
+        m2_role: 'Психолог',
+        m3_name: 'Максим Терехов',
+        m3_role: 'Координатор програм / проєктний менеджер',
+        m4_name: 'Наталія Коротя',
+        m4_role: 'Психолог',
+        m5_name: 'Ірина Подвальна',
+        m5_role: 'Психолог',
+        m6_name: 'Ірина Макушина',
+        m6_role: 'SMM-менеджер',
+        m7_name: 'Крістіна Максименко',
+        m7_role: 'Амбасадор фонду'
       },
       teamMembers: [
-        { photo: 'images/placeholder.jpg', nameKey: 'team.m1_name', roleKey: 'team.m1_role' },
-        { photo: 'images/placeholder.jpg', nameKey: 'team.m2_name', roleKey: 'team.m2_role' },
-        { photo: 'images/placeholder.jpg', nameKey: 'team.m3_name', roleKey: 'team.m3_role' },
-        { photo: 'images/placeholder.jpg', nameKey: 'team.m4_name', roleKey: 'team.m4_role' },
-        { photo: 'images/placeholder.jpg', nameKey: 'team.m5_name', roleKey: 'team.m5_role' },
-        { photo: 'images/placeholder.jpg', nameKey: 'team.m6_name', roleKey: 'team.m6_role' }
+        { photo: 'images/team-yuliia-lisova.png', nameKey: 'team.m1_name', roleKey: 'team.m1_role' },
+        { photo: 'images/team-iryna-cherkashyna.png', nameKey: 'team.m2_name', roleKey: 'team.m2_role' },
+        { photo: 'images/team-maksym-terekhov.png', nameKey: 'team.m3_name', roleKey: 'team.m3_role' },
+        { photo: 'images/team-nataliia-korotia.png', nameKey: 'team.m4_name', roleKey: 'team.m4_role' },
+        { photo: 'images/team-iryna-podvalna.png', nameKey: 'team.m5_name', roleKey: 'team.m5_role' },
+        { photo: 'images/team-iryna-makushyna.png', nameKey: 'team.m6_name', roleKey: 'team.m6_role' },
+        { photo: 'images/team-kristina-maksymenko.png', nameKey: 'team.m7_name', roleKey: 'team.m7_role' }
       ],
       how: {
         section_tag: 'Методологія',
@@ -207,10 +210,10 @@
         p3_title: '«Від людини до людини»',
         p3_desc:
           'Благодійні збори й події прямої солідарності: кошти, подарунки та увага для дітей із вразливих родин - щоб повернути відчуття турботи й святковості навіть під час війни.',
-        p4_tag:   'Розвиток і зцілення',
-        p4_title: 'P.E.A.C.E III',
+        p4_tag:   'Жіноче лідерство й відновлення',
+        p4_title: 'Проєкт «Форум Сила Харків’янок»',
         p4_desc:
-          'Міжнародний проєкт для жінок і дітей: поєднання економічних можливостей (навички, менторство, заняття) із системною психологічною допомогою та групами для стійкого відновлення після кризи.'
+          'Це ініціатива, спрямована на посилення ролі жінок у процесах відновлення, соціальної згуртованості та розвитку громад Харківської області в умовах війни. Форум об’єднує активісток, представниць громадських організацій, місцевої влади, освітнього сектору, бізнесу та міжнародних партнерів для спільного обговорення викликів, з якими стикаються жінки у прифронтовому регіоні, а також пошуку практичних рішень і можливостей для співпраці.'
       },
       donate: {
         headline:          'Ваша підтримка відкриває жінкам доступ до турботи й спільноти',
@@ -342,7 +345,7 @@
         terms:             'Умови сайту',
         registration_link: 'Реєстраційні документи',
         registration:      'БО «БФ «АЙ КЕН»» · Код ЄДРПОУ 45404369 · Зареєстровано в Україні',
-        rights:            '© 2023-2026 I CAN Women Foundation. Всі права захищені.'
+        rights:            '© 2023-2026 I CAN. Всі права захищені.'
       }
     },
 
@@ -479,26 +482,29 @@
         tag: 'Team',
         headline: 'Our team',
         subtitle: 'The people coordinating programmes and community support.',
-        m1_name: 'Nataliia Soloviova',
-        m1_role: 'Chair of the Board',
-        m2_name: 'Maryna Ovcharenko',
-        m2_role: 'Head of Programmes',
-        m3_name: 'Valeriia Burlakova',
-        m3_role: 'Head of Communications',
-        m4_name: 'Daria Hlebova',
-        m4_role: 'Social worker',
-        m5_name: 'Yuliia Malovichko',
+        m1_name: 'Yuliia Lisova',
+        m1_role: 'Head of the foundation',
+        m2_name: 'Iryna Cherkashyna',
+        m2_role: 'Psychologist',
+        m3_name: 'Maksym Terekhov',
+        m3_role: 'Program coordinator / project manager',
+        m4_name: 'Nataliia Korotia',
+        m4_role: 'Psychologist',
+        m5_name: 'Iryna Podvalna',
         m5_role: 'Psychologist',
-        m6_name: 'Anna Ivanchenko',
-        m6_role: 'Project coordinator'
+        m6_name: 'Iryna Makushyna',
+        m6_role: 'SMM manager',
+        m7_name: 'Kristina Maksymenko',
+        m7_role: 'Foundation ambassador'
       },
       teamMembers: [
-        { photo: 'images/placeholder.jpg', nameKey: 'team.m1_name', roleKey: 'team.m1_role' },
-        { photo: 'images/placeholder.jpg', nameKey: 'team.m2_name', roleKey: 'team.m2_role' },
-        { photo: 'images/placeholder.jpg', nameKey: 'team.m3_name', roleKey: 'team.m3_role' },
-        { photo: 'images/placeholder.jpg', nameKey: 'team.m4_name', roleKey: 'team.m4_role' },
-        { photo: 'images/placeholder.jpg', nameKey: 'team.m5_name', roleKey: 'team.m5_role' },
-        { photo: 'images/placeholder.jpg', nameKey: 'team.m6_name', roleKey: 'team.m6_role' }
+        { photo: 'images/team-yuliia-lisova.png', nameKey: 'team.m1_name', roleKey: 'team.m1_role' },
+        { photo: 'images/team-iryna-cherkashyna.png', nameKey: 'team.m2_name', roleKey: 'team.m2_role' },
+        { photo: 'images/team-maksym-terekhov.png', nameKey: 'team.m3_name', roleKey: 'team.m3_role' },
+        { photo: 'images/team-nataliia-korotia.png', nameKey: 'team.m4_name', roleKey: 'team.m4_role' },
+        { photo: 'images/team-iryna-podvalna.png', nameKey: 'team.m5_name', roleKey: 'team.m5_role' },
+        { photo: 'images/team-iryna-makushyna.png', nameKey: 'team.m6_name', roleKey: 'team.m6_role' },
+        { photo: 'images/team-kristina-maksymenko.png', nameKey: 'team.m7_name', roleKey: 'team.m7_role' }
       ],
       how: {
         section_tag: 'Method',
@@ -524,10 +530,10 @@
         p3_title: 'From Person to Person',
         p3_desc:
           'Solidarity fundraising and events where people support people-resources, gifts and attention for children in vulnerable families, bringing back a sense of care and celebration even in wartime.',
-        p4_tag:   'Growth & healing',
-        p4_title: 'P.E.A.C.E III',
+        p4_tag:   'Women’s leadership & recovery',
+        p4_title: 'Project «Forum Syla Kharkivyanok»',
         p4_desc:
-          'An international project for women and children combining economic opportunity (skills, mentoring, activities) with structured psychological support and groups for sustainable recovery after crisis.'
+          'An initiative to strengthen the role of women in recovery, social cohesion and community development in Kharkiv Oblast during the war. The Forum brings together activists, representatives of civil society, local government, education, business and international partners to discuss the challenges women face in the near-frontline region and to seek practical solutions and opportunities for cooperation.'
       },
       donate: {
         headline:          'Your support helps women access care and community',
@@ -659,7 +665,7 @@
         terms:             'Site terms',
         registration_link: 'Registration files',
         registration:      'Charitable organisation «BF «I CAN»» · EDRPOU 45404369 · Registered in Ukraine',
-        rights:            '© 2023-2026 I CAN Women Foundation. All rights reserved.'
+        rights:            '© 2023-2026 I CAN. All rights reserved.'
       }
     }
   };

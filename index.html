@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="description" content="I CAN Women Foundation: психологічна, юридична й гуманітарна підтримка жінок і дітей у громадах Харківщини. Допомога поруч, прозора звітність.">
-  <meta name="theme-color" content="#0B0A0F">
+  <meta name="theme-color" content="#FFFFFF">
   <meta property="og:title" content="I CAN Women Foundation | Підтримка жінок і дітей Харківщини">
   <meta property="og:description" content="Психологічна, юридична й гуманітарна підтримка жінок і дітей у громадах Харківщини. I CAN Women Foundation.">
   <meta property="og:image" content="https://icanwomen.org/og-image.jpg">
@@ -57,23 +57,23 @@
       --color-violet:        #9B7BF7;
       --color-violet-rgb:    155, 123, 247;
 
-      /* Dark UI surfaces & text (primary mode) */
-      --color-void:          #050408;
-      --color-dark:          #F5F1F3;
-      --color-mid:           #ADA7AE;
-      --color-muted:         #7A737C;
-      --color-border:        rgba(255, 255, 255, 0.09);
-      --color-surface:       rgba(255, 255, 255, 0.035);
+      /* Light UI — білий фон, тёмний текст */
+      --color-void:          #FFFFFF;
+      --color-dark:          #1C1819;
+      --color-mid:           #4D4548;
+      --color-muted:         #756C70;
+      --color-border:        #E8E0E3;
+      --color-surface:       #FAF7F8;
       --color-white:         #FFFFFF;
-      --surface-elevated:    rgba(18, 16, 24, 0.72);
-      --surface-solid:       #141218;
-      --color-warm-bg:       transparent;
-      --color-warm-pink:     rgba(var(--color-accent-rgb), 0.06);
+      --surface-elevated:    #FFFFFF;
+      --surface-solid:       #F5F2F4;
+      --color-warm-bg:       #FFFBFC;
+      --color-warm-pink:     #FDF2F6;
 
-      --glass-fill:          rgba(22, 19, 30, 0.55);
-      --glass-border:        rgba(255, 255, 255, 0.1);
-      --glass-highlight:     rgba(255, 255, 255, 0.06);
-      --glass-blur:          20px;
+      --glass-fill:          rgba(255, 255, 255, 0.82);
+      --glass-border:        rgba(28, 24, 25, 0.08);
+      --glass-highlight:     rgba(255, 255, 255, 0.9);
+      --glass-blur:          18px;
 
       --color-success:       #5ED29A;
       --color-error:         #E08598;
@@ -98,10 +98,11 @@
       --radius-full:  9999px;
 
       /* --- Shadows --- */
-      --shadow-sm:     0 2px 8px rgba(0, 0, 0, 0.22), 0 0 0 1px rgba(255,255,255,0.04) inset;
-      --shadow-md:     0 12px 32px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(255,255,255,0.05) inset;
-      --shadow-lg:     0 24px 64px rgba(0, 0, 0, 0.45), 0 0 120px rgba(var(--color-violet-rgb), 0.08);
-      --shadow-accent: 0 8px 32px rgba(var(--color-accent-rgb), 0.35);
+      --shadow-sm:     0 1px 3px rgba(28, 24, 25, 0.06), 0 1px 2px rgba(28, 24, 25, 0.04);
+      --shadow-md:     0 8px 24px rgba(28, 24, 25, 0.08), 0 2px 8px rgba(28, 24, 25, 0.05);
+      --shadow-lg:     0 16px 48px rgba(28, 24, 25, 0.1), 0 4px 16px rgba(28, 24, 25, 0.06),
+        0 0 80px rgba(var(--color-violet-rgb), 0.06);
+      --shadow-accent: 0 6px 24px rgba(var(--color-accent-rgb), 0.28);
 
       /* --- Typography --- */
       --font-heading: 'Outfit', system-ui, sans-serif;
@@ -145,17 +146,16 @@
       position: absolute;
       inset: -30% -20%;
       background:
-        radial-gradient(ellipse 90% 70% at 15% 10%, rgba(var(--color-violet-rgb), 0.42) 0%, transparent 52%),
-        radial-gradient(ellipse 75% 55% at 88% 75%, rgba(var(--color-accent-rgb), 0.28) 0%, transparent 55%),
-        radial-gradient(ellipse 50% 40% at 50% 100%, rgba(120, 80, 200, 0.15) 0%, transparent 50%),
-        linear-gradient(180deg, #07060b 0%, #0c0a12 38%, #090810 100%);
+        radial-gradient(ellipse 90% 70% at 12% 8%, rgba(var(--color-violet-rgb), 0.09) 0%, transparent 52%),
+        radial-gradient(ellipse 75% 55% at 92% 78%, rgba(var(--color-accent-rgb), 0.08) 0%, transparent 55%),
+        linear-gradient(180deg, #ffffff 0%, #fefcfd 45%, #ffffff 100%);
       animation: ambient-mesh 22s ease-in-out infinite alternate;
     }
     .ambient__orb {
       position: absolute;
       border-radius: 50%;
       filter: blur(80px);
-      opacity: 0.65;
+      opacity: 0.42;
       animation: orb-drift 28s ease-in-out infinite;
     }
     .ambient__orb--a {
@@ -163,7 +163,7 @@
       height: min(52vw, 520px);
       top: -8%;
       left: -12%;
-      background: rgba(var(--color-violet-rgb), 0.45);
+      background: rgba(var(--color-violet-rgb), 0.2);
       animation-delay: 0s;
     }
     .ambient__orb--b {
@@ -171,7 +171,7 @@
       height: min(42vw, 440px);
       bottom: -5%;
       right: -8%;
-      background: rgba(var(--color-accent-rgb), 0.35);
+      background: rgba(var(--color-accent-rgb), 0.18);
       animation-delay: -9s;
       animation-duration: 34s;
     }
@@ -180,16 +180,16 @@
       height: min(28vw, 320px);
       top: 40%;
       right: 18%;
-      background: rgba(130, 100, 255, 0.25);
+      background: rgba(200, 180, 255, 0.16);
       animation-delay: -5s;
       animation-duration: 26s;
     }
     .ambient__noise {
       position: absolute;
       inset: 0;
-      opacity: 0.045;
+      opacity: 0.028;
       background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-      mix-blend-mode: overlay;
+      mix-blend-mode: multiply;
     }
 
     @keyframes ambient-mesh {
@@ -214,8 +214,8 @@
       z-index: -1;
       background: radial-gradient(
         circle at center,
-        rgba(var(--color-violet-rgb), 0.16) 0%,
-        rgba(var(--color-accent-rgb), 0.06) 38%,
+        rgba(var(--color-violet-rgb), 0.07) 0%,
+        rgba(var(--color-accent-rgb), 0.04) 38%,
         transparent 68%
       );
       opacity: 0;
@@ -246,7 +246,7 @@
       font-size: 1rem;
       line-height: 1.75;
       color: var(--color-dark);
-      background: var(--color-void);
+      background: var(--color-white);
       overflow-x: hidden;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
@@ -258,10 +258,10 @@
     }
 
     #main-content > section:not(#hero) {
-      border-top: 1px solid rgba(255, 255, 255, 0.055);
+      border-top: 1px solid rgba(28, 24, 25, 0.06);
       box-shadow:
-        0 -48px 96px -56px rgba(var(--color-violet-rgb), 0.14),
-        0 64px 120px -72px rgba(0, 0, 0, 0.5);
+        0 -32px 64px -48px rgba(var(--color-violet-rgb), 0.07),
+        0 48px 80px -64px rgba(28, 24, 25, 0.04);
     }
 
     img, svg { display: block; max-width: 100%; }
@@ -434,17 +434,17 @@
 
     .btn-secondary {
       padding: 12px 26px;
-      background: rgba(255, 255, 255, 0.04);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
+      background: var(--color-white);
+      backdrop-filter: none;
+      -webkit-backdrop-filter: none;
       color: var(--color-dark);
-      border-color: var(--glass-border);
-      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2) inset;
+      border-color: var(--color-border);
+      box-shadow: var(--shadow-sm);
     }
     .btn-secondary:hover {
-      border-color: rgba(var(--color-accent-rgb), 0.45);
-      color: var(--color-dark);
-      background: rgba(var(--color-accent-rgb), 0.1);
+      border-color: var(--color-accent);
+      color: var(--color-accent);
+      background: var(--color-accent-soft);
       transform: scale(1.02) translateY(-2px);
     }
 
@@ -473,9 +473,9 @@
       inset: 0 0 auto 0;
       z-index: 100;
       padding-top: env(safe-area-inset-top, 0px);
-      background: rgba(8, 6, 12, 0.35);
-      backdrop-filter: blur(14px) saturate(1.2);
-      -webkit-backdrop-filter: blur(14px) saturate(1.2);
+      background: rgba(255, 255, 255, 0.76);
+      backdrop-filter: blur(14px) saturate(1.15);
+      -webkit-backdrop-filter: blur(14px) saturate(1.15);
       border-bottom: 1px solid transparent;
       transition:
         background  var(--transition-base),
@@ -484,11 +484,11 @@
     }
 
     .site-header.scrolled {
-      background: rgba(8, 6, 14, 0.82);
-      backdrop-filter: blur(18px) saturate(1.35);
-      -webkit-backdrop-filter: blur(18px) saturate(1.35);
-      border-bottom-color: rgba(255, 255, 255, 0.06);
-      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(18px) saturate(1.2);
+      -webkit-backdrop-filter: blur(18px) saturate(1.2);
+      border-bottom-color: rgba(28, 24, 25, 0.06);
+      box-shadow: 0 4px 24px rgba(28, 24, 25, 0.06);
     }
 
     .nav-inner {
@@ -516,9 +516,9 @@
       width: 40px;
       height: 40px;
       border-radius: 12px;
-      background: rgba(255, 255, 255, 0.06);
-      border: 1px solid var(--glass-border);
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow-sm);
     }
     .brand-logo-mark img {
       display: block;
@@ -594,8 +594,8 @@
     .lang-toggle {
       display: flex;
       align-items: center;
-      background: rgba(255, 255, 255, 0.06);
-      border: 1px solid var(--glass-border);
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
       border-radius: var(--radius-full);
       padding: 3px;
       gap: 2px;
@@ -686,11 +686,11 @@
       bottom: 0;
       width: min(20.5rem, calc(100vw - 2.25rem));
       max-width: 100%;
-      background: rgba(14, 12, 20, 0.94);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border-left: 1px solid var(--glass-border);
-      box-shadow: -24px 0 64px rgba(0, 0, 0, 0.55);
+      background: var(--color-white);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-left: 1px solid var(--color-border);
+      box-shadow: -12px 0 40px rgba(28, 24, 25, 0.1);
       display: flex;
       flex-direction: column;
       padding-top: env(safe-area-inset-top, 0px);
@@ -762,7 +762,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(ellipse 85% 70% at 70% 25%, rgba(var(--color-violet-rgb), 0.2) 0%, transparent 55%);
+      background: radial-gradient(ellipse 85% 70% at 70% 25%, rgba(var(--color-violet-rgb), 0.06) 0%, transparent 55%);
       pointer-events: none;
     }
 
@@ -772,10 +772,10 @@
       right: -20%;
       width: min(65%, 680px);
       height: min(85%, 820px);
-      background: radial-gradient(ellipse at center, rgba(var(--color-accent-rgb), 0.35) 0%, rgba(var(--color-violet-rgb), 0.12) 45%, transparent 70%);
+      background: radial-gradient(ellipse at center, rgba(var(--color-accent-rgb), 0.2) 0%, rgba(var(--color-violet-rgb), 0.06) 45%, transparent 70%);
       pointer-events: none;
       filter: blur(56px);
-      opacity: 0.9;
+      opacity: 0.75;
       animation: hero-blob-pulse 14s ease-in-out infinite alternate;
     }
 
@@ -793,12 +793,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: rgba(255, 255, 255, 0.06);
-      border: 1px solid var(--glass-border);
-      color: rgba(255, 255, 255, 0.85);
+      background: var(--color-white);
+      border: 1px solid var(--color-border);
+      color: var(--color-accent);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
-      box-shadow: var(--shadow-md);
+      box-shadow: var(--shadow-sm);
       pointer-events: none;
       animation: hero-float-y 7s ease-in-out infinite;
     }
@@ -829,19 +829,19 @@
       position: relative;
       z-index: 2;
       background: linear-gradient(
-        145deg,
-        rgba(255, 255, 255, 0.09) 0%,
-        rgba(22, 19, 32, 0.45) 100%
+        165deg,
+        rgba(255, 255, 255, 0.95) 0%,
+        rgba(255, 251, 252, 0.92) 100%
       );
-      backdrop-filter: blur(24px) saturate(1.35);
-      -webkit-backdrop-filter: blur(24px) saturate(1.35);
+      backdrop-filter: blur(18px) saturate(1.2);
+      -webkit-backdrop-filter: blur(18px) saturate(1.2);
       border-radius: var(--radius-card);
       padding: clamp(2rem, 5vw, 3.5rem);
-      border: 1px solid var(--glass-border);
+      border: 1px solid var(--color-border);
       box-shadow:
-        0 0 0 1px rgba(var(--color-violet-rgb), 0.12) inset,
-        0 32px 80px rgba(0, 0, 0, 0.45),
-        0 0 120px rgba(var(--color-violet-rgb), 0.1);
+        var(--shadow-lg),
+        0 0 0 1px rgba(255, 255, 255, 0.8) inset,
+        0 0 64px rgba(var(--color-accent-rgb), 0.06);
     }
 
     .hero .hero__headline {
@@ -850,12 +850,12 @@
       font-size: clamp(2.85rem, 8vw, 4.75rem);
       line-height: 1.04;
       letter-spacing: -0.035em;
-      color: #fff;
+      color: var(--color-dark);
       margin-bottom: var(--space-lg);
       text-wrap: balance;
     }
     .hero .hero__headline mark {
-      color: rgba(255, 255, 255, 0.98);
+      color: var(--color-dark);
       background: none;
       font-weight: 800;
     }
@@ -864,7 +864,7 @@
       font-size: clamp(0.9rem, 1.65vw, 1.125rem);
       line-height: 1.65;
       font-weight: 400;
-      color: rgba(220, 215, 225, 0.72);
+      color: var(--color-mid);
       margin-bottom: var(--space-2xl);
       max-width: 28rem;
       text-wrap: balance;
@@ -881,11 +881,11 @@
       width: 100%;
       margin-top: var(--space-xs);
       font-size: 0.8125rem;
-      color: rgba(255, 255, 255, 0.55);
+      color: var(--color-muted);
     }
 
     .hero .hero__cta-note a {
-      color: rgba(255, 255, 255, 0.92);
+      color: var(--color-accent);
       font-weight: 600;
       text-decoration: underline;
       text-underline-offset: 3px;
@@ -915,32 +915,31 @@
         filter 0.22s ease;
     }
     .hero .btn-primary {
-      background: linear-gradient(135deg, #fff 0%, #f5e8ee 100%);
-      color: #1a0b12;
-      border: 1px solid rgba(255, 255, 255, 0.45);
-      box-shadow:
-        0 12px 40px rgba(0, 0, 0, 0.28),
-        0 0 0 1px rgba(255, 255, 255, 0.35) inset;
+      background: linear-gradient(135deg, #f0aac0, var(--color-accent));
+      color: #1a0a12;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      box-shadow: var(--shadow-accent), 0 0 0 1px rgba(255, 255, 255, 0.35) inset;
     }
     .hero .btn-primary:hover {
       filter: brightness(1.05);
       box-shadow:
-        0 20px 48px rgba(var(--color-accent-rgb), 0.35),
-        0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+        0 16px 40px rgba(var(--color-accent-rgb), 0.35),
+        0 0 0 1px rgba(255, 255, 255, 0.45) inset;
       transform: scale(1.02) translateY(-2px);
     }
     .hero .btn-primary:active { transform: scale(0.99) translateY(0); }
     .hero .btn-secondary {
-      background: rgba(255, 255, 255, 0.06);
-      border-color: rgba(255, 255, 255, 0.22);
-      color: #fff;
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
+      background: var(--color-white);
+      border-color: var(--color-border);
+      color: var(--color-dark);
+      backdrop-filter: none;
+      -webkit-backdrop-filter: none;
+      box-shadow: var(--shadow-sm);
     }
     .hero .btn-secondary:hover {
-      background: rgba(255, 255, 255, 0.12);
-      border-color: rgba(255, 255, 255, 0.4);
-      color: #fff;
+      background: var(--color-accent-soft);
+      border-color: var(--color-accent);
+      color: var(--color-accent);
       transform: scale(1.02) translateY(-2px);
     }
     .hero .btn-secondary:active { transform: scale(0.99) translateY(0); }
@@ -953,14 +952,13 @@
       padding: clamp(10px, 1.5vw, 14px);
       background: linear-gradient(
         135deg,
-        rgba(255, 255, 255, 0.12) 0%,
-        rgba(255, 255, 255, 0.03) 100%
+        rgba(255, 255, 255, 0.95) 0%,
+        var(--color-surface) 100%
       );
-      border: 1px solid var(--glass-border);
+      border: 1px solid var(--color-border);
       box-shadow:
         var(--shadow-lg),
-        0 0 100px rgba(var(--color-violet-rgb), 0.18),
-        0 0 0 1px rgba(0, 0, 0, 0.35) inset;
+        0 0 64px rgba(var(--color-violet-rgb), 0.08);
       transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1), box-shadow var(--transition-base);
     }
 
@@ -968,15 +966,14 @@
       transform: perspective(1000px) rotateY(-2deg) rotateX(2deg) translateY(-4px);
       box-shadow:
         var(--shadow-lg),
-        0 0 140px rgba(var(--color-violet-rgb), 0.28),
-        0 0 0 1px rgba(0, 0, 0, 0.35) inset;
+        0 0 80px rgba(var(--color-violet-rgb), 0.12);
     }
 
     .hero__visual-inner {
       border-radius: calc(var(--radius-card) - 6px);
       overflow: hidden;
       aspect-ratio: 4 / 3;
-      background: #0a0810;
+      background: var(--color-surface);
       transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
       will-change: transform;
     }
@@ -1022,7 +1019,7 @@
       bottom: max(var(--space-xl), env(safe-area-inset-bottom, 0px));
       left: 50%;
       transform: translateX(-50%);
-      color: rgba(255, 255, 255, 0.38);
+      color: var(--color-muted);
       animation: bounce 2s ease-in-out infinite;
       transition: opacity var(--transition-base);
     }
@@ -1191,7 +1188,7 @@
     }
     .strategy-carousel__btn:hover {
       border-color: rgba(var(--color-violet-rgb), 0.35);
-      background: rgba(255, 255, 255, 0.08);
+      background: var(--color-surface);
       transform: scale(1.05);
     }
     .strategy-carousel__btn:active { transform: scale(0.96); }
@@ -1528,10 +1525,10 @@
       margin: 0 auto var(--space-md);
       border-radius: 50%;
       overflow: hidden;
-      border: 1px solid var(--glass-border);
-      background: rgba(0, 0, 0, 0.3);
+      border: 1px solid var(--color-border);
+      background: var(--color-surface);
       flex-shrink: 0;
-      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+      box-shadow: var(--shadow-sm);
     }
     .team-card__photo img {
       width: 100%;
@@ -1560,12 +1557,12 @@
     .hero-quote-strip {
       margin-top: var(--space-xl);
       padding: var(--space-md) var(--space-lg);
-      background: rgba(0, 0, 0, 0.25);
+      background: var(--color-surface);
       border-radius: var(--radius-md);
-      border: 1px solid rgba(255, 255, 255, 0.12);
+      border: 1px solid var(--color-border);
       font-size: 0.9375rem;
       font-style: italic;
-      color: rgba(255, 255, 255, 0.88);
+      color: var(--color-mid);
       line-height: 1.65;
       max-width: 540px;
     }
@@ -1817,6 +1814,16 @@
     }
     .project-card__media img { width: 100%; height: 100%; object-fit: cover; }
 
+    /* Вертикальне фото — показувати повністю без обрізання (напр. «Добрі руки») */
+    .project-card--portrait .project-card__media {
+      aspect-ratio: 3 / 4;
+      min-height: 200px;
+    }
+    .project-card--portrait .project-card__media img {
+      object-fit: contain;
+      object-position: center;
+    }
+
     .project-card__body { padding: var(--space-xl); }
 
     .project-card__tag {
@@ -1937,21 +1944,21 @@
     .donate__seg-btn {
       flex: 1;
       padding: 14px var(--space-md);
-      border: 1px solid var(--glass-border);
+      border: 1px solid var(--color-border);
       border-radius: 14px;
       font-family: var(--font-heading);
       font-size: 0.9375rem;
       font-weight: 600;
       color: var(--color-mid);
-      background: rgba(255, 255, 255, 0.04);
+      background: var(--color-surface);
       cursor: pointer;
       transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
     }
-    .donate__seg-btn:hover { background: rgba(255, 255, 255, 0.08); color: var(--color-dark); }
+    .donate__seg-btn:hover { background: var(--color-warm-pink); color: var(--color-dark); }
     .donate__seg-btn.is-active {
-      background: linear-gradient(135deg, rgba(var(--color-violet-rgb), 0.35), rgba(var(--color-accent-rgb), 0.35));
-      color: #fff;
-      border-color: rgba(255, 255, 255, 0.18);
+      background: linear-gradient(135deg, #f0aac0, var(--color-accent));
+      color: #1a0a12;
+      border-color: rgba(var(--color-accent-rgb), 0.35);
     }
 
     .donate-amt-grid {
@@ -2012,9 +2019,9 @@
       justify-content: space-between;
       gap: var(--space-sm);
       padding: 12px 14px;
-      border: 1px solid var(--glass-border);
+      border: 1px solid var(--color-border);
       border-radius: 16px;
-      background: rgba(0, 0, 0, 0.25);
+      background: var(--color-white);
     }
     .donate-iban-code {
       font-family: ui-monospace, 'Cascadia Code', monospace;
@@ -2029,9 +2036,9 @@
       gap: 6px;
       flex-shrink: 0;
       padding: 8px 12px;
-      border: 1px solid var(--glass-border);
+      border: 1px solid var(--color-border);
       border-radius: 999px;
-      background: rgba(255, 255, 255, 0.08);
+      background: var(--color-surface);
       font-family: var(--font-heading);
       font-size: 0.8125rem;
       font-weight: 600;
@@ -2039,7 +2046,7 @@
       cursor: pointer;
       transition: background 0.2s ease, border-color 0.2s ease;
     }
-    .donate-iban-copy:hover { background: rgba(255, 255, 255, 0.14); }
+    .donate-iban-copy:hover { background: var(--color-warm-pink); }
     .donate-iban-copy svg { flex-shrink: 0; color: var(--color-mid); }
 
     .donate__amounts {
@@ -2051,36 +2058,35 @@
 
     .donate__amount-btn {
       padding: 14px var(--space-sm);
-      border: 1px solid var(--glass-border);
+      border: 1px solid var(--color-border);
       border-radius: 14px;
       font-family: var(--font-heading);
       font-size: 1rem;
       font-weight: 600;
-      color: var(--color-mid);
-      background: rgba(255, 255, 255, 0.05);
+      color: var(--color-dark);
+      background: var(--color-surface);
       cursor: pointer;
       text-align: center;
       transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
     }
     .donate__amount-btn:hover {
-      background: rgba(255, 255, 255, 0.1);
-      color: var(--color-dark);
+      background: var(--color-warm-pink);
       transform: translateY(-1px);
     }
     .donate__amount-btn.selected {
       background: linear-gradient(135deg, #f0aac0, var(--color-accent));
       color: #1a0a12;
-      border-color: rgba(255, 255, 255, 0.22);
+      border-color: rgba(var(--color-accent-rgb), 0.35);
     }
 
     .donate__field {
       width: 100%;
       padding: 14px var(--space-lg);
-      border: 1px solid var(--glass-border);
+      border: 1px solid var(--color-border);
       border-radius: 16px;
       font-size: 1rem;
       color: var(--color-dark);
-      background: rgba(0, 0, 0, 0.3);
+      background: var(--color-white);
       transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
       appearance: none;
       -moz-appearance: textfield;
@@ -2255,11 +2261,11 @@
     .form__textarea {
       width: 100%;
       padding: 13px var(--space-md);
-      border: 1px solid var(--glass-border);
+      border: 1px solid var(--color-border);
       border-radius: 16px;
       font-size: 0.9375rem;
       color: var(--color-dark);
-      background: rgba(0, 0, 0, 0.28);
+      background: var(--color-white);
       transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
       appearance: none;
     }
@@ -2565,14 +2571,14 @@
     .social-link {
       width: 44px;
       height: 44px;
-      border: 1px solid var(--glass-border);
+      border: 1px solid var(--color-border);
       border-radius: 14px;
       display: flex;
       align-items: center;
       justify-content: center;
       color: var(--color-muted);
-      background: rgba(255, 255, 255, 0.04);
-      backdrop-filter: blur(8px);
+      background: var(--color-white);
+      backdrop-filter: none;
       transition:
         border-color var(--transition-fast),
         color var(--transition-fast),
@@ -2736,6 +2742,7 @@
     [data-animate-stagger].visible > *:nth-child(8) { opacity:1; transform:none; filter: none; transition-delay:0.40s; }
     [data-animate-stagger].visible > *:nth-child(9) { opacity:1; transform:none; filter: none; transition-delay:0.45s; }
     [data-animate-stagger].visible > *:nth-child(10) { opacity:1; transform:none; filter: none; transition-delay:0.50s; }
+    [data-animate-stagger].visible > *:nth-child(n+11) { opacity:1; transform:none; filter: none; transition-delay:0.55s; }
 
     /* ============================================================
        KEYFRAMES
@@ -3267,9 +3274,9 @@
 
         <div class="projects__grid" data-animate-stagger>
 
-          <article class="project-card">
+          <article class="project-card project-card--portrait">
             <div class="project-card__media">
-              <img src="images/IMG-20260121-123340.png" alt="«Добрі руки» - волонтерка та мешканка громади взимку" width="640" height="360" loading="lazy" decoding="async">
+              <img src="images/IMG-20260121-123340.png" alt="«Добрі руки» - волонтерка та мешканка громади взимку" width="480" height="640" loading="lazy" decoding="async">
             </div>
             <div class="project-card__body">
               <span class="project-card__tag"  data-i18n="projects.p1_tag">Інтегрована допомога</span>
@@ -3278,9 +3285,9 @@
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card project-card--portrait">
             <div class="project-card__media">
-              <img src="images/IMG_0097.png" alt="Психологічна підтримка - практика в безпечному просторі з супроводом фахівця" width="640" height="360" loading="lazy" decoding="async">
+              <img src="images/project-psychological-support.png" alt="Групова зустріч і творча активність: жінки за столом у просторі підтримки" width="480" height="640" loading="lazy" decoding="async">
             </div>
             <div class="project-card__body">
               <span class="project-card__tag"  data-i18n="projects.p2_tag">Ментальне здоров’я</span>
@@ -3302,12 +3309,12 @@
 
           <article class="project-card">
             <div class="project-card__media">
-              <img src="images/project-peace-iii.png" alt="P.E.A.C.E III - підтримка та практика в безпечному просторі разом із фахівцями" width="640" height="360" loading="lazy" decoding="async">
+              <img src="images/IMG_0097.png" alt="Учасниці заходу: обговорення та співпраця у форматі форуму" width="640" height="360" loading="lazy" decoding="async">
             </div>
             <div class="project-card__body">
-              <span class="project-card__tag"  data-i18n="projects.p4_tag">Розвиток і зцілення</span>
-              <h3  class="project-card__title" data-i18n="projects.p4_title">P.E.A.C.E III</h3>
-              <p   class="project-card__desc"  data-i18n="projects.p4_desc">Підтримка жінок і дітей через розбудову економічних можливостей і професійну психологічну допомогу.</p>
+              <span class="project-card__tag"  data-i18n="projects.p4_tag">Жіноче лідерство й відновлення</span>
+              <h3  class="project-card__title" data-i18n="projects.p4_title">Проєкт «Форум Сила Харків’янок»</h3>
+              <p   class="project-card__desc"  data-i18n="projects.p4_desc">Це ініціатива, спрямована на посилення ролі жінок у процесах відновлення, соціальної згуртованості та розвитку громад Харківської області в умовах війни. Форум об’єднує активісток, представниць громадських організацій, місцевої влади, освітнього сектору, бізнесу та міжнародних партнерів для спільного обговорення викликів, з якими стикаються жінки у прифронтовому регіоні, а також пошуку практичних рішень і можливостей для співпраці.</p>
             </div>
           </article>
 
@@ -3337,78 +3344,6 @@
         </div>
         <!-- Populated by app.js renderPartners() -->
         <div id="partners-grid" data-animate-stagger aria-label="Організації-партнери"></div>
-      </div>
-    </section>
-
-    <!-- ── FAQ (partners) ───────────────────────────────────────── -->
-    <section id="faq" class="faq" aria-labelledby="faq-title">
-      <div class="container faq__inner">
-        <div class="faq__intro" data-animate>
-          <h2 class="faq__title" id="faq-title" data-i18n="faq.headline">Поширені запитання</h2>
-          <p class="faq__lead" data-i18n="faq.lead">
-            Можливо, у вас вже є питання? Ми зібрали відповіді на найважливіші. Якщо не знайдете потрібного - пишіть нам, ми завжди поруч, щоб допомогти.
-          </p>
-          <a href="mailto:bobfican@gmail.com?subject=Запитання%20щодо%20партнерства" class="btn btn-primary faq__cta" data-i18n="faq.cta">Задати запитання</a>
-        </div>
-        <div class="faq__accordion-wrap" data-animate data-faq-accordion>
-          <div class="faq-accordion" role="list">
-            <div class="faq-item" role="listitem">
-              <button type="button" class="faq-item__trigger" id="faq-t-1" aria-expanded="false" aria-controls="faq-p-1" data-faq-trigger>
-                <span data-i18n="faq.q1">Як стати партнером фонду?</span>
-                <span class="faq-item__icon" aria-hidden="true"></span>
-              </button>
-              <div class="faq-item__panel" id="faq-p-1" role="region" aria-labelledby="faq-t-1">
-                <div class="faq-item__panel-inner">
-                  <p class="faq-item__answer" data-i18n="faq.a1"></p>
-                </div>
-              </div>
-            </div>
-            <div class="faq-item" role="listitem">
-              <button type="button" class="faq-item__trigger" id="faq-t-2" aria-expanded="false" aria-controls="faq-p-2" data-faq-trigger>
-                <span data-i18n="faq.q2">Які можливості для партнерства ви пропонуєте?</span>
-                <span class="faq-item__icon" aria-hidden="true"></span>
-              </button>
-              <div class="faq-item__panel" id="faq-p-2" role="region" aria-labelledby="faq-t-2">
-                <div class="faq-item__panel-inner">
-                  <p class="faq-item__answer" data-i18n="faq.a2"></p>
-                </div>
-              </div>
-            </div>
-            <div class="faq-item" role="listitem">
-              <button type="button" class="faq-item__trigger" id="faq-t-3" aria-expanded="false" aria-controls="faq-p-3" data-faq-trigger>
-                <span data-i18n="faq.q3">Чи є вимоги до потенційних партнерів?</span>
-                <span class="faq-item__icon" aria-hidden="true"></span>
-              </button>
-              <div class="faq-item__panel" id="faq-p-3" role="region" aria-labelledby="faq-t-3">
-                <div class="faq-item__panel-inner">
-                  <p class="faq-item__answer" data-i18n="faq.a3"></p>
-                </div>
-              </div>
-            </div>
-            <div class="faq-item" role="listitem">
-              <button type="button" class="faq-item__trigger" id="faq-t-4" aria-expanded="false" aria-controls="faq-p-4" data-faq-trigger>
-                <span data-i18n="faq.q4">Чи є можливість стати ексклюзивним партнером у певній сфері?</span>
-                <span class="faq-item__icon" aria-hidden="true"></span>
-              </button>
-              <div class="faq-item__panel" id="faq-p-4" role="region" aria-labelledby="faq-t-4">
-                <div class="faq-item__panel-inner">
-                  <p class="faq-item__answer" data-i18n="faq.a4"></p>
-                </div>
-              </div>
-            </div>
-            <div class="faq-item" role="listitem">
-              <button type="button" class="faq-item__trigger" id="faq-t-5" aria-expanded="false" aria-controls="faq-p-5" data-faq-trigger>
-                <span data-i18n="faq.q5">Як фонд підтримує своїх партнерів?</span>
-                <span class="faq-item__icon" aria-hidden="true"></span>
-              </button>
-              <div class="faq-item__panel" id="faq-p-5" role="region" aria-labelledby="faq-t-5">
-                <div class="faq-item__panel-inner">
-                  <p class="faq-item__answer" data-i18n="faq.a5"></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -3718,6 +3653,78 @@
       </div>
     </section>
 
+    <!-- ── FAQ (після донату) ─────────────────────────────────── -->
+    <section id="faq" class="faq" aria-labelledby="faq-title">
+      <div class="container faq__inner">
+        <div class="faq__intro" data-animate>
+          <h2 class="faq__title" id="faq-title" data-i18n="faq.headline">Поширені запитання</h2>
+          <p class="faq__lead" data-i18n="faq.lead">
+            Можливо, у вас вже є питання? Ми зібрали відповіді на найважливіші. Якщо не знайдете потрібного - пишіть нам, ми завжди поруч, щоб допомогти.
+          </p>
+          <a href="mailto:bobfican@gmail.com?subject=Запитання%20щодо%20партнерства" class="btn btn-primary faq__cta" data-i18n="faq.cta">Задати запитання</a>
+        </div>
+        <div class="faq__accordion-wrap" data-animate data-faq-accordion>
+          <div class="faq-accordion" role="list">
+            <div class="faq-item" role="listitem">
+              <button type="button" class="faq-item__trigger" id="faq-t-1" aria-expanded="false" aria-controls="faq-p-1" data-faq-trigger>
+                <span data-i18n="faq.q1">Як стати партнером фонду?</span>
+                <span class="faq-item__icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-item__panel" id="faq-p-1" role="region" aria-labelledby="faq-t-1">
+                <div class="faq-item__panel-inner">
+                  <p class="faq-item__answer" data-i18n="faq.a1"></p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item" role="listitem">
+              <button type="button" class="faq-item__trigger" id="faq-t-2" aria-expanded="false" aria-controls="faq-p-2" data-faq-trigger>
+                <span data-i18n="faq.q2">Які можливості для партнерства ви пропонуєте?</span>
+                <span class="faq-item__icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-item__panel" id="faq-p-2" role="region" aria-labelledby="faq-t-2">
+                <div class="faq-item__panel-inner">
+                  <p class="faq-item__answer" data-i18n="faq.a2"></p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item" role="listitem">
+              <button type="button" class="faq-item__trigger" id="faq-t-3" aria-expanded="false" aria-controls="faq-p-3" data-faq-trigger>
+                <span data-i18n="faq.q3">Чи є вимоги до потенційних партнерів?</span>
+                <span class="faq-item__icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-item__panel" id="faq-p-3" role="region" aria-labelledby="faq-t-3">
+                <div class="faq-item__panel-inner">
+                  <p class="faq-item__answer" data-i18n="faq.a3"></p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item" role="listitem">
+              <button type="button" class="faq-item__trigger" id="faq-t-4" aria-expanded="false" aria-controls="faq-p-4" data-faq-trigger>
+                <span data-i18n="faq.q4">Чи є можливість стати ексклюзивним партнером у певній сфері?</span>
+                <span class="faq-item__icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-item__panel" id="faq-p-4" role="region" aria-labelledby="faq-t-4">
+                <div class="faq-item__panel-inner">
+                  <p class="faq-item__answer" data-i18n="faq.a4"></p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item" role="listitem">
+              <button type="button" class="faq-item__trigger" id="faq-t-5" aria-expanded="false" aria-controls="faq-p-5" data-faq-trigger>
+                <span data-i18n="faq.q5">Як фонд підтримує своїх партнерів?</span>
+                <span class="faq-item__icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-item__panel" id="faq-p-5" role="region" aria-labelledby="faq-t-5">
+                <div class="faq-item__panel-inner">
+                  <p class="faq-item__answer" data-i18n="faq.a5"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main><!-- /#main-content -->
 
   <!-- ================================================================
@@ -3795,7 +3802,7 @@
           БО «БФ «АЙ КЕН»» · Код ЄДРПОУ 45404369 · Зареєстровано в Україні
         </p>
         <p class="footer__copy" data-i18n="footer.rights">
-          © 2023-2026 I CAN Women Foundation. Всі права захищені.
+          © 2023-2026 I CAN. Всі права захищені.
         </p>
       </div>
     </div>
