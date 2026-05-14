@@ -708,6 +708,20 @@
       logo: 'images/partner-lwf.png',
       url: 'https://www.lutheranworld.org/',
       category: 'international'
+    },
+    {
+      id: 'cafi',
+      name: 'CAFI II',
+      logo: 'images/partner-cafi.png',
+      url: 'https://associationhda.com/cafi-ii/',
+      category: 'international'
+    },
+    {
+      id: 'kharkivshchyna1325',
+      name: 'Коаліція «Харківщина 1325»',
+      logo: 'images/partner-kharkivshchyna-1325.png',
+      url: 'https://www.genderculturecentre.org/',
+      category: 'national'
     }
   ];
 
@@ -729,7 +743,7 @@
     { value: 2300, suffix: '+', key: 'pillar_women' },
     { value: 840, suffix: '+', key: 'pillar_consults' },
     { value: 140, suffix: '+', key: 'pillar_programs' },
-    { value: 4, suffix: '', key: 'pillar_partners' }
+    { value: 6, suffix: '', key: 'pillar_partners' }
   ];
 
   /* ================================================================
