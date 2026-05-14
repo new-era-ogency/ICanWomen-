@@ -52,11 +52,7 @@
         headline:    'Я зможу — ти зможеш',
         subheading:  'Фонд поруч із жінками й дітьми в прифронтових громадах Харківщини: психологічна підтримка, право й гуманітарна допомога — людяно й без зайвого шуму.',
         mission:     'Допомагати людям у складних обставинах подолати наслідки втрат і насильства та підсилювати жіноче лідерство через психосоціальну, освітню й гуманітарну підтримку.',
-<<<<<<< HEAD
-        impact_line: 'Разом ми вже підтримали понад 2&nbsp;300 родин лише через польові команди й хаби в 32 громадах.',
-=======
         impact_line: 'Разом ми вже підтримали понад 2\u00A0300 родин лише через польові команди й хаби в 32 громадах.',
->>>>>>> 26df9e8 (Initial commit: ICAN Women Foundation site (index.html, app.js, images))
         cta_support: 'Підтримати місію',
         cta_get_help:'Отримати допомогу',
         cta_learn:   'Дізнатися більше про програми',
@@ -616,66 +612,42 @@
     {
       id: 'oxfam',
       name: 'OXFAM',
-<<<<<<< HEAD
-      logo: 'images(do not deleate!)/partner-oxfam.png',
-=======
       logo: 'images/background_green_oxfam_logo_organization_social_inequality_confederation.jpg',
->>>>>>> 26df9e8 (Initial commit: ICAN Women Foundation site (index.html, app.js, images))
       url: 'https://www.oxfam.org/',
       category: 'international'
     },
     {
       id: 'r2p',
       name: 'Право на захист',
-<<<<<<< HEAD
-      logo: 'images(do not deleate!)/partner-pravo-na-zakhyst.png',
-=======
       logo: 'images/partner-pravo-na-zakhyst.png',
->>>>>>> 26df9e8 (Initial commit: ICAN Women Foundation site (index.html, app.js, images))
       url: 'https://r2p.org.ua/',
       category: 'international'
     },
     {
       id: 'yednannia',
       name: 'Єднання',
-<<<<<<< HEAD
-      logo: 'images(do not deleate!)/partner-ednannia.png',
-=======
       logo: 'images/partner-ednannia.png',
->>>>>>> 26df9e8 (Initial commit: ICAN Women Foundation site (index.html, app.js, images))
       url: 'https://www.ednannia.org/',
       category: 'national'
     },
     {
       id: 'lwf',
       name: 'LWF',
-<<<<<<< HEAD
-      logo: 'images(do not deleate!)/partner-lwf.png',
-=======
       logo: 'images/partner-lwf.png',
->>>>>>> 26df9e8 (Initial commit: ICAN Women Foundation site (index.html, app.js, images))
       url: 'https://www.lutheranworld.org/',
       category: 'international'
     },
     {
       id: 'cafi',
       name: 'CAFI',
-<<<<<<< HEAD
-      logo: 'images(do not deleate!)/partner-cafi.png',
-=======
       logo: 'images/partner-cafi.png',
->>>>>>> 26df9e8 (Initial commit: ICAN Women Foundation site (index.html, app.js, images))
       url: 'https://womensperspectives.org.ua/',
       category: 'international'
     },
     {
       id: 'kharkiv-1325',
       name: 'Коаліція «Харківщина 1325»',
-<<<<<<< HEAD
-      logo: 'images(do not deleate!)/partner-kharkivshchyna-1325.png',
-=======
       logo: 'images/partner-kharkivshchyna-1325.png',
->>>>>>> 26df9e8 (Initial commit: ICAN Women Foundation site (index.html, app.js, images))
       url: 'https://1325ukraine.org.ua/ua/',
       category: 'national'
     }
