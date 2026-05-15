@@ -68,10 +68,10 @@
       reports: {
         section_tag: 'Документи',
         headline:   'Звіт про діяльність',
-        subtitle:   'Офіційні матеріали для партнерів, донорів і громади. Файли-плейсхолдери - замініть посилання на реальні PDF перед публікацією.',
+        subtitle:   'Офіційні матеріали для партнерів, донорів і громади. Річні звіти доступні для перегляду та завантаження.',
         r2025:       'Річний звіт 2025',
         r2024:       'Річний звіт 2024',
-        r_finance:   'Фінансовий звіт',
+        r2023:       'Річний звіт 2023',
         download:    'Завантажити PDF'
       },
       programs: {
@@ -388,10 +388,10 @@
       reports: {
         section_tag: 'Documents',
         headline:   'Activity reports',
-        subtitle:   'Official materials for partners, donors and communities. Placeholder links - replace with real PDF URLs before launch.',
+        subtitle:   'Official materials for partners, donors and communities. Annual reports are available to view and download.',
         r2025:       'Annual report 2025',
         r2024:       'Annual report 2024',
-        r_finance:   'Financial report',
+        r2023:       'Annual report 2023',
         download:    'Download PDF'
       },
       programs: {
