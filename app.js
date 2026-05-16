@@ -38,7 +38,6 @@
         impact:       'У цифрах',
         programs:     'Напрямки діяльності',
         reports:      'Звіти',
-        stories:      'Історії',
         team:         'Команда',
         projects:     'Проєкти',
         partners:     'Партнери',
@@ -90,25 +89,6 @@
           title: 'Підтримка й розвиток дітей',
           body: 'Психологічна адаптація, соціалізація та особлива увага до дітей з особливими освітніми потребами.'
         }
-      },
-      stories: {
-        tag: 'Реальні історії',
-        headline: 'Історії людей, не кейси для сайту',
-        philosophy: 'Люди, а не кейси - це не слоган, а наш спосіб працювати з підтримкою й розповідями.',
-        subtitle: 'Ми змінюємо імена й деталі, але зберігаємо форму допомоги - так чесно перед донором і безопасно для людини.',
-        read_more: 'Читати далі',
-        read_less: 'Згорнути',
-        p1_name: 'Олена, учасниця програми',
-        p1_a: 'Я приїхала всередині війни без «своїх стін» й без порадника. Спочатку було соромно навіть питати дорогу до лікаря.',
-        p1_b: 'У хабі мені без черги підказали, як записатися до психолога державної лінії, а паралельно запросили до кола жінок, що збирається щотижня.',
-        p1_help: 'Фонд дав три речі: живий простір без оцінювання, два юридичні супроводи щодо аліментів і пакунок гігієни, бо гроші пішли на оренду.',
-        p2_name: 'Марія, кураторка волонтерів',
-        p2_a: 'Наші активістки вигорають через постійний «режим тривожності» - хотілося місце, де можна просто перевести подих.',
-        p2_b: 'I CAN дав ноутбук бухгалтеру, аптечку і шаблон графіка чергування. Мобільний психолог приїхав із нами тричі - це було видно очима громади.',
-        p2_help: 'Ми тримаємо волонтерський чат уже 14 місяців без «вігоньок»: фонд платить символічну доплату локальній координаторці через прозору угоду.',
-        p3_name: 'Юлія, партнерка-юристка',
-        p3_a: 'На консультаціях ми бачимо: жінку лякає не закон - а відсутність супроводу. Одна фраза «ми запишемо разом» вже заспокоює.',
-        p3_help: 'Спільно зібрали 12 модулів простою мовою про захист від насильства під час переїзду - і роздали партнерам у п’яти містах уздовж нашого маршруту.'
       },
       mission: {
         tag: 'Про I CAN',
@@ -358,7 +338,6 @@
         impact:       'In numbers',
         programs:     'Areas of work',
         reports:      'Reports',
-        stories:      'Stories',
         team:         'Team',
         projects:     'Projects',
         partners:     'Partners',
@@ -410,25 +389,6 @@
           title: 'Child Support & Development',
           body: 'Psychological adaptation and socialisation, with particular attention to children with special educational needs.'
         }
-      },
-      stories: {
-        tag: 'Real voices',
-        headline: 'People, not portfolio testimonials',
-        philosophy: 'People, not cases - this is how we hold stories, data and dignity together.',
-        subtitle: 'We change names and trim details to protect privacy while showing what shifts after support lands.',
-        read_more: 'Read more',
-        read_less: 'Show less',
-        p1_name: 'Olena, programme participant',
-        p1_a: 'Displacement takes more than a roof - it quietly erases your circle. I was ashamed to even ask how to find a therapist.',
-        p1_b: 'The hub invited me to a listening circle, then walked me through two legal consults about child support while kids played in the corner.',
-        p1_help: 'I CAN gave three grounded gifts: a shame-free room, paperwork help and dignity kits during the emptiest paycheck week.',
-        p2_name: 'Mariya, volunteer lead',
-        p2_a: 'Local activists were burning out from constant alert mode yet still feeding entire streets.',
-        p2_b: 'I CAN financed the first rent month, coached us on safeguarding and brought mobile therapy teams three times alongside us.',
-        p2_help: 'Our volunteer roster stayed above 40 people thanks to stipends routed transparently through the foundation.',
-        p3_name: 'Yuliia, partner jurist',
-        p3_a: 'People fear stigma more than statutes. Saying «we\'ll draft this together» calms quicker than brochures.',
-        p3_help: 'We packaged 12 plain-language protections for women on the move and shipped them via I CAN vans to five county seats.'
       },
       mission: {
         tag: 'About I CAN',
@@ -784,7 +744,6 @@
     document.documentElement.lang = documentLang(lang);
 
     refreshFinalizedCounters();
-    refreshStoryExpandButtons();
 
     document.querySelectorAll('.lang-btn').forEach(btn => {
       const isActive = btn.dataset.lang === lang;
@@ -795,26 +754,6 @@
     updateDonateCustomPlaceholder();
     renderTeam();
     renderStrategyCarousel();
-  }
-
-  function refreshStoryExpandButtons() {
-    document.querySelectorAll('[data-story-expand]').forEach(btn => {
-      const expanded = btn.closest('.story-card')?.classList.contains('is-expanded');
-      const bundle = translations[currentLang]?.stories;
-      const text = expanded ? bundle?.read_less : bundle?.read_more;
-      if (text) btn.textContent = text;
-      btn.setAttribute('aria-expanded', String(!!expanded));
-    });
-  }
-
-  function initStoryExpandButtons() {
-    document.querySelectorAll('[data-story-expand]').forEach(btn => {
-      btn.addEventListener('click', () => {
-        btn.closest('.story-card')?.classList.toggle('is-expanded');
-        refreshStoryExpandButtons();
-      });
-    });
-    refreshStoryExpandButtons();
   }
 
   /** Update already-finished animated counters after language switch */
@@ -1582,7 +1521,6 @@
     initMobileMenu();
     initDonationModule();
     initLanguageToggle();
-    initStoryExpandButtons();
 
     initHeaderScroll();
     initPremiumChrome();

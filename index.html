@@ -1273,135 +1273,6 @@
       line-height: 1.45;
     }
 
-    /* Real stories - staggered cards + expandable body */
-    .stories {
-      padding: clamp(4.25rem, 9vw, 6.25rem) 0;
-      background: transparent;
-    }
-
-    .stories__philosophy {
-      font-family: var(--font-heading);
-      font-size: clamp(1.05rem, 2.2vw, 1.2rem);
-      font-weight: 700;
-      color: var(--color-dark);
-      line-height: 1.45;
-      margin: var(--space-md) 0 var(--space-sm);
-      max-width: 42rem;
-    }
-
-    .stories__mosaic {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: var(--space-xl);
-      margin-top: var(--space-xl);
-    }
-
-    .story-card {
-      display: flex;
-      flex-direction: column;
-      background: var(--glass-fill);
-      backdrop-filter: blur(var(--glass-blur));
-      -webkit-backdrop-filter: blur(var(--glass-blur));
-      border: 1px solid var(--glass-border);
-      border-radius: var(--radius-card);
-      overflow: hidden;
-      box-shadow: var(--shadow-sm);
-      transition:
-        box-shadow var(--transition-base),
-        transform var(--transition-base),
-        border-color var(--transition-base),
-        filter var(--transition-fast);
-    }
-    .story-card:hover {
-      box-shadow: var(--shadow-lg);
-      transform: translateY(-6px) scale(1.01);
-      border-color: rgba(var(--color-violet-rgb), 0.3);
-      filter: saturate(1.04);
-    }
-
-    .story-card__media {
-      aspect-ratio: 16 / 10;
-      overflow: hidden;
-      background: var(--color-surface);
-      flex-shrink: 0;
-    }
-    .story-card__media img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    .story-card__body {
-      padding: var(--space-lg) var(--space-xl) var(--space-xl);
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-      gap: var(--space-sm);
-    }
-
-    .story-card__name {
-      font-family: var(--font-heading);
-      font-size: 1.125rem;
-      font-weight: 700;
-      color: var(--color-dark);
-      margin: 0 0 var(--space-xs);
-    }
-
-    .story-card__text-inner {
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 5;
-      overflow: hidden;
-      transition: -webkit-line-clamp 0.35s ease;
-    }
-    .story-card.is-expanded .story-card__text-inner {
-      -webkit-line-clamp: unset;
-      display: block;
-    }
-
-    .story-card__text-inner p {
-      font-size: 0.9375rem;
-      color: var(--color-mid);
-      line-height: 1.78;
-      margin: 0 0 var(--space-sm);
-    }
-    .story-card__text-inner p:last-child { margin-bottom: 0; }
-
-    .story-card__help {
-      margin-top: var(--space-sm);
-      padding-top: var(--space-md);
-      border-top: 1px solid var(--color-border);
-      font-size: 0.875rem;
-      font-weight: 500;
-      color: var(--color-mid);
-      line-height: 1.65;
-    }
-
-    .story-card__toggle {
-      align-self: flex-start;
-      margin-top: var(--space-md);
-      padding: 0;
-      border: none;
-      background: none;
-      font-family: var(--font-heading);
-      font-size: 0.875rem;
-      font-weight: 600;
-      color: var(--color-accent);
-      cursor: pointer;
-      text-decoration: underline;
-      text-underline-offset: 3px;
-      text-decoration-thickness: 1px;
-    }
-    .story-card__toggle:hover,
-    .story-card__toggle:focus-visible {
-      color: var(--color-accent-hover);
-    }
-    .story-card__toggle:focus-visible {
-      outline: 2px solid var(--color-accent);
-      outline-offset: 2px;
-    }
-
     /* Mission / founder human block */
     .mission-started { background: transparent; padding: clamp(4.5rem, 10vw, 6.75rem) 0; }
 
@@ -2867,11 +2738,6 @@
         text-align: center;
       }
 
-      .stories__mosaic .story-card:nth-child(2),
-      .stories__mosaic .story-card:nth-child(3) {
-        margin-top: 0;
-      }
-
       .mobile-menu__nav a {
         font-weight: 600;
         font-size: 1.2rem;
@@ -2905,8 +2771,6 @@
       .hero__inner         { grid-template-columns: 1fr 1fr; gap: var(--space-3xl); padding-bottom: var(--space-3xl); }
       .our-impact__grid    { grid-template-columns: repeat(3, 1fr); }
       .reports__grid       { grid-template-columns: repeat(2, 1fr); }
-      .stories__mosaic     { grid-template-columns: repeat(2, 1fr); align-items: start; }
-      .stories__mosaic .story-card:nth-child(2) { margin-top: 2rem; }
       .mission-started__inner { grid-template-columns: 1fr 1fr; gap: var(--space-3xl); align-items: center; }
       .team__grid          { grid-template-columns: repeat(3, 1fr); }
       .programs__grid      { grid-template-columns: repeat(3, 1fr); }
@@ -2945,9 +2809,6 @@
 
       .our-impact__grid  { grid-template-columns: repeat(4, minmax(0, 1fr)); }
       .reports__grid      { grid-template-columns: repeat(3, 1fr); }
-      .stories__mosaic    { grid-template-columns: repeat(3, 1fr); }
-      .stories__mosaic .story-card:nth-child(2) { margin-top: 2.75rem; }
-      .stories__mosaic .story-card:nth-child(3) { margin-top: 5rem; }
       .footer__inner      { grid-template-columns: 1.25fr repeat(4, minmax(0, 1fr)); gap: var(--space-2xl); }
 
       .how__steps    { grid-template-columns: repeat(4, 1fr); }
@@ -3395,70 +3256,6 @@
               <a href="https://icanwomen.org/wp-content/uploads/2025/09/zvit-2023.pdf" class="btn btn-secondary btn-sm" target="_blank" rel="noopener noreferrer" data-i18n="reports.download">Завантажити PDF</a>
             </div>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── REAL STORIES ───────────────────────────────────────────── -->
-    <section id="stories" class="stories" aria-labelledby="stories-title">
-      <div class="container">
-        <div class="section-header section-header--wide" data-animate>
-          <p class="section-tag" data-i18n="stories.tag">Реальні історії</p>
-          <h2 class="section-title" id="stories-title" data-i18n="stories.headline">Історії людей, не кейси для сайту</h2>
-          <p class="stories__philosophy" data-i18n="stories.philosophy">
-            Люди, а не кейси - це не слоган, а наш спосіб працювати з підтримкою й розповідями.
-          </p>
-          <p class="section-subtitle" data-i18n="stories.subtitle">
-            Узагальнені історії без прізвищ - так ми бережемо приватність, але показуємо, що змінилося після нашої роботи поруч.
-          </p>
-        </div>
-
-        <div class="stories__mosaic" data-animate-stagger>
-
-          <article class="story-card story-card--tile">
-            <div class="story-card__media">
-              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80" alt="Портрет жінки, яка ділиться своїм шляхом відновлення" width="640" height="400" loading="lazy">
-            </div>
-            <div class="story-card__body">
-              <h3 class="story-card__name" data-i18n="stories.p1_name">Олена, учасниця програми</h3>
-              <div class="story-card__text-inner">
-                <p data-i18n="stories.p1_a">Через евакуацію зникає не лише дім - губиться звичний коло підтримки. У новому місті складно було навіть запитати про психолога.</p>
-                <p data-i18n="stories.p1_b">Спочатку я прийшла на офлайн-зустріч «коло довіри», потім отримала кілька юридичних консультацій щодо аліментів та статусів.</p>
-              </div>
-              <p class="story-card__help" data-i18n="stories.p1_help">Фонд дав шлях із трьох кроків: група підтримки, правник і гуманітарний пакунок під час кризи - без осуду і згори.</p>
-              <button type="button" class="story-card__toggle" data-story-expand aria-expanded="false">Читати далі</button>
-            </div>
-          </article>
-
-          <article class="story-card story-card--tile">
-            <div class="story-card__media">
-              <img src="https://images.unsplash.com/photo-1573497491208-6b1acb260507?w=800&q=80" alt="Жінки під час робочої зустрічі команди організації" width="560" height="350" loading="lazy">
-            </div>
-            <div class="story-card__body">
-              <h3 class="story-card__name" data-i18n="stories.p2_name">Марія, координаторка волонтерів</h3>
-              <div class="story-card__text-inner">
-                <p data-i18n="stories.p2_a">На місцях ми бачимо, як жінки тягнуть цілу громаду: діти, літні батьки, робота без вихідних.</p>
-                <p data-i18n="stories.p2_b">Разом із фондом ми відкрити маленький хаб: чай, дитячий куточок дві години на день, та «тихий» запис до спеціаліста.</p>
-              </div>
-              <p class="story-card__help" data-i18n="stories.p2_help">I CAN дав методологію, навчання для команди й фінансування першого місяця оренди - ми зібрали 18 постійних волонтерів.</p>
-              <button type="button" class="story-card__toggle" data-story-expand aria-expanded="false">Читати далі</button>
-            </div>
-          </article>
-
-          <article class="story-card story-card--tile">
-            <div class="story-card__media">
-              <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=800&q=80" alt="Спокійний момент під час групової роботи всередині приміщення" width="560" height="350" loading="lazy">
-            </div>
-            <div class="story-card__body">
-              <h3 class="story-card__name" data-i18n="stories.p3_name">Юлія, юристка-партнерка хабу</h3>
-              <div class="story-card__text-inner">
-                <p data-i18n="stories.p3_a">Половина запитів - про безпеку в родині та статус домашнього насильства під час війни. Людині потрібна не лекція, а прості кроки.</p>
-              </div>
-              <p class="story-card__help" data-i18n="stories.p3_help">Разом ми зробили 12 виїздів із мобільними юристами й шаблонами заяв - без «ідеальної» поліграфії лендингу, зате живий контакт.</p>
-              <button type="button" class="story-card__toggle" data-story-expand aria-expanded="false">Читати далі</button>
-            </div>
-          </article>
-
         </div>
       </div>
     </section>
