@@ -13,6 +13,9 @@
   <link rel="canonical" href="https://icanwomen.org/">
   <link rel="icon" href="images/logo-ican-foundation.png" type="image/png">
 
+  <!-- LCP: discover hero image early (parser + priority) -->
+  <link rel="preload" as="image" href="images/hero-meeting.png" fetchpriority="high">
+
   <title>I CAN Women Foundation | Підтримка жінок і дітей Харківщини</title>
 
   <!-- Structured Data: Organization -->
@@ -1072,6 +1075,8 @@
       padding-inline: max(var(--container-pad), env(safe-area-inset-left, 0px));
       scrollbar-width: none;
       mask-image: linear-gradient(to right, transparent 0, #000 12px, #000 calc(100% - 12px), transparent 100%);
+      /* Track is empty until JS runs; slides use min-height ~320px */
+      min-height: 22rem;
     }
     .strategy-carousel__viewport::-webkit-scrollbar { display: none; }
 
@@ -1495,6 +1500,8 @@
       display: grid;
       grid-template-columns: 1fr;
       gap: var(--space-lg);
+      /* Reserve space while JS renders team cards */
+      min-height: clamp(36rem, 120vh, 48rem);
     }
 
     .team-card {
@@ -2135,6 +2142,8 @@
       gap: var(--space-md);
       align-items: stretch;
       justify-items: stretch;
+      /* Reserve space while JS injects partner cards (~2 rows × 3 cols on large screens) */
+      min-height: clamp(33rem, 65vw, 54rem);
     }
 
     .partner-card {
@@ -2671,10 +2680,10 @@
       color: rgba(255,255,255,0.35);
     }
 
-    /* Footer social links */
+    /* Footer social links: SVGs use currentColor on white tiles — light text color hid icons until hover */
     .site-footer .social-link {
       border-color: rgba(255,255,255,0.12);
-      color: rgba(255,255,255,0.5);
+      color: var(--color-muted);
     }
     .site-footer .social-link:hover {
       border-color: var(--color-accent);
@@ -3083,7 +3092,7 @@
         <div class="hero__inner">
 
           <!-- Content -->
-          <div class="hero__content" data-animate>
+          <div class="hero__content visible" data-animate>
             <h1 class="hero__headline" id="hero-headline">
               <span data-i18n="hero.headline">Підтримка жінок і дітей там, де війна змінила все</span>
             </h1>
@@ -3106,7 +3115,7 @@
             <p class="hero-quote-strip" data-i18n="hero.quote">«Ця спільнота допомогла мені відчути, що я не одна» - учасниця групи підтримки</p>
           </div>
 
-          <div class="hero__visual" data-animate data-parallax-visual>
+          <div class="hero__visual visible" data-animate data-parallax-visual>
             <div class="hero__visual-inner">
             <img
               src="images/hero-meeting.png"
@@ -3115,6 +3124,7 @@
               height="675"
               loading="eager"
               fetchpriority="high"
+              decoding="sync"
             >
             </div>
           </div>
@@ -3808,6 +3818,6 @@
     </div>
   </footer>
 
-  <script src="app.js"></script>
+  <script src="app.js" defer></script>
 </body>
 </html>

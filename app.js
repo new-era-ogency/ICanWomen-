@@ -1481,7 +1481,10 @@
       });
     }, { threshold: 0.15 });
 
-    elements.forEach(el => observer.observe(el));
+    elements.forEach(el => {
+      if (el.classList.contains('visible')) return;
+      observer.observe(el);
+    });
   }
 
   /* ================================================================
