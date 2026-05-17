@@ -9,7 +9,7 @@
      ================================================================ */
   const CONFIG = {
     wayforpay: {
-      paymentPageUrl: 'https://secure.wayforpay.com/page?vkh=6a042d1d-3cdc-4c40-bee4-0acd22d1dba8'
+      paymentPageUrl: 'https://icanwomenorg.wayforpay.link'
     },
     telegramBot: 'https://t.me/bo_bf_ican',
     social: {
@@ -1058,7 +1058,11 @@
 
   /** WayForPay donation page: preset amount + currency (+ optional monthly regular). */
   function buildWayForPayPageUrl(amount, currency, recurring) {
-    const u = new URL(CONFIG.wayforpay.paymentPageUrl);
+    const base = CONFIG.wayforpay.paymentPageUrl.replace(/\/$/, '');
+    const u = new URL(base);
+    if (u.hostname.endsWith('wayforpay.link')) {
+      return base;
+    }
     u.searchParams.set('amount', String(amount));
     u.searchParams.set('currency', currency);
     if (recurring) {
