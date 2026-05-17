@@ -46,7 +46,7 @@
       },
       hero: {
         brand_lockup: 'I CAN',
-        headline:    'Підтримка жінок і дітей там, де війна змінила все',
+        headline:    'Я зможу - ти зможешь',
         subheading:  'Психологічна допомога, право та гуманітарна підтримка в громадах Харківщини - поруч і без зайвого шуму.',
         cta_support: 'Підтримати фонд',
         cta_join:    'Долучитися до спільноти',
@@ -124,19 +124,19 @@
           'Учасниці та учасник навчального заходу I CAN Women Foundation за столом: бейдж «АЙ КЕН», зошит і вода на столі.',
         s1_title: 'Розширити сталий доступ до підтримки',
         s1_body:
-          'закріпити роботу хабів і мобільних бригад, щоб допомога була передбачуваною та надійною, а не лише від випадку до випадку.',
+          'Закріпити роботу хабів і мобільних бригад, щоб допомога була передбачуваною та надійною, а не лише від випадку до випадку',
         s2_title: 'Посилити роботу з психічним здоров’ям',
         s2_body:
-          'запровадити нові практики, зокрема TRE-терапію, збільшити кількість фахівців і просторів відновлення.',
+          'Запровадити нові практики, зокрема TRE-терапію, збільшити кількість фахівців і просторів відновлення',
         s3_title: 'Підтримати жінок, які доглядають за іншими',
         s3_body:
-          'мам, які виховують дітей з інвалідністю, жінок, що втратили близьких, і тих, хто тривалий час не мав змоги подбати про себе.',
+          'Мам, які виховують дітей з інвалідністю, жінок, що втратили близьких, і тих, хто тривалий час не мав змоги подбати про себе',
         s4_title: 'Зміцнити партнерства',
         s4_body:
-          'розвивати співпрацю з міжнародними й локальними організаціями, громадами та донорами - із прозорою звітністю та спільними програмами.',
+          'Розвивати співпрацю з міжнародними й локальними організаціями, громадами та донорами - із прозорою звітністю та спільними програмами',
         s5_title: 'Посилити просвітницькі напрями',
         s5_body:
-          'масштабувати заходи з профілактики насильства й підтримки жіночого лідерства в прифронтових громадах.'
+          'Масштабувати заходи з профілактики насильства й підтримки жіночого лідерства в прифронтових громадах'
       },
       team: {
         tag: 'Команда',
@@ -144,23 +144,23 @@
         subtitle: 'Люди, які координують програми та підтримку громад.',
         m1_name: 'Юлія Лісова',
         m1_role: 'Голова фонду',
-        m2_name: 'Ірина Черкашина',
-        m2_role: 'Психолог',
+        m2_name: 'Черкашина-Дробаха Ірина',
+        m2_role: 'Психологиня',
         m3_name: 'Максим Терехов',
-        m3_role: 'Координатор програм / проєктний менеджер',
+        m3_role: 'Координатор програм / Керівник проєктів',
         m4_name: 'Наталія Коротя',
-        m4_role: 'Психолог',
+        m4_role: 'Психологиня',
         m5_name: 'Ірина Подвальна',
-        m5_role: 'Психолог',
+        m5_role: 'Психологиня',
         m6_name: 'Ірина Макушина',
-        m6_role: 'SMM-менеджер',
+        m6_role: 'SMM-менеджерка',
         m7_name: 'Крістіна Максименко',
-        m7_role: 'Амбасадор фонду'
+        m7_role: 'Амбасадорка'
       },
       teamMembers: [
         { photo: 'images/team-yuliia-lisova.png', nameKey: 'team.m1_name', roleKey: 'team.m1_role' },
-        { photo: 'images/team-iryna-cherkashyna.png', nameKey: 'team.m2_name', roleKey: 'team.m2_role' },
         { photo: 'images/team-maksym-terekhov.png', nameKey: 'team.m3_name', roleKey: 'team.m3_role' },
+        { photo: 'images/team-iryna-cherkashyna.png', nameKey: 'team.m2_name', roleKey: 'team.m2_role' },
         { photo: 'images/team-nataliia-korotia.png', nameKey: 'team.m4_name', roleKey: 'team.m4_role' },
         { photo: 'images/team-iryna-podvalna.png', nameKey: 'team.m5_name', roleKey: 'team.m5_role' },
         { photo: 'images/team-iryna-makushyna.png', nameKey: 'team.m6_name', roleKey: 'team.m6_role' },
@@ -191,17 +191,18 @@
         p3_desc:
           'Благодійні збори й події прямої солідарності: кошти, подарунки та увага для дітей із вразливих родин - щоб повернути відчуття турботи й святковості навіть під час війни.',
         p4_tag:   'Жіноче лідерство й відновлення',
-        p4_title: 'Проєкт «Форум Сила Харків’янок»',
+        p4_title: 'Форум "Сила Харків’янок"',
         p4_desc:
           'Це ініціатива, спрямована на посилення ролі жінок у процесах відновлення, соціальної згуртованості та розвитку громад Харківської області в умовах війни. Форум об’єднує активісток, представниць громадських організацій, місцевої влади, освітнього сектору, бізнесу та міжнародних партнерів для спільного обговорення викликів, з якими стикаються жінки у прифронтовому регіоні, а також пошуку практичних рішень і можливостей для співпраці.'
       },
       donate: {
         headline:          'Ваша підтримка відкриває жінкам доступ до турботи й спільноти',
-        subheading:        'Не «донат як кнопка» - а їжа, терапія, право на тишу для тих, хто тягне родину в прифронтових селах Харківщини.',
-        emotional:         'Жодна гривня не йде на маркетинг - тільки виїзди, хаби й супровід волонтерів, яким теж потрібне пальне та страховки.',
-        impact_200:       '200 ₴ - один шанс поговорити з психологом без черги',
-        impact_500:       '500 ₴ - гідний гігієнічний набір для жінки й дитини',
-        impact_1000:      '1000 ₴ - юридичний супровід + оформлення заяви',
+        subheading:        'Кожна гривня тут - це не абстрактний «внесок у фонд», а конкретна допомога дітям, які щодня чують вибухи у прифронтових селах Харківщини.',
+        emotional:         'Ми не витрачаємо ресурси на маркетинг чи рекламу. Усі кошти йдуть виключно на забезпечення виїздів, роботу локальних хабів та пряму підтримку мобільних команд, які везуть допомогу туди, де її найбільше чекають.',
+        impact_intro:      'Ваш внесок напряму фінансує життєво важливі речі для дітей та їхніх матерів:',
+        impact_200:       'Невідкладну психологічну допомогу - роботу з дитячими травмами та страхами безпосередньо на місцях.',
+        impact_500:       'Гідні дитячі та жіночі гігієнічні набори, дитяче харчування та речі першої потреби.',
+        impact_1000:      'Юридичний супровід сімей - допомогу в оформленні документів на евакуацію, отримання статусів або державної допомоги.',
         card_title:        'Підтримати',
         module_title:      'Підтримати',
         freq_monthly:      'Щомісячно',
@@ -221,7 +222,7 @@
         error_amount:      'Мінімальна сума - 10 (у вибраній валюті)',
         error_amount_max:  'Максимум 999 999 за операцію',
         preset_sr:         'Готові суми лише в обраній валюті (за замовчуванням ₴)',
-        impact_list_sr:    'Приклади, що може профінансувати ваш внесок',
+        impact_list_sr:    'Що саме фінансує ваш внесок',
         custom_sr_label:   'Сума платежу',
         cta_aria_label:    'Перейти на сторінку оплати WayForPay',
         amt250_aria:       'Пожертва у розмірі 250',
@@ -424,19 +425,19 @@
           'I CAN Women Foundation workshop: participants at a table with an I CAN name badge, notebook and water bottle.',
         s1_title: 'Expand reliable access to support',
         s1_body:
-          'strengthen hubs and mobile brigades so assistance is predictable and dependable-not only from one-off visits.',
+          'Strengthen hubs and mobile brigades so assistance is predictable and dependable-not only from one-off visits',
         s2_title: 'Deepen mental health work',
         s2_body:
-          'introduce new practices including TRE therapy, grow the number of specialists and safe recovery spaces.',
+          'Introduce new practices including TRE therapy, grow the number of specialists and safe recovery spaces',
         s3_title: 'Support women who care for others',
         s3_body:
-          'mothers raising children with disabilities, women who have lost loved ones, and those who have long had no chance to care for themselves.',
+          'Mothers raising children with disabilities, women who have lost loved ones, and those who have long had no chance to care for themselves',
         s4_title: 'Strengthen partnerships',
         s4_body:
-          'develop cooperation with international and local organisations, communities and donors-with transparent reporting and joint programmes.',
+          'Develop cooperation with international and local organisations, communities and donors-with transparent reporting and joint programmes',
         s5_title: 'Scale awareness-raising work',
         s5_body:
-          'grow activities on violence prevention and women’s leadership in frontline municipalities.'
+          'Grow activities on violence prevention and women’s leadership in frontline municipalities'
       },
       team: {
         tag: 'Team',
@@ -444,10 +445,10 @@
         subtitle: 'The people coordinating programmes and community support.',
         m1_name: 'Yuliia Lisova',
         m1_role: 'Head of the foundation',
-        m2_name: 'Iryna Cherkashyna',
+        m2_name: 'Iryna Cherkashyna-Drobakha',
         m2_role: 'Psychologist',
         m3_name: 'Maksym Terekhov',
-        m3_role: 'Program coordinator / project manager',
+        m3_role: 'Programmes coordinator / Head of projects',
         m4_name: 'Nataliia Korotia',
         m4_role: 'Psychologist',
         m5_name: 'Iryna Podvalna',
@@ -455,12 +456,12 @@
         m6_name: 'Iryna Makushyna',
         m6_role: 'SMM manager',
         m7_name: 'Kristina Maksymenko',
-        m7_role: 'Foundation ambassador'
+        m7_role: 'Ambassador'
       },
       teamMembers: [
         { photo: 'images/team-yuliia-lisova.png', nameKey: 'team.m1_name', roleKey: 'team.m1_role' },
-        { photo: 'images/team-iryna-cherkashyna.png', nameKey: 'team.m2_name', roleKey: 'team.m2_role' },
         { photo: 'images/team-maksym-terekhov.png', nameKey: 'team.m3_name', roleKey: 'team.m3_role' },
+        { photo: 'images/team-iryna-cherkashyna.png', nameKey: 'team.m2_name', roleKey: 'team.m2_role' },
         { photo: 'images/team-nataliia-korotia.png', nameKey: 'team.m4_name', roleKey: 'team.m4_role' },
         { photo: 'images/team-iryna-podvalna.png', nameKey: 'team.m5_name', roleKey: 'team.m5_role' },
         { photo: 'images/team-iryna-makushyna.png', nameKey: 'team.m6_name', roleKey: 'team.m6_role' },
@@ -491,17 +492,18 @@
         p3_desc:
           'Solidarity fundraising and events where people support people-resources, gifts and attention for children in vulnerable families, bringing back a sense of care and celebration even in wartime.',
         p4_tag:   'Women’s leadership & recovery',
-        p4_title: 'Project «Forum Syla Kharkivyanok»',
+        p4_title: 'Forum "Syla Kharkivyanok"',
         p4_desc:
           'An initiative to strengthen the role of women in recovery, social cohesion and community development in Kharkiv Oblast during the war. The Forum brings together activists, representatives of civil society, local government, education, business and international partners to discuss the challenges women face in the near-frontline region and to seek practical solutions and opportunities for cooperation.'
       },
       donate: {
         headline:          'Your support helps women access care and community',
-        subheading:        'No lifestyle-brand gloss - fuel for counsellors, vans and quiet rooms in Kharkiv border communities.',
-        emotional:         'Every hryvnia skips billboards; it pays stipends, fuel and insurance for humans carrying boxes and stories.',
-        impact_200:       '200 UAH - one counseling hour when public queues fail',
-        impact_500:       '500 UAH - hygiene + warmth bundle for a mother and child',
-        impact_1000:      '1,000 UAH - legal drafting with follow-up texting',
+        subheading:        'Every hryvnia here is not an abstract “donation to a foundation”, but concrete help for children who hear explosions every day in frontline villages of Kharkiv Oblast.',
+        emotional:         'We do not spend resources on marketing or advertising. All funds go solely to field visits, local hub work and direct support for mobile teams that deliver aid where it is needed most.',
+        impact_intro:      'Your contribution directly funds life-sustaining support for children and their mothers:',
+        impact_200:       'Urgent psychological help - working with children’s trauma and fears right on the ground.',
+        impact_500:       'Dignified hygiene kits for children and women, baby food and essentials.',
+        impact_1000:      'Legal support for families - help with evacuation paperwork, status applications or state assistance.',
         card_title:        'Support us',
         module_title:      'Support',
         freq_monthly:       'Monthly',
@@ -521,7 +523,7 @@
         error_amount:      'Minimum amount is 10 (in selected currency)',
         error_amount_max:  'Maximum 999,999 per transaction',
         preset_sr:         'Suggested amounts match the currency you chose (defaults to ₴)',
-        impact_list_sr:    'Examples of what your donation can fund',
+        impact_list_sr:    'What your donation funds',
         custom_sr_label:   'Payment amount',
         cta_aria_label:    'Open WayForPay payment page',
         amt250_aria:       'Donate 250',
@@ -664,6 +666,13 @@
       category: 'international'
     },
     {
+      id: 'your-part-foundation',
+      name: 'Your Part Foundation',
+      logo: 'images/partner-your-part-foundation.png',
+      url: 'https://www.yourpartfoundation.org/',
+      category: 'international'
+    },
+    {
       id: 'cafi',
       name: 'CAFI II',
       logo: 'images/partner-cafi.png',
@@ -697,7 +706,7 @@
     { value: 2300, suffix: '+', key: 'pillar_women' },
     { value: 840, suffix: '+', key: 'pillar_consults' },
     { value: 140, suffix: '+', key: 'pillar_programs' },
-    { value: 6, suffix: '', key: 'pillar_partners' }
+    { value: 7, suffix: '', key: 'pillar_partners' }
   ];
 
   /* ================================================================

@@ -1760,7 +1760,24 @@
       font-size: 1.0625rem;
       color: var(--color-mid);
       line-height: 1.7;
-      margin-bottom: var(--space-xl);
+      margin-bottom: var(--space-md);
+    }
+
+    .donate__emotional {
+      font-size: 0.975rem;
+      color: var(--color-mid);
+      line-height: 1.72;
+      margin-bottom: var(--space-md);
+      max-width: 36rem;
+    }
+
+    .donate__impact-lead {
+      font-size: 0.975rem;
+      color: var(--color-mid);
+      line-height: 1.72;
+      margin-bottom: var(--space-sm);
+      max-width: 36rem;
+      font-weight: 600;
     }
 
     .donate__impact-list {
@@ -2008,13 +2025,19 @@
     }
 
     #partners-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: var(--space-md);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       align-items: stretch;
-      justify-items: stretch;
-      /* Reserve space while JS injects partner cards (~2 rows × 3 cols on large screens) */
+      gap: var(--space-md);
+      /* Reserve space while JS injects partner cards */
       min-height: clamp(33rem, 65vw, 54rem);
+    }
+
+    #partners-grid .partner-card {
+      flex: 1 1 calc((100% - var(--space-md)) / 2);
+      max-width: calc((100% - var(--space-md)) / 2);
+      box-sizing: border-box;
     }
 
     .partner-card {
@@ -2024,7 +2047,7 @@
       padding: clamp(0.65rem, 2.2vw, 1.1rem);
       border: 1px solid var(--glass-border);
       border-radius: var(--radius-card);
-      width: 100%;
+      width: auto;
       min-width: 0;
       aspect-ratio: 1;
       overflow: hidden;
@@ -2749,8 +2772,12 @@
       .our-impact__grid   { grid-template-columns: repeat(2, 1fr); }
       .programs__grid  { grid-template-columns: repeat(2, 1fr); }
       .projects__grid  { grid-template-columns: repeat(2, 1fr); }
-      #partners-grid   { grid-template-columns: repeat(2, 1fr); }
       .team__grid       { grid-template-columns: repeat(2, 1fr); }
+      #team-grid.team__grid .team-card:nth-child(7) {
+        grid-column: 1 / -1;
+        justify-self: center;
+        width: min(100%, 22rem);
+      }
     }
 
     /* ============================================================
@@ -2773,13 +2800,21 @@
       .reports__grid       { grid-template-columns: repeat(2, 1fr); }
       .mission-started__inner { grid-template-columns: 1fr 1fr; gap: var(--space-3xl); align-items: center; }
       .team__grid          { grid-template-columns: repeat(3, 1fr); }
+      #team-grid.team__grid .team-card:nth-child(7) {
+        grid-column: 2;
+        justify-self: stretch;
+        width: auto;
+      }
       .programs__grid      { grid-template-columns: repeat(3, 1fr); }
       .how__steps          { grid-template-columns: repeat(2, 1fr); }
       .projects__grid      { grid-template-columns: repeat(2, 1fr); }
       .donate__inner       { grid-template-columns: 1fr 1fr; }
       #partners-grid {
-        grid-template-columns: repeat(3, 1fr);
         gap: var(--space-lg);
+      }
+      #partners-grid .partner-card {
+        flex: 1 1 calc((100% - 2 * var(--space-lg)) / 3);
+        max-width: calc((100% - 2 * var(--space-lg)) / 3);
       }
       .two-col             { grid-template-columns: 1fr 1fr; }
       .contact .two-col    { grid-template-columns: 1fr 1fr; }
@@ -2799,13 +2834,14 @@
     @media (min-width: 1025px) {
       :root { --container-pad: var(--space-3xl); }
 
-      /* Partners: one row of 4, second row of 2 (centred) */
+      /* Partners: up to 4 per row; last incomplete row centred via flex */
       #partners-grid {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
         gap: var(--space-lg);
       }
-      #partners-grid .partner-card:nth-child(5) { grid-column: 2; }
-      #partners-grid .partner-card:nth-child(6) { grid-column: 3; }
+      #partners-grid .partner-card {
+        flex: 1 1 calc((100% - 3 * var(--space-lg)) / 4);
+        max-width: calc((100% - 3 * var(--space-lg)) / 4);
+      }
 
       .our-impact__grid  { grid-template-columns: repeat(4, minmax(0, 1fr)); }
       .reports__grid      { grid-template-columns: repeat(3, 1fr); }
@@ -2955,7 +2991,7 @@
           <!-- Content -->
           <div class="hero__content visible" data-animate>
             <h1 class="hero__headline" id="hero-headline">
-              <span data-i18n="hero.headline">Підтримка жінок і дітей там, де війна змінила все</span>
+              <span data-i18n="hero.headline">Я зможу - ти зможешь</span>
             </h1>
 
             <p class="hero__subheading" data-i18n="hero.subheading">
@@ -3001,6 +3037,44 @@
       </div>
     </section>
 
+    <!-- ── MISSION STARTED (human arc / Про нас) ─────────────────── -->
+    <section id="mission-started" class="mission-started" aria-labelledby="mission-started-title">
+      <div class="container split-asym mission-started__inner">
+        <div data-animate>
+          <p class="section-tag" data-i18n="mission.tag">Про I CAN</p>
+          <h2 class="section-title" id="mission-started-title" data-i18n="mission.title">Історія, місія й цінності</h2>
+          <p class="mission-started__lead" data-i18n="mission.lead">
+            Ми там, де найскладніше - поруч із громадами на межі
+          </p>
+          <p class="mission-started__body" data-i18n="mission.body1">
+            Благодійна організація I CAN заснована у 2023 році в Харкові; ми допомагаємо тим, хто найбільше постраждав від війни - через психосоціальну, освітню й гуманітарну підтримку жінок і дітей у Харківській області.
+          </p>
+          <p class="mission-started__body" data-i18n="mission.body2">
+            Ми будуємо стійкість там, де вона потрібна найбільше - у невеликих містах і селах, куди рідко доходить системна допомога.
+          </p>
+          <h3 class="mission-started__subhead" data-i18n="mission.mission_heading">Місія</h3>
+          <p class="mission-started__body" data-i18n="mission.body_mission">
+            Допомагати людям у складних обставинах подолати наслідки втрат і насильства; сприяти жіночому лідерству через психосоціальну, освітню та гуманітарну підтримку.
+          </p>
+          <h3 class="mission-started__subhead" data-i18n="mission.values_heading">Цінності</h3>
+          <ul class="mission-values" role="list">
+            <li><strong data-i18n="mission.val_trust_title">Довіра</strong> - <span data-i18n="mission.val_trust_desc">будуємо стосунки на передбачуваності, чесності й підтримці без засудження.</span></li>
+            <li><strong data-i18n="mission.val_safety_title">Безпека</strong> - <span data-i18n="mission.val_safety_desc">піклуємося про фізичну й психоемоційну безпеку людей і команди; нуль толерантності до насильства.</span></li>
+            <li><strong data-i18n="mission.val_respect_title">Повага</strong> - <span data-i18n="mission.val_respect_desc">визнаємо гідність і автономію, слухаємо по-справжньому й дотримуємося особистих меж.</span></li>
+            <li><strong data-i18n="mission.val_solidarity_title">Солідарність</strong> - <span data-i18n="mission.val_solidarity_desc">тримаємо одна одну в кризі - мережа взаємодопомоги без змагання «хто старанніший».</span></li>
+            <li><strong data-i18n="mission.val_responsibility_title">Відповідальність</strong> - <span data-i18n="mission.val_responsibility_desc">публічна звітність, етичні стандарти роботи та відповідь перед людьми, які нам довірилися.</span></li>
+          </ul>
+          <blockquote class="pull-quote" data-i18n="mission.quote">«Коли поруч є люди без засудження, легше дихати навіть у найважчі тижні» - зворотний зв’язок учасниць програм I CAN.</blockquote>
+          <div class="our-projects__actions" style="margin-top:var(--space-xl);">
+            <a href="#donate" class="btn btn-primary" data-i18n="mission.cta_donate">Підтримати місію</a>
+          </div>
+        </div>
+        <figure class="mission-started__figure" data-animate>
+          <img src="images/mission-1325-concrete.png" alt="Бетонний виріб з написом про резолюцію РБ ООН 1325 «Жінки, мир, безпека»: нагадування про залучення жінок до миру та безпеки" width="1200" height="900" decoding="async" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
     <!-- ── PROGRAMS (Напрямки діяльності) ─────────────────────────── -->
     <section id="programs" class="programs section-pad-relaxed section-soft-pink" aria-labelledby="programs-title">
       <div class="container">
@@ -3040,44 +3114,6 @@
       </div>
     </section>
 
-    <!-- ── MISSION STARTED (human arc) ───────────────────────────── -->
-    <section id="mission-started" class="mission-started" aria-labelledby="mission-started-title">
-      <div class="container split-asym mission-started__inner">
-        <div data-animate>
-          <p class="section-tag" data-i18n="mission.tag">Про I CAN</p>
-          <h2 class="section-title" id="mission-started-title" data-i18n="mission.title">Історія, місія й цінності</h2>
-          <p class="mission-started__lead" data-i18n="mission.lead">
-            Ми там, де найскладніше - поруч із громадами на межі
-          </p>
-          <p class="mission-started__body" data-i18n="mission.body1">
-            Благодійна організація I CAN заснована у 2023 році в Харкові; ми допомагаємо тим, хто найбільше постраждав від війни - через психосоціальну, освітню й гуманітарну підтримку жінок і дітей у Харківській області.
-          </p>
-          <p class="mission-started__body" data-i18n="mission.body2">
-            Ми будуємо стійкість там, де вона потрібна найбільше - у невеликих містах і селах, куди рідко доходить системна допомога.
-          </p>
-          <h3 class="mission-started__subhead" data-i18n="mission.mission_heading">Місія</h3>
-          <p class="mission-started__body" data-i18n="mission.body_mission">
-            Допомагати людям у складних обставинах подолати наслідки втрат і насильства; сприяти жіночому лідерству через психосоціальну, освітню та гуманітарну підтримку.
-          </p>
-          <h3 class="mission-started__subhead" data-i18n="mission.values_heading">Цінності</h3>
-          <ul class="mission-values" role="list">
-            <li><strong data-i18n="mission.val_trust_title">Довіра</strong> - <span data-i18n="mission.val_trust_desc">будуємо стосунки на передбачуваності, чесності й підтримці без засудження.</span></li>
-            <li><strong data-i18n="mission.val_safety_title">Безпека</strong> - <span data-i18n="mission.val_safety_desc">піклуємося про фізичну й психоемоційну безпеку людей і команди; нуль толерантності до насильства.</span></li>
-            <li><strong data-i18n="mission.val_respect_title">Повага</strong> - <span data-i18n="mission.val_respect_desc">визнаємо гідність і автономію, слухаємо по-справжньому й дотримуємося особистих меж.</span></li>
-            <li><strong data-i18n="mission.val_solidarity_title">Солідарність</strong> - <span data-i18n="mission.val_solidarity_desc">тримаємо одна одну в кризі - мережа взаємодопомоги без змагання «хто старанніший».</span></li>
-            <li><strong data-i18n="mission.val_responsibility_title">Відповідальність</strong> - <span data-i18n="mission.val_responsibility_desc">публічна звітність, етичні стандарти роботи та відповідь перед людьми, які нам довірилися.</span></li>
-          </ul>
-          <blockquote class="pull-quote" data-i18n="mission.quote">«Коли поруч є люди без засудження, легше дихати навіть у найважчі тижні» - зворотний зв’язок учасниць програм I CAN.</blockquote>
-          <div class="our-projects__actions" style="margin-top:var(--space-xl);">
-            <a href="#donate" class="btn btn-primary" data-i18n="mission.cta_donate">Підтримати місію</a>
-          </div>
-        </div>
-        <figure class="mission-started__figure" data-animate>
-          <img src="images/mission-1325-concrete.png" alt="Бетонний виріб з написом про резолюцію РБ ООН 1325 «Жінки, мир, безпека»: нагадування про залучення жінок до миру та безпеки" width="1200" height="900" decoding="async" loading="lazy">
-        </figure>
-      </div>
-    </section>
-
     <!-- ── STRATEGY (development carousel) ───────────────────────── -->
     <section id="strategy" class="strategy-panel" aria-labelledby="strategy-title">
       <div class="container">
@@ -3107,7 +3143,6 @@
     <section id="our-impact" class="our-impact" aria-labelledby="our-impact-title">
       <div class="container">
         <div class="section-header section-header--wide" data-animate>
-          <p class="section-tag" data-i18n="impact.section_tag">У цифрах</p>
           <h2 class="section-title" id="our-impact-title" data-i18n="impact.title">Наш вплив</h2>
           <p class="section-subtitle" data-i18n="impact.subtitle">
             Показуємо ключові результати, якими керуємось у звітності перед громадою та партнерами.
@@ -3138,7 +3173,6 @@
     <section id="projects" class="projects section-pad-relaxed" aria-labelledby="projects-title">
       <div class="container">
         <div class="section-header" data-animate>
-          <p class="section-tag" data-i18n="projects.section_tag">Ініціативи</p>
           <h2 class="section-title" id="projects-title" data-i18n="projects.headline">Ключові проєкти</h2>
           <p class="section-subtitle" data-i18n="projects.subheading">Чотири ініціативи підтримки громад</p>
         </div>
@@ -3184,7 +3218,7 @@
             </div>
             <div class="project-card__body">
               <span class="project-card__tag"  data-i18n="projects.p4_tag">Жіноче лідерство й відновлення</span>
-              <h3  class="project-card__title" data-i18n="projects.p4_title">Проєкт «Форум Сила Харків’янок»</h3>
+              <h3  class="project-card__title" data-i18n="projects.p4_title">Форум "Сила Харків’янок"</h3>
               <p   class="project-card__desc"  data-i18n="projects.p4_desc">Це ініціатива, спрямована на посилення ролі жінок у процесах відновлення, соціальної згуртованості та розвитку громад Харківської області в умовах війни. Форум об’єднує активісток, представниць громадських організацій, місцевої влади, освітнього сектору, бізнесу та міжнародних партнерів для спільного обговорення викликів, з якими стикаються жінки у прифронтовому регіоні, а також пошуку практичних рішень і можливостей для співпраці.</p>
             </div>
           </article>
@@ -3197,7 +3231,6 @@
     <section id="team" class="team section-warm-bg section-pad-relaxed" aria-labelledby="team-title">
       <div class="container">
         <div class="section-header section-header--wide" data-animate>
-          <p class="section-tag" data-i18n="team.tag">Команда</p>
           <h2 class="section-title" id="team-title" data-i18n="team.headline">Команда</h2>
           <p class="section-subtitle" data-i18n="team.subtitle">
             Люди, які координують програми та підтримку громад.
@@ -3318,25 +3351,27 @@
               Ваша підтримка відкриває жінкам доступ до турботи й спільноти
             </h2>
             <p class="donate__subheading" data-i18n="donate.subheading">
-              Кожна гривня йде безпосередньо до жінок і дітей у прифронтових громадах Харківщини.
+              Кожна гривня тут - це не абстрактний «внесок у фонд», а конкретна допомога дітям, які щодня чують вибухи у прифронтових селах Харківщини.
             </p>
-            <p class="donate__emotional" style="font-size:0.975rem;color:var(--color-mid);line-height:1.72;margin-bottom:var(--space-lg);max-width:36rem;" data-i18n="donate.emotional">
-              Жодна гривня не йде на маркетинг - лише виїзди, хаби та супровід волонтерів.
+            <p class="donate__emotional" data-i18n="donate.emotional">
+              Ми не витрачаємо ресурси на маркетинг чи рекламу. Усі кошти йдуть виключно на забезпечення виїздів, роботу локальних хабів та пряму підтримку мобільних команд, які везуть допомогу туди, де її найбільше чекають.
             </p>
 
-            <p id="donate-impact-legend" class="visually-hidden" data-i18n="donate.impact_list_sr">Приклади, на що впливає ваш внесок</p>
+            <p class="donate__impact-lead" id="donate-impact-legend" data-i18n="donate.impact_intro">
+              Ваш внесок напряму фінансує життєво важливі речі для дітей та їхніх матерів:
+            </p>
             <ul class="donate__impact-list" aria-labelledby="donate-impact-legend">
               <li class="donate__impact-item">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span data-i18n="donate.impact_200">200 ₴ - одна година психологічної підтримки</span>
+                <span data-i18n="donate.impact_200">Невідкладну психологічну допомогу - роботу з дитячими травмами та страхами безпосередньо на місцях.</span>
               </li>
               <li class="donate__impact-item">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span data-i18n="donate.impact_500">500 ₴ - гігієнічний набір для матері та дитини</span>
+                <span data-i18n="donate.impact_500">Гідні дитячі та жіночі гігієнічні набори, дитяче харчування та речі першої потреби.</span>
               </li>
               <li class="donate__impact-item">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span data-i18n="donate.impact_1000">1000 ₴ - юридичне супроводження документів</span>
+                <span data-i18n="donate.impact_1000">Юридичний супровід сімей - допомогу в оформленні документів на евакуацію, отримання статусів або державної допомоги.</span>
               </li>
             </ul>
           </div>
