@@ -46,7 +46,7 @@
       },
       hero: {
         brand_lockup: 'I CAN',
-        headline:    'Я зможу - ти зможешь',
+        headline:    'Я зможу - ти зможеш',
         subheading:  'Психологічна та соціальна допомога, право та гуманітарна підтримка в громадах Харківщини - поруч і без зайвого шуму.',
         cta_support: 'Підтримати фонд',
         cta_join:    'Долучитися до спільноти',
@@ -347,14 +347,14 @@
       },
       hero: {
         brand_lockup: 'I CAN',
-        headline:    'Standing with women and children when war changes everything',
-        subheading:  'Psychological care, legal support and humanitarian help in Kharkiv Oblast communities - close by, grounded in dignity.',
+        headline:    'I can - you can',
+        subheading:  'Psychological and social support, legal aid and humanitarian help in Kharkiv Oblast communities - close by, without unnecessary noise.',
         cta_support: 'Support the foundation',
         cta_join:    'Join the community',
         cta_get_help:'Get help',
-        cta_learn:   'Learn more about our programmes',
+        cta_learn:   'Learn more about programs',
         cta_community:'Join our community',
-        quote:       '“This community helped me feel less alone” - participant in a support circle.',
+        quote:       '“This community helped me feel less lonely” - support group participant.',
       },
       impact: {
         section_tag:   'Impact by numbers',
@@ -662,7 +662,7 @@
       id: 'lwf',
       name: 'LWF (The Lutheran World Federation)',
       logo: 'images/partner-lwf.png',
-      url: 'https://www.lutheranworld.org/',
+      url: 'https://worldservice.lutheranworld.org/where-we-work/ukraine',
       category: 'international'
     },
     {
